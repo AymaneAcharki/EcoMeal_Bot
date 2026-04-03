@@ -1,44 +1,76 @@
 from typing import Dict, List
 
 
-# Core system prompt - optimized for small models (1B params)
-SYSTEM_PROMPT_CORE = """You are EcoChef, a sustainable cooking assistant (UN SDG 12).
-Help users cook delicious, low-carbon meals.
+# Core system prompt - short and focused for Llama 3.2
+SYSTEM_PROMPT = """You are EcoChef, a sustainable cooking assistant.
+Help users cook realistic, delicious, low-carbon meals.
 
-STRICT RULES:
-1. ONLY answer about: recipes, cooking, food CO2, nutrition
-2. Off-topic -> "I specialize in sustainable cooking. Ask me about recipes or food."
-3. Be concise (max 200 words per response)
-4. For recipes: output ONLY valid JSON, no markdown, no extra text
+RULES:
+1. Only answer about: recipes, cooking, food CO2, substitutions, shopping lists.
+2. Be practical and concise.
+3. For recipes: output ONLY valid JSON, no markdown, no extra text.
+4. Create REAL, COOKABLE dishes - not generic or invented combinations.
 
-CO2 DATA (kg CO2 per kg of food):
-- Beef: 27.0 | Lamb: 20.0 | Pork: 7.6 | Chicken: 6.9 | Fish: 6-12
-- Eggs: 4.8 | Cheese: 13.5 | Tofu: 2.0 | Lentils: 0.9 | Chickpeas: 0.8
-- Vegetables: 0.3-1.5 | Rice: 2.7 | Pasta: 1.5 | Potatoes: 0.2
+CO2 DATA (kg CO2 per kg): Beef 27 | Chicken 6.9 | Fish 6-12 | Tofu 2.0 | Lentils 0.9 | Vegetables 0.3-1.5
+Target: Keep recipes under 2.0 kg CO2 per serving."""
 
-TARGET: Keep recipes under 2.0 kg CO2 per serving."""
 
-# Recipe format reminder - injected in user message for better attention
-RECIPE_FORMAT_REMINDER = """OUTPUT ONLY THIS JSON STRUCTURE, NOTHING ELSE:
+# Few-shot example for better quality
+RECIPE_EXAMPLE = """EXAMPLE OF A GOOD RECIPE:
 {
-  "name": "Recipe Name",
-  "description": "1-2 sentences.",
-  "ingredients": [{"name": "Item", "quantity_g": 150}],
-  "steps": ["Step 1: ...", "Step 2: ..."],
-  "cooking_time_minutes": 30,
+  "name": "Spaghetti Aglio e Olio",
+  "description": "Classic Italian pasta with garlic, olive oil, and chili flakes. Simple, fragrant, and ready in 15 minutes.",
+  "ingredients": [
+    {"name": "spaghetti", "quantity_g": 200},
+    {"name": "garlic cloves", "quantity_g": 15},
+    {"name": "olive oil", "quantity_g": 45},
+    {"name": "red chili flakes", "quantity_g": 3},
+    {"name": "fresh parsley", "quantity_g": 10},
+    {"name": "salt", "quantity_g": 5}
+  ],
+  "steps": [
+    "Boil spaghetti in salted water for 9 minutes until al dente. Reserve 100ml pasta water.",
+    "Slice garlic thinly. Heat olive oil in pan over medium-low heat for 2 minutes.",
+    "Add garlic and chili flakes. Cook gently for 3 minutes until golden, not brown.",
+    "Drain pasta, add to pan with reserved water. Toss for 2 minutes until coated.",
+    "Serve with chopped parsley and a drizzle of olive oil."
+  ],
+  "cooking_time_minutes": 15,
   "difficulty": "easy",
-  "sustainability_tip": "One sentence."
-}
-RULES: Max 12 ingredients. Quantities in grams. 4-8 steps. No markdown. No explanation."""
+  "sustainability_tip": "This plant-based pasta has very low CO2 (~0.4kg). Use local garlic for even less."
+}"""
 
-# For backward compatibility
-SYSTEM_PROMPT = SYSTEM_PROMPT_CORE
+
+# Quality rules to enforce
+QUALITY_RULES = """
+QUALITY RULES (follow strictly):
+- Create a REAL, COOKABLE dish that exists in cuisine.
+- Use AUTHENTIC ingredients for the dish type (e.g., carbonara = eggs + pecorino + guanciale, NO cream).
+- Do NOT use vague ingredients like "spices", "sauce", "seasoning", "herbs" - be specific.
+- Each step MUST include: action + time/temperature + expected result.
+- Description MUST mention taste and texture.
+- Add one practical chef_tip.
+- If traditional dish, preserve its identity - do not modify core ingredients.
+- Output ONLY valid JSON, nothing else."""
+
+
+# Format reminder (shorter)
+RECIPE_FORMAT = """OUTPUT FORMAT (JSON only):
+{
+  "name": "Dish Name",
+  "description": "Taste and texture in 1-2 sentences.",
+  "ingredients": [{"name": "specific ingredient", "quantity_g": 100}],
+  "steps": ["Action + time/temp + result.", "..."],
+  "cooking_time_minutes": 30,
+  "difficulty": "easy|medium|hard",
+  "sustainability_tip": "One specific tip."
+}"""
 
 
 def build_recipe_prompt(ingredients: List[str], profile: Dict,
                         constraints: Dict = None,
                         focus_mode: str = "co2") -> str:
-    """Build a recipe generation prompt with user context."""
+    """Build a recipe generation prompt optimized for Llama 3.2."""
     diet = profile.get("diet_type", "omnivore")
     allergies = profile.get("allergies", [])
     max_time = profile.get("max_cooking_time", 60)
@@ -46,37 +78,46 @@ def build_recipe_prompt(ingredients: List[str], profile: Dict,
     household = profile.get("household_size", 2)
     cuisines = profile.get("cuisine_preferences", [])
 
-    prompt = f"Generate a recipe using these ingredients: {', '.join(ingredients)}.\n\n"
-    prompt += f"USER PROFILE:\n"
+    # Build context
+    prompt = f"Create a recipe using: {', '.join(ingredients)}\n\n"
+    prompt += f"USER:\n"
     prompt += f"- Diet: {diet}\n"
-    prompt += f"- Household size: {household} people\n"
-    prompt += f"- Skill level: {skill}\n"
-    prompt += f"- Max cooking time: {max_time} minutes\n"
+    prompt += f"- Servings: {household}\n"
+    prompt += f"- Skill: {skill}\n"
+    prompt += f"- Max time: {max_time} min\n"
 
     if allergies:
-        prompt += f"- ALLERGIES (strictly avoid): {', '.join(allergies)}\n"
+        prompt += f"- ALLERGIES (avoid): {', '.join(allergies)}\n"
 
     if cuisines:
-        prompt += f"- Cuisine preferences: {', '.join(cuisines)}\n"
+        prompt += f"- Preferred cuisines: {', '.join(cuisines)}\n"
 
-    if constraints:
-        if "max_co2" in constraints:
-            prompt += f"- Maximum CO2 per serving: {constraints['max_co2']} kg\n"
-        if "appliances" in constraints:
-            prompt += f"- Available appliances: {', '.join(constraints['appliances'])}\n"
-        if "difficulty" in constraints:
-            prompt += f"- Difficulty level: {constraints['difficulty']}\n"
+    # Focus mode - but respect user's ingredient choices
+    has_meat = any(ing.lower() in ['chicken', 'beef', 'pork', 'lamb', 'turkey', 'duck', 'fish', 'salmon', 'shrimp', 'bacon', 'sausage'] for ing in ingredients)
 
-    focus_hints = {
-        "co2": "FOCUS: Minimize CO2 footprint. Prefer plant-based proteins, local ingredients.\n",
-        "nutri": "FOCUS: Maximize nutritional value. Include protein, fiber, vitamins.\n",
-        "eco": "FOCUS: Budget-friendly and sustainable. Use affordable, seasonal ingredients.\n"
-    }
-    if focus_mode in focus_hints:
-        prompt += focus_hints[focus_mode]
+    if focus_mode == "co2" and not has_meat:
+        prompt += "\nFOCUS: Minimize CO2. Use local seasonal ingredients where possible.\n"
+    elif focus_mode == "nutri":
+        prompt += "\nFOCUS: Maximize nutrition. Include protein, fiber, vitamins.\n"
+    elif focus_mode == "eco":
+        prompt += "\nFOCUS: Budget-friendly. Use affordable ingredients.\n"
 
-    # Inject format reminder at the end of user message (better attention for small models)
-    prompt += f"\n{RECIPE_FORMAT_REMINDER}"
+    # If user explicitly wants meat, acknowledge it
+    if has_meat:
+        prompt += "\nNOTE: User requested meat. Include it as requested. You can suggest a smaller portion for sustainability.\n"
+
+    # Add quality rules
+    prompt += QUALITY_RULES
+
+    # Add format
+    prompt += "\n" + RECIPE_FORMAT
+
+    # Add few-shot example
+    prompt += "\n\n" + RECIPE_EXAMPLE
+
+    # Final instruction
+    prompt += "\n\nNow generate the recipe (JSON only):"
+
     return prompt
 
 

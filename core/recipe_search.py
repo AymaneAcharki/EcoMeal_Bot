@@ -16,6 +16,7 @@ from core.substitutions import suggest_multiple_substitutions
 
 BASE_DIR = Path(__file__).parent.parent / "data"
 RECIPES_DB = BASE_DIR / "recipes" / "recipes_db.json"
+MEALDB_DB = BASE_DIR / "recipes" / "mealdb_recipes.json"
 ALIMENTS_DB = BASE_DIR / "aliments.json"
 PRICES_DB = BASE_DIR / "prices.json"
 SEASONS_DB = BASE_DIR / "seasons.json"
@@ -34,10 +35,24 @@ class RecipeSearch:
         self._build_search_index()
 
     def _load_db(self):
-        with open(RECIPES_DB, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        self.metadata = data.get("metadata", {})
-        self.recipes = data.get("recipes", [])
+        """Load recipes from both local DB and TheMealDB."""
+        self.recipes = []
+        self.metadata = {}
+
+        # Load local recipes
+        if RECIPES_DB.exists():
+            with open(RECIPES_DB, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            self.recipes.extend(data.get("recipes", []))
+            self.metadata.update(data.get("metadata", {}))
+
+        # Load TheMealDB recipes (higher quality)
+        if MEALDB_DB.exists():
+            with open(MEALDB_DB, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            mealdb_recipes = data.get("recipes", [])
+            self.recipes.extend(mealdb_recipes)
+            print(f"Loaded {len(mealdb_recipes)} TheMealDB recipes")
 
         # Separate emblematic recipes
         self.emblematic_recipes = [r for r in self.recipes if r.get("emblematic")]
