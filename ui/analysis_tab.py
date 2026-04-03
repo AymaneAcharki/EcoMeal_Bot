@@ -4,11 +4,9 @@ from core.carbon_tracker import CarbonTracker, GPT4_EMISSIONS_PER_REQUEST_G
 
 
 def render_analysis_tab() -> None:
-    _render_sdg_table()
-    st.markdown("---")
     _render_carbon_dashboard()
     st.markdown("---")
-    _render_ethics()
+    _render_sdg_table()
     st.markdown("---")
     _render_key_points()
     st.markdown("---")
@@ -438,10 +436,9 @@ def _render_carbon_dashboard() -> None:
            This includes datacenter PUE, cooling, and networking overhead
            that local inference avoids entirely.
 
-        **Why local LLM is greener**: Running Qwen3.5:0.8b on consumer hardware
-        avoids datacenter overhead (PUE ~1.1-1.5), network transfer emissions,
-        and shared infrastructure costs. A single GPT-4 request emits as much
-        as ~100+ local inference calls on a laptop.
+        **Why small SLM is greener**: Running Llama-3.2-1B-Instruct (1B params)
+        instead of large models like GPT-4 (1.8T params) reduces compute by 1000x+.
+        A single GPT-4 request emits as much as ~100+ small model inference calls.
         """)
 
 
@@ -478,10 +475,10 @@ def _render_ethics() -> None:
         {
             "title": "AI Ethics",
             "icon": "!",
-            "description": "Uses a local LLM (LM Studio, Qwen3.5:0.8b) with no cloud dependency. "
-                           "User controls all parameters (temperature, thinking mode). "
+            "description": "Uses Llama-3.2-1B-Instruct via Hugging Face Inference Providers (free tier). "
+                           "User controls all parameters (temperature, focus mode). "
                            "Database-first approach: AI supplements, never replaces, factual data. "
-                           "Fallback recipes available when AI is offline.",
+                           "Local mode available via LM Studio for full offline capability.",
         },
         {
             "title": "Environmental Responsibility",
@@ -592,23 +589,23 @@ def _render_key_points() -> None:
             <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
                 <tr style="border-bottom: 1px solid var(--border-light);">
                     <td style="padding: 0.5rem 0; color: var(--text-muted);">LLM Engine</td>
-                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">Qwen3.5:0.8b (local)</td>
+                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">Llama-3.2-1B-Instruct</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-light);">
                     <td style="padding: 0.5rem 0; color: var(--text-muted);">AI Platform</td>
-                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">LM Studio (localhost)</td>
+                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">HF Inference Providers</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-light);">
                     <td style="padding: 0.5rem 0; color: var(--text-muted);">Strategy</td>
                     <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">DB-first, AI-fallback</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-light);">
-                    <td style="padding: 0.5rem 0; color: var(--text-muted);">Offline Mode</td>
-                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">Full functionality</td>
+                    <td style="padding: 0.5rem 0; color: var(--text-muted);">Local Mode</td>
+                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">LM Studio compatible</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-light);">
                     <td style="padding: 0.5rem 0; color: var(--text-muted);">Intent Classification</td>
-                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">6 intents, keyword-based</td>
+                    <td style="padding: 0.5rem 0; font-weight: 600; text-align: right;">6 intents, LLM-based</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-light);">
                     <td style="padding: 0.5rem 0; color: var(--text-muted);">Ingredient Matching</td>
@@ -648,7 +645,7 @@ def _render_workflow() -> None:
         },
         {
             "label": "LLM Fallback",
-            "detail": "If DB empty: Qwen3.5 generates recipe via structured prompt. Local LM Studio only.",
+            "detail": "If DB empty: Llama-3.2-1B generates recipe via structured prompt on HF Inference.",
             "color": "#FF9800",
         },
         {
