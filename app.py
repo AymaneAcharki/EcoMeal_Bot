@@ -3,7 +3,7 @@ import config
 from chat.engine import ChatEngine
 from profile.manager import ProfileManager
 from ui.sidebar import render_sidebar
-from ui.chat_area import render_chat_area
+from ui.chat_area import render_chat_area, handle_user_input
 from ui.welcome_tab import render_welcome_tab
 from ui.profile_tab import render_profile_tab
 from ui.analysis_tab import render_analysis_tab
@@ -30,6 +30,7 @@ def init_session_state():
         st.session_state["show_new_profile"] = False
         st.session_state["active_conversation_id"] = None
         st.session_state["active_conversation_title"] = "New Conversation"
+        st.session_state["current_tab"] = 1  # 0=Home, 1=Chat, 2=Profile, 3=Analysis
 
     if "profile" not in st.session_state:
         pm = ProfileManager()
@@ -48,41 +49,31 @@ def init_session_state():
 
 
 def render_main_content():
-    tab_home, tab_chat, tab_profile, tab_analysis = st.tabs([
-        "Home",
-        "Chat",
-        "Profile",
-        "Analysis"
-    ])
+    tabs = st.tabs(["🏠 Home", "💬 Chat", "👤 Profile", "📊 Analysis"])
 
-    # Track active tab in session state
-    if "active_tab" not in st.session_state:
-        st.session_state["active_tab"] = "Chat"
+    # Track which tab is selected via query params or default
+    current_tab = st.session_state.get("current_tab", 1)
 
-    with tab_home:
-        st.session_state["active_tab"] = "Home"
+    with tabs[0]:
         render_welcome_tab()
 
-    with tab_chat:
-        st.session_state["active_tab"] = "Chat"
+    with tabs[1]:
         render_chat_area()
 
-    with tab_profile:
-        st.session_state["active_tab"] = "Profile"
+    with tabs[2]:
         render_profile_tab()
 
-    with tab_analysis:
-        st.session_state["active_tab"] = "Analysis"
+    with tabs[3]:
         render_analysis_tab()
 
-    # Chat input MUST be outside tabs - show when Chat tab is contextually active
+    # Chat input at app level (required by Streamlit - must be outside tabs)
+    # But only process when user is on Chat tab
     user_input = st.chat_input(
         "Ask for a recipe, shopping list, weekly plan...",
-        key="chat_input_main"
+        key="chat_input_global"
     )
 
-    if user_input and st.session_state.get("active_tab") == "Chat":
-        from ui.chat_area import handle_user_input
+    if user_input:
         handle_user_input(user_input)
 
 

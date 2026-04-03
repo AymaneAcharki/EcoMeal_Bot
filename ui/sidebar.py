@@ -158,22 +158,29 @@ def _load_conversation(conv_id: str) -> None:
 
 def _render_lm_status() -> None:
     lm_connected = st.session_state.get("lm_connected", False)
+    provider = config.LLM_PROVIDER
+    provider_name = "Hugging Face" if provider == "huggingface" else "LM Studio"
+    model_name = config.HF_MODEL if provider == "huggingface" else config.LM_STUDIO_MODEL
 
     if lm_connected:
         st.markdown(f"""
-        <div style="padding: 0.5rem; border-radius: 8px; background-color: var(--primary-light);">
-            <span class="status-dot status-dot-online"></span>
-            <small style="color: var(--primary-dark); font-weight: 600;">LM Studio Connected</small>
+        <div style="padding: 0.5rem; border-radius: 8px; background-color: #d4edda;">
+            <span style="color: green;">●</span>
+            <small style="color: #155724; font-weight: 600;">{provider_name} Connected</small>
         </div>
         """, unsafe_allow_html=True)
+        st.caption(f"Model: {model_name}")
     else:
         st.markdown(f"""
-        <div style="padding: 0.5rem; border-radius: 8px; background-color: var(--danger-light);">
-            <span class="status-dot status-dot-offline"></span>
-            <small style="color: var(--danger); font-weight: 600;">LM Studio Disconnected</small>
+        <div style="padding: 0.5rem; border-radius: 8px; background-color: #f8d7da;">
+            <span style="color: #721c24;">●</span>
+            <small style="color: #721c24; font-weight: 600;">{provider_name} Not Connected</small>
         </div>
         """, unsafe_allow_html=True)
-        st.caption("Fallback mode active")
+        if provider == "huggingface":
+            st.caption("Set HF_API_TOKEN in secrets")
+        else:
+            st.caption("Start LM Studio server")
 
     thinking = st.toggle(
         "Thinking Mode",
