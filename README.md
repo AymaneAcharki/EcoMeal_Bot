@@ -42,10 +42,24 @@ Or deploy directly to Hugging Face Spaces - the app will use the `HF_API_TOKEN` 
 
 1. Install dependencies: `pip install -r requirements.txt`
 2. Download LM Studio from https://lmstudio.ai
-3. Load model: `qwen3.5:0.8b`
+3. Load model: `llama-3.2-1b-instruct`
 4. Start local server on port 1234
 5. Set `LLM_PROVIDER=lm_studio` in `.env`
 6. Run: `streamlit run app.py`
+
+## Model Selection
+
+**Current model: `meta-llama/Llama-3.2-1B-Instruct`**
+
+The project was originally designed for **Qwen3.5-0.8B**, offering an optimal balance of speed and quality for recipe generation. However, due to deployment constraints on the free Hugging Face Inference Providers tier, we switched to **Llama-3.2-1B-Instruct**:
+
+| Model | Params | Quality | Speed | Free HF Tier |
+|-------|--------|---------|-------|--------------|
+| Qwen3.5-0.8B | 0.8B | ⭐⭐⭐ | ⚡⚡⚡ | ❌ Not available |
+| Qwen2.5-1.5B | 1.5B | ⭐⭐⭐⭐ | ⚡⚡ | ❌ Not available |
+| **Llama-3.2-1B** | 1B | ⭐⭐⭐⭐ | ⚡⚡⚡ | ✅ Available |
+
+Llama-3.2-1B provides excellent instruction following and multilingual support (important for French recipes) and is available on the free Hugging Face Inference Providers tier.
 
 ## Project Structure
 

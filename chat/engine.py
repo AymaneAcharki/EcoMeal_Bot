@@ -3,6 +3,7 @@ from typing import Dict, List, Optional
 from datetime import datetime
 import requests
 from openai import OpenAI
+from huggingface_hub import InferenceClient
 
 import config
 from profile.models import UserProfile
@@ -74,10 +75,13 @@ class ChatEngine:
         }
 
     def _init_huggingface(self):
-        """Initialize Hugging Face (cloud) client."""
+        """Initialize Hugging Face (cloud) client using new Inference Providers API."""
         self.hf_token = config.HF_API_TOKEN
         self.hf_model = config.HF_MODEL
-        self.hf_api_url = f"https://api-inference.huggingface.co/models/{self.hf_model}"
+        self.hf_client = InferenceClient(
+            provider="auto",
+            api_key=self.hf_token,
+        )
         self.client = None  # Not using OpenAI client for HF
         self.model = self.hf_model
         self.thinking_enabled = False
@@ -126,48 +130,26 @@ class ChatEngine:
 
     def _call_huggingface(self, messages: List[Dict], max_tokens: int,
                           temperature: float = None) -> str:
-        """Call Hugging Face Inference API."""
-        # Build prompt from messages
-        prompt_parts = []
-        for msg in messages:
-            role = msg.get("role", "user")
-            content = msg.get("content", "")
-            if role == "system":
-                prompt_parts.append(f"<|system|>\n{content}")
-            elif role == "assistant":
-                prompt_parts.append(f"<|assistant|\n{content}")
-            else:
-                prompt_parts.append(f"<|user|>\n{content}")
-        prompt = "\n".join(prompt_parts) + "\n<|assistant|"
-
-        payload = {
-            "inputs": prompt,
-            "parameters": {
-                "max_new_tokens": max_tokens,
-                "temperature": temperature or self.llm_params.get("temperature", 0.3),
-                "top_p": self.llm_params.get("top_p", 0.95),
-                "return_full_text": False
-            }
-        }
-
-        headers = {
-            "Authorization": f"Bearer {self.hf_token}",
-            "Content-Type": "application/json"
-        }
-
+        """Call Hugging Face Inference Providers API using huggingface_hub."""
         start_time = self.carbon_tracker.start_call()
 
-        response = requests.post(self.hf_api_url, json=payload, headers=headers, timeout=60)
+        try:
+            completion = self.hf_client.chat.completions.create(
+                model=self.hf_model,
+                messages=messages,
+                max_tokens=max_tokens,
+                temperature=temperature or self.llm_params.get("temperature", 0.3),
+                top_p=self.llm_params.get("top_p", 0.95),
+            )
+            content = completion.choices[0].message.content or ""
 
-        self.carbon_tracker.end_call(start_time, tokens_generated=0)
+            tokens = getattr(completion.usage, 'completion_tokens', 0) if completion.usage else 0
+            self.carbon_tracker.end_call(start_time, tokens_generated=tokens)
 
-        if response.status_code == 200:
-            result = response.json()
-            if isinstance(result, list) and len(result) > 0:
-                return result[0].get("generated_text", "")
-            return result.get("generated_text", "")
-        else:
-            raise Exception(f"HF API error: {response.status_code} - {response.text}")
+            return content
+        except Exception as e:
+            self.carbon_tracker.end_call(start_time, tokens_generated=0)
+            raise Exception(f"HF Inference API error: {e}")
 
     def _strip_thinking(self, text: str) -> str:
         """Remove <think|...> or <thinking>...</thinking> blocks from LLM output."""
