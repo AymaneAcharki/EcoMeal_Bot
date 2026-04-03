@@ -1,0 +1,16 @@
+{
+  "user_id": "Kenji_Japan",
+  "diet_type": "pescatarian",
+  "allergies": ["shellfish"],
+  "disliked_ingredients": ["cilantro"],
+  "cuisine_preferences": ["asian", "mediterranean"],
+  "max_cooking_time": 60,
+  "skill_level": "advanced",
+  "weekly_budget": 180.0,
+  "currency": "EUR",
+  "household_size": 2,
+  "sustainability_priority": "local",
+  "country": "Japan",
+  "created_at": "2026-04-03T10:00:00.000000",
+  "updated_at": "2026-04-03T10:00:00.000000"
+}
