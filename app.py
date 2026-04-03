@@ -55,17 +55,35 @@ def render_main_content():
         "Analysis"
     ])
 
+    # Track active tab in session state
+    if "active_tab" not in st.session_state:
+        st.session_state["active_tab"] = "Chat"
+
     with tab_home:
+        st.session_state["active_tab"] = "Home"
         render_welcome_tab()
 
     with tab_chat:
+        st.session_state["active_tab"] = "Chat"
         render_chat_area()
 
     with tab_profile:
+        st.session_state["active_tab"] = "Profile"
         render_profile_tab()
 
     with tab_analysis:
+        st.session_state["active_tab"] = "Analysis"
         render_analysis_tab()
+
+    # Chat input MUST be outside tabs - show when Chat tab is contextually active
+    user_input = st.chat_input(
+        "Ask for a recipe, shopping list, weekly plan...",
+        key="chat_input_main"
+    )
+
+    if user_input and st.session_state.get("active_tab") == "Chat":
+        from ui.chat_area import handle_user_input
+        handle_user_input(user_input)
 
 
 def render_footer():

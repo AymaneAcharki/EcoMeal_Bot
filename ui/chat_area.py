@@ -27,7 +27,7 @@ def render_chat_area() -> None:
     _render_ingredient_selector()
     _render_demo_button()
     _render_message_history()
-    _render_chat_input()
+    # Note: chat_input is now in app.py (must be outside tabs)
 
 
 def _ensure_conversation() -> None:
@@ -429,14 +429,14 @@ def _run_demo() -> None:
 
 
 def _render_chat_input() -> None:
-    user_input = st.chat_input(
-        "Ask for a recipe, shopping list, weekly plan...",
-        key="chat_input"
-    )
+    """Deprecated - chat_input moved to app.py for HF Spaces compatibility."""
+    pass
 
-    if user_input:
-        pantry_items = _get_all_selected_ingredients()
-        _process_user_message(user_input, pantry_items)
+
+def handle_user_input(user_input: str) -> None:
+    """Handle user input from chat_input in app.py."""
+    pantry_items = _get_all_selected_ingredients()
+    _process_user_message(user_input, pantry_items)
 
 
 def _ensure_engine_matches_profile_toggle() -> None:
