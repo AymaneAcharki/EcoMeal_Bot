@@ -69,12 +69,13 @@ def render_main_content():
 
 
 def render_footer():
+    provider_name = "Hugging Face" if config.LLM_PROVIDER == "huggingface" else "LM Studio"
     st.markdown("---")
     st.markdown(f"""
     <div class="footer">
         {config.APP_TITLE} v{config.APP_VERSION} |
         UN SDG 12: Responsible Consumption |
-        Powered by LM Studio (Qwen3.5:0.8b)
+        Powered by {provider_name}
     </div>
     """, unsafe_allow_html=True)
 

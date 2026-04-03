@@ -1,3 +1,15 @@
+---
+title: EcoMeal Bot
+emoji: 🌱
+colorFrom: green
+colorTo: blue
+sdk: streamlit
+sdk_version: "1.29.0"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # EcoMeal Bot - Sustainable Recipe Chatbot
 
 A Streamlit chatbot that suggests eco-friendly recipes, tracks CO2 emissions per meal
@@ -10,35 +22,30 @@ A Streamlit chatbot that suggests eco-friendly recipes, tracks CO2 emissions per
 - User profiles with dietary preferences
 - Shopping list generation
 - Weekly meal planning
-- LLM-powered chat (LM Studio local)
+- LLM-powered chat (Hugging Face or LM Studio local)
 
 ## Quick Start
 
-### 1. Install Dependencies
+### Option A: Hugging Face (Cloud - Recommended)
 
+1. Get your HF API token from https://huggingface.co/settings/tokens
+2. Set environment variable: `HF_API_TOKEN=hf_your_token_here`
+3. Run:
 ```bash
 pip install -r requirements.txt
+streamlit run app.py
 ```
 
-### 2. Start LM Studio
+Or deploy directly to Hugging Face Spaces - the app will use the `HF_API_TOKEN` secret.
 
-1. Download LM Studio from https://lmstudio.ai
-2. Load model: `qwen3.5:0.8b` (or compatible)
-3. Start local server on port 1234
+### Option B: LM Studio (Local)
 
-### 3. Run the App
-
-```bash
-# Option A: Direct launch
-python -m streamlit run app.py --server.port 8501
-
-# Option B: With pre-flight checks
-python run.py
-```
-
-### 4. Open Browser
-
-Navigate to: http://localhost:8501
+1. Install dependencies: `pip install -r requirements.txt`
+2. Download LM Studio from https://lmstudio.ai
+3. Load model: `qwen3.5:0.8b`
+4. Start local server on port 1234
+5. Set `LLM_PROVIDER=lm_studio` in `.env`
+6. Run: `streamlit run app.py`
 
 ## Project Structure
 

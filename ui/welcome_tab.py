@@ -1,15 +1,23 @@
 import socket
 import io
 import base64
+import os
 
 import qrcode
 import streamlit as st
 import config
 
 
+def _is_cloud_deployment() -> bool:
+    """Check if running on Hugging Face Spaces or other cloud."""
+    return bool(os.environ.get("HF_API_TOKEN") and os.environ.get("SPACE_ID"))
+
+
 def render_welcome_tab() -> None:
     _render_hero()
-    _render_access_section()
+    # Skip QR code section on cloud deployment (HF Spaces has its own URL)
+    if not _is_cloud_deployment():
+        _render_access_section()
     _render_features()
     _render_how_it_works()
     _render_key_numbers()

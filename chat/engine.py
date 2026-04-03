@@ -4,6 +4,7 @@ from datetime import datetime
 import requests
 from openai import OpenAI
 
+import config
 from profile.models import UserProfile
 from chat.prompts import (
     SYSTEM_PROMPT, build_recipe_prompt, build_shopping_list_prompt,
@@ -18,7 +19,6 @@ from core.budget import BudgetManager
 from core.substitutions import suggest_multiple_substitutions
 from core.recipe_search import RecipeSearch
 from core.carbon_tracker import CarbonTracker
-import config
 
 
 class ChatEngine:
@@ -46,27 +46,59 @@ class ChatEngine:
             ram_gb=16
         )
 
+        # Initialize LLM client based on provider
+        self.provider = config.LLM_PROVIDER
+        if self.provider == "huggingface":
+            self._init_huggingface()
+        else:
+            self._init_lm_studio()
+
+        self.llm_available = self._test_connection()
+
+    def _init_lm_studio(self):
+        """Initialize LM Studio (local) client."""
         self.client = OpenAI(
             base_url=config.LM_STUDIO_BASE_URL,
             api_key="not-needed"
         )
-        self.thinking_enabled = config.LM_STUDIO_THINKING_ENABLED
+        self.model = config.LM_STUDIO_MODEL
+        self.thinking_enabled = config.LLM_THINKING_ENABLED
         self.llm_params = {
-            "temperature": config.LM_STUDIO_TEMPERATURE,
-            "top_p": config.LM_STUDIO_TOP_P,
+            "temperature": config.LLM_TEMPERATURE,
+            "top_p": config.LLM_TOP_P,
         }
         self.llm_extra = {
-            "top_k": config.LM_STUDIO_TOP_K,
-            "min_p": config.LM_STUDIO_MIN_P,
-            "repeat_penalty": config.LM_STUDIO_REPEAT_PENALTY,
+            "top_k": config.LLM_TOP_K,
+            "min_p": config.LLM_MIN_P,
+            "repeat_penalty": config.LLM_REPEAT_PENALTY,
         }
-        self.llm_available = self._test_connection()
+
+    def _init_huggingface(self):
+        """Initialize Hugging Face (cloud) client."""
+        self.hf_token = config.HF_API_TOKEN
+        self.hf_model = config.HF_MODEL
+        self.hf_api_url = f"https://api-inference.huggingface.co/models/{self.hf_model}"
+        self.client = None  # Not using OpenAI client for HF
+        self.model = self.hf_model
+        self.thinking_enabled = False
+        self.llm_params = {
+            "temperature": config.LLM_TEMPERATURE,
+            "top_p": config.LLM_TOP_P,
+        }
+        self.llm_extra = {}
 
     def _call_llm(self, messages: List[Dict], max_tokens: int,
                   temperature: float = None) -> str:
-        """Unified LLM call with all parameters synced to LM Studio settings."""
+        """Unified LLM call supporting multiple providers."""
+        if self.provider == "huggingface":
+            return self._call_huggingface(messages, max_tokens, temperature)
+        return self._call_lm_studio(messages, max_tokens, temperature)
+
+    def _call_lm_studio(self, messages: List[Dict], max_tokens: int,
+                        temperature: float = None) -> str:
+        """Call LM Studio (local) API."""
         params = {
-            "model": config.LM_STUDIO_MODEL,
+            "model": self.model,
             "messages": messages,
             "max_tokens": max_tokens,
         }
@@ -79,21 +111,63 @@ class ChatEngine:
         if self.thinking_enabled:
             params["extra_body"]["enable_thinking"] = True
 
-        # Track carbon emissions for this LLM call
         start_time = self.carbon_tracker.start_call()
 
         response = self.client.chat.completions.create(**params)
         content = response.choices[0].message.content or ""
 
-        # Record emissions
         tokens = getattr(response.usage, 'completion_tokens', 0) if response.usage else 0
         self.carbon_tracker.end_call(start_time, tokens_generated=tokens)
 
-        # Strip thinking blocks from output if present
         if self.thinking_enabled:
             content = self._strip_thinking(content)
 
         return content
+
+    def _call_huggingface(self, messages: List[Dict], max_tokens: int,
+                          temperature: float = None) -> str:
+        """Call Hugging Face Inference API."""
+        # Build prompt from messages
+        prompt_parts = []
+        for msg in messages:
+            role = msg.get("role", "user")
+            content = msg.get("content", "")
+            if role == "system":
+                prompt_parts.append(f"<|system|>\n{content}")
+            elif role == "assistant":
+                prompt_parts.append(f"<|assistant|\n{content}")
+            else:
+                prompt_parts.append(f"<|user|>\n{content}")
+        prompt = "\n".join(prompt_parts) + "\n<|assistant|"
+
+        payload = {
+            "inputs": prompt,
+            "parameters": {
+                "max_new_tokens": max_tokens,
+                "temperature": temperature or self.llm_params.get("temperature", 0.3),
+                "top_p": self.llm_params.get("top_p", 0.95),
+                "return_full_text": False
+            }
+        }
+
+        headers = {
+            "Authorization": f"Bearer {self.hf_token}",
+            "Content-Type": "application/json"
+        }
+
+        start_time = self.carbon_tracker.start_call()
+
+        response = requests.post(self.hf_api_url, json=payload, headers=headers, timeout=60)
+
+        self.carbon_tracker.end_call(start_time, tokens_generated=0)
+
+        if response.status_code == 200:
+            result = response.json()
+            if isinstance(result, list) and len(result) > 0:
+                return result[0].get("generated_text", "")
+            return result.get("generated_text", "")
+        else:
+            raise Exception(f"HF API error: {response.status_code} - {response.text}")
 
     def _strip_thinking(self, text: str) -> str:
         """Remove <think|...> or <thinking>...</thinking> blocks from LLM output."""
@@ -104,12 +178,22 @@ class ChatEngine:
 
     def _test_connection(self) -> bool:
         try:
-            response = self.client.chat.completions.create(
-                model=config.LM_STUDIO_MODEL,
-                messages=[{"role": "user", "content": "test"}],
-                max_tokens=10
-            )
-            return True
+            if self.provider == "huggingface":
+                if not self.hf_token:
+                    return False
+                # Test HF with a simple request
+                response = self._call_huggingface(
+                    [{"role": "user", "content": "test"}],
+                    max_tokens=10
+                )
+                return True
+            else:
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    messages=[{"role": "user", "content": "test"}],
+                    max_tokens=10
+                )
+                return True
         except:
             return False
 

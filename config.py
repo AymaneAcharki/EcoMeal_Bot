@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
@@ -12,17 +13,51 @@ PRICES_DB = DATA_DIR / "prices.json"
 SEASONS_DB = DATA_DIR / "seasons.json"
 COUNTRY_CO2_DB = DATA_DIR / "country_co2.json"
 
-LM_STUDIO_BASE_URL = "http://localhost:1234/v1"
-LM_STUDIO_MODEL = "qwen3.5:0.8b"
-LM_STUDIO_TEMPERATURE = 0.3
-LM_STUDIO_TOP_K = 40
-LM_STUDIO_TOP_P = 0.95
-LM_STUDIO_MIN_P = 0.05
-LM_STUDIO_REPEAT_PENALTY = 1.1
-LM_STUDIO_MAX_TOKENS_RECIPE = 800
-LM_STUDIO_MAX_TOKENS_GUIDED = 1500
-LM_STUDIO_MAX_TOKENS_CHAT = 1000
-LM_STUDIO_THINKING_ENABLED = False
+# Load from .env file if exists
+def load_env():
+    env_file = BASE_DIR / ".env"
+    if env_file.exists():
+        with open(env_file, "r") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, value = line.split("=", 1)
+                    os.environ.setdefault(key.strip(), value.strip())
+
+load_env()
+
+# Provider: "lm_studio" or "huggingface"
+LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "huggingface")
+
+# LM Studio (local)
+LM_STUDIO_BASE_URL = os.environ.get("LM_STUDIO_BASE_URL", "http://localhost:1234/v1")
+LM_STUDIO_MODEL = os.environ.get("LM_STUDIO_MODEL", "qwen3.5:0.8b")
+
+# Hugging Face (cloud)
+HF_API_TOKEN = os.environ.get("HF_API_TOKEN", "")
+HF_MODEL = os.environ.get("HF_MODEL", "Qwen/Qwen3.5-0.8B")
+
+# Common settings
+LLM_TEMPERATURE = 0.3
+LLM_TOP_K = 40
+LLM_TOP_P = 0.95
+LLM_MIN_P = 0.05
+LLM_REPEAT_PENALTY = 1.1
+LLM_MAX_TOKENS_RECIPE = 800
+LLM_MAX_TOKENS_GUIDED = 1500
+LLM_MAX_TOKENS_CHAT = 1000
+LLM_THINKING_ENABLED = False
+
+# Aliases for backward compatibility
+LM_STUDIO_TEMPERATURE = LLM_TEMPERATURE
+LM_STUDIO_TOP_K = LLM_TOP_K
+LM_STUDIO_TOP_P = LLM_TOP_P
+LM_STUDIO_MIN_P = LLM_MIN_P
+LM_STUDIO_REPEAT_PENALTY = LLM_REPEAT_PENALTY
+LM_STUDIO_MAX_TOKENS_RECIPE = LLM_MAX_TOKENS_RECIPE
+LM_STUDIO_MAX_TOKENS_GUIDED = LLM_MAX_TOKENS_GUIDED
+LM_STUDIO_MAX_TOKENS_CHAT = LLM_MAX_TOKENS_CHAT
+LM_STUDIO_THINKING_ENABLED = LLM_THINKING_ENABLED
 
 CO2_THRESHOLDS = {
     "excellent": 0.5,
