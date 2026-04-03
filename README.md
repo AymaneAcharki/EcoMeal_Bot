@@ -49,17 +49,14 @@ Or deploy directly to Hugging Face Spaces - the app will use the `HF_API_TOKEN` 
 
 ## Model Selection
 
-**Current model: `meta-llama/Llama-3.2-1B-Instruct`**
+**Recommended: `qwen3.5:0.8b` (local via LM Studio)**
 
-The project was originally designed for **Qwen3.5-0.8B**, offering an optimal balance of speed and quality for recipe generation. However, due to deployment constraints on the free Hugging Face Inference Providers tier, we switched to **Llama-3.2-1B-Instruct**:
+| Model | Params | Use Case |
+|-------|--------|----------|
+| **Qwen3.5-0.8B** | 0.8B | Local (best diversity, 88%) |
+| Llama-3.2-1B | 1B | Hugging Face cloud (backup) |
 
-| Model | Params | Quality | Speed | Free HF Tier |
-|-------|--------|---------|-------|--------------|
-| Qwen3.5-0.8B | 0.8B | ⭐⭐⭐ | ⚡⚡⚡ | ❌ Not available |
-| Qwen2.5-1.5B | 1.5B | ⭐⭐⭐⭐ | ⚡⚡ | ❌ Not available |
-| **Llama-3.2-1B** | 1B | ⭐⭐⭐⭐ | ⚡⚡⚡ | ✅ Available |
-
-Llama-3.2-1B provides excellent instruction following and multilingual support (important for French recipes) and is available on the free Hugging Face Inference Providers tier.
+Run LM Studio, load Qwen3.5-0.8B, start server on port 1234.
 
 ## Project Structure
 

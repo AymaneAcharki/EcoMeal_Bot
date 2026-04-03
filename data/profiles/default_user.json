@@ -5,15 +5,22 @@
   "disliked_ingredients": [],
   "cuisine_preferences": [
     "french",
-    "italian"
+    "italian",
+    "mediterranean",
+    "asian",
+    "indian",
+    "mexican",
+    "middle_eastern",
+    "american",
+    "african"
   ],
   "max_cooking_time": 60,
-  "skill_level": "beginner",
-  "weekly_budget": 100.0,
+  "skill_level": "intermediate",
+  "weekly_budget": 150.0,
   "currency": "EUR",
   "household_size": 2,
   "sustainability_priority": "balanced",
   "country": "france",
   "created_at": "2026-04-02T17:26:07.272513",
-  "updated_at": "2026-04-02T17:26:07.272513"
+  "updated_at": "2026-04-03T00:00:00.000000"
 }

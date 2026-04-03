@@ -99,10 +99,13 @@ DEFAULT_PROFILE = {
     "diet_type": "omnivore",
     "allergies": [],
     "disliked_ingredients": [],
-    "cuisine_preferences": ["french", "italian"],
+    "cuisine_preferences": [
+        "french", "italian", "mediterranean", "asian", "indian",
+        "mexican", "middle_eastern", "american", "african"
+    ],
     "max_cooking_time": 60,
-    "skill_level": "beginner",
-    "weekly_budget": 100.0,
+    "skill_level": "intermediate",
+    "weekly_budget": 150.0,
     "currency": "EUR",
     "household_size": 2,
     "sustainability_priority": "balanced",

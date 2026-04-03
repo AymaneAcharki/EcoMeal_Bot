@@ -9,55 +9,32 @@ RULES:
 1. Only answer about: recipes, cooking, food CO2, substitutions, shopping lists.
 2. Be practical and concise.
 3. For recipes: output ONLY valid JSON, no markdown, no extra text.
-4. Create REAL, COOKABLE dishes - not generic or invented combinations.
+4. Create REAL, COOKABLE dishes using the REQUESTED INGREDIENTS.
 
 CO2 DATA (kg CO2 per kg): Beef 27 | Chicken 6.9 | Fish 6-12 | Tofu 2.0 | Lentils 0.9 | Vegetables 0.3-1.5
 Target: Keep recipes under 2.0 kg CO2 per serving."""
 
 
-# Few-shot example for better quality
-RECIPE_EXAMPLE = """EXAMPLE OF A GOOD RECIPE:
-{
-  "name": "Spaghetti Aglio e Olio",
-  "description": "Classic Italian pasta with garlic, olive oil, and chili flakes. Simple, fragrant, and ready in 15 minutes.",
-  "ingredients": [
-    {"name": "spaghetti", "quantity_g": 200},
-    {"name": "garlic cloves", "quantity_g": 15},
-    {"name": "olive oil", "quantity_g": 45},
-    {"name": "red chili flakes", "quantity_g": 3},
-    {"name": "fresh parsley", "quantity_g": 10},
-    {"name": "salt", "quantity_g": 5}
-  ],
-  "steps": [
-    "Boil spaghetti in salted water for 9 minutes until al dente. Reserve 100ml pasta water.",
-    "Slice garlic thinly. Heat olive oil in pan over medium-low heat for 2 minutes.",
-    "Add garlic and chili flakes. Cook gently for 3 minutes until golden, not brown.",
-    "Drain pasta, add to pan with reserved water. Toss for 2 minutes until coated.",
-    "Serve with chopped parsley and a drizzle of olive oil."
-  ],
-  "cooking_time_minutes": 15,
-  "difficulty": "easy",
-  "sustainability_tip": "This plant-based pasta has very low CO2 (~0.4kg). Use local garlic for even less."
-}"""
-
-
 # Quality rules to enforce
 QUALITY_RULES = """
 QUALITY RULES (follow strictly):
-- Create a REAL, COOKABLE dish that exists in cuisine.
-- Use AUTHENTIC ingredients for the dish type (e.g., carbonara = eggs + pecorino + guanciale, NO cream).
-- Do NOT use vague ingredients like "spices", "sauce", "seasoning", "herbs" - be specific.
+- MUST use the REQUESTED INGREDIENTS in the recipe.
+- If user requests chicken/beef/fish, the recipe MUST include that ingredient as the MAIN ingredient.
+- Create a REAL, COOKABLE dish that matches the ingredients provided.
+- Use AUTHENTIC ingredients for the dish type.
+- Do NOT use vague ingredients like "spices", "sauce", "seasoning" - be specific.
 - Each step MUST include: action + time/temperature + expected result.
 - Description MUST mention taste and texture.
-- Add one practical chef_tip.
-- If traditional dish, preserve its identity - do not modify core ingredients.
+- Include the CUISINE type in the output.
+- BE CREATIVE - avoid repeating the same dish, create VARIETY.
 - Output ONLY valid JSON, nothing else."""
 
 
-# Format reminder (shorter)
-RECIPE_FORMAT = """OUTPUT FORMAT (JSON only):
+# Format reminder
+RECIPE_FORMAT = """OUTPUT FORMAT (JSON only, no markdown):
 {
   "name": "Dish Name",
+  "cuisine": "italian|french|indian|thai|mexican|japanese|chinese|greek|moroccan|vietnamese",
   "description": "Taste and texture in 1-2 sentences.",
   "ingredients": [{"name": "specific ingredient", "quantity_g": 100}],
   "steps": ["Action + time/temp + result.", "..."],
@@ -78,8 +55,12 @@ def build_recipe_prompt(ingredients: List[str], profile: Dict,
     household = profile.get("household_size", 2)
     cuisines = profile.get("cuisine_preferences", [])
 
+    # Emphasize the ingredients
+    ing_list = ', '.join(ingredients) if ingredients else 'any available ingredients'
+
     # Build context
-    prompt = f"Create a recipe using: {', '.join(ingredients)}\n\n"
+    prompt = f"Create a recipe that USES these ingredients as MAIN: {ing_list}\n\n"
+    prompt += f"IMPORTANT: If the user requested chicken, beef, fish, or any meat - it MUST be the main ingredient.\n\n"
     prompt += f"USER:\n"
     prompt += f"- Diet: {diet}\n"
     prompt += f"- Servings: {household}\n"
@@ -92,19 +73,19 @@ def build_recipe_prompt(ingredients: List[str], profile: Dict,
     if cuisines:
         prompt += f"- Preferred cuisines: {', '.join(cuisines)}\n"
 
-    # Focus mode - but respect user's ingredient choices
+    # Check for meat in ingredients
     has_meat = any(ing.lower() in ['chicken', 'beef', 'pork', 'lamb', 'turkey', 'duck', 'fish', 'salmon', 'shrimp', 'bacon', 'sausage'] for ing in ingredients)
 
-    if focus_mode == "co2" and not has_meat:
-        prompt += "\nFOCUS: Minimize CO2. Use local seasonal ingredients where possible.\n"
-    elif focus_mode == "nutri":
-        prompt += "\nFOCUS: Maximize nutrition. Include protein, fiber, vitamins.\n"
-    elif focus_mode == "eco":
-        prompt += "\nFOCUS: Budget-friendly. Use affordable ingredients.\n"
-
-    # If user explicitly wants meat, acknowledge it
     if has_meat:
-        prompt += "\nNOTE: User requested meat. Include it as requested. You can suggest a smaller portion for sustainability.\n"
+        prompt += f"\nCRITICAL: User requested meat. Recipe MUST include meat as main protein. Do NOT substitute with vegetables.\n"
+
+    # Focus mode
+    if focus_mode == "co2" and not has_meat:
+        prompt += "\nFOCUS: Minimize CO2. Prefer plant proteins where appropriate.\n"
+    elif focus_mode == "nutri":
+        prompt += "\nFOCUS: Maximize nutrition.\n"
+    elif focus_mode == "eco":
+        prompt += "\nFOCUS: Budget-friendly.\n"
 
     # Add quality rules
     prompt += QUALITY_RULES
@@ -112,11 +93,8 @@ def build_recipe_prompt(ingredients: List[str], profile: Dict,
     # Add format
     prompt += "\n" + RECIPE_FORMAT
 
-    # Add few-shot example
-    prompt += "\n\n" + RECIPE_EXAMPLE
-
     # Final instruction
-    prompt += "\n\nNow generate the recipe (JSON only):"
+    prompt += f"\n\nGenerate a recipe with {ing_list}. JSON only:"
 
     return prompt
 
@@ -137,7 +115,7 @@ def build_recipe_suggestion_prompt(ingredients: List[str],
 
     prompt += "\nSelect the best match and present it as a complete recipe in JSON format."
     prompt += " Adjust ingredient quantities for the user's household size."
-    prompt += f"\n\n{RECIPE_FORMAT_REMINDER}"
+    prompt += f"\n\n{RECIPE_FORMAT}"
     return prompt
 
 
@@ -152,7 +130,7 @@ def build_shopping_list_prompt(recipe_ingredients: List[Dict],
     prompt += f"Already in pantry: {', '.join(pantry_items) if pantry_items else 'Nothing listed'}\n"
 
     if focus_items:
-        prompt += f"\nFOCUS ON: {', '.join(focus_items)} (prioritize these categories)\n"
+        prompt += f"\nFOCUS ON: {', '.join(focus_items)}\n"
 
     prompt += "\nRespond in JSON format ONLY:\n"
     prompt += "{\n"
@@ -178,7 +156,7 @@ def build_follow_up_prompt(previous_recipe: Dict, modification: str,
         prompt += "When modifying, try to keep it budget-friendly.\n"
 
     prompt += f"Generate an updated recipe in JSON format.\n"
-    prompt += f"{RECIPE_FORMAT_REMINDER}"
+    prompt += f"{RECIPE_FORMAT}"
     return prompt
 
 
@@ -223,7 +201,7 @@ def build_weekly_plan_prompt(profile: Dict, pantry_items: List[str],
     if focus_mode in focus_hints:
         prompt += focus_hints[focus_mode]
 
-    # Complete JSON structure (not truncated)
+    # Complete JSON structure
     prompt += "\nRespond in JSON format ONLY:\n"
     prompt += "{\n"
     prompt += '  "days": [\n'

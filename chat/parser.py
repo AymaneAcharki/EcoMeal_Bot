@@ -218,6 +218,7 @@ def parse_recipe(json_data: Dict) -> Dict:
     
     recipe = {
         'name': json_data.get('name', 'Unnamed Recipe'),
+        'cuisine': json_data.get('cuisine', 'unknown'),
         'description': json_data.get('description', ''),
         'ingredients': validated_ingredients,
         'steps': steps,
@@ -425,27 +426,110 @@ def parse_intent(text: str) -> str:
     return 'unknown'
 
 
-def get_fallback_recipe() -> Dict:
-    return {
-        'name': 'Simple Vegetable Stir-Fry',
-        'description': 'A quick and sustainable vegetable stir-fry',
+# Fallback recipes pool - diverse cuisines
+_FALLBACK_RECIPES = [
+    {
+        'name': 'Mediterranean Quinoa Bowl',
+        'cuisine': 'mediterranean',
+        'description': 'Fresh and light quinoa bowl with Mediterranean flavors',
         'ingredients': [
-            {'name': 'Broccoli', 'quantity_g': 150},
-            {'name': 'Carrots', 'quantity_g': 100},
-            {'name': 'Onions', 'quantity_g': 50},
-            {'name': 'Tofu', 'quantity_g': 100}
+            {'name': 'Quinoa', 'quantity_g': 150},
+            {'name': 'Cherry tomatoes', 'quantity_g': 100},
+            {'name': 'Cucumber', 'quantity_g': 80},
+            {'name': 'Feta cheese', 'quantity_g': 50},
+            {'name': 'Olives', 'quantity_g': 30}
         ],
-        'steps': [
-            'Cut vegetables into bite-sized pieces',
-            'Heat oil in a wok or large pan over high heat',
-            'Add tofu and cook until golden, about 3-4 minutes',
-            'Add vegetables and stir-fry for 5-7 minutes',
-            'Season with soy sauce and serve over rice'
-        ],
-        'cooking_time_minutes': 20,
+        'steps': ['Cook quinoa', 'Chop vegetables', 'Combine with olive oil and lemon', 'Top with feta'],
+        'cooking_time_minutes': 25,
         'difficulty': 'easy',
-        'sustainability_tip': 'Use seasonal vegetables for lowest CO2 impact'
+        'sustainability_tip': 'Use local vegetables'
+    },
+    {
+        'name': 'Thai Basil Stir-Fry',
+        'cuisine': 'thai',
+        'description': 'Aromatic Thai stir-fry with fresh basil',
+        'ingredients': [
+            {'name': 'Chicken breast', 'quantity_g': 150},
+            {'name': 'Thai basil', 'quantity_g': 20},
+            {'name': 'Garlic', 'quantity_g': 15},
+            {'name': 'Chili', 'quantity_g': 10},
+            {'name': 'Fish sauce', 'quantity_g': 15}
+        ],
+        'steps': ['Slice chicken', 'Heat wok', 'Stir-fry garlic and chili', 'Add chicken', 'Finish with basil'],
+        'cooking_time_minutes': 15,
+        'difficulty': 'easy',
+        'sustainability_tip': 'Free-range chicken has lower CO2'
+    },
+    {
+        'name': 'Indian Dal Tadka',
+        'cuisine': 'indian',
+        'description': 'Creamy lentil curry with aromatic spices',
+        'ingredients': [
+            {'name': 'Red lentils', 'quantity_g': 150},
+            {'name': 'Turmeric', 'quantity_g': 5},
+            {'name': 'Cumin', 'quantity_g': 5},
+            {'name': 'Onion', 'quantity_g': 80},
+            {'name': 'Tomatoes', 'quantity_g': 100}
+        ],
+        'steps': ['Cook lentils with turmeric', 'Fry onion and cumin', 'Add tomatoes', 'Combine and simmer'],
+        'cooking_time_minutes': 30,
+        'difficulty': 'easy',
+        'sustainability_tip': 'Lentils are very low carbon protein'
+    },
+    {
+        'name': 'Mexican Black Bean Tacos',
+        'cuisine': 'mexican',
+        'description': 'Spicy black bean tacos with fresh salsa',
+        'ingredients': [
+            {'name': 'Black beans', 'quantity_g': 150},
+            {'name': 'Corn tortillas', 'quantity_g': 60},
+            {'name': 'Avocado', 'quantity_g': 50},
+            {'name': 'Lime', 'quantity_g': 20},
+            {'name': 'Cilantro', 'quantity_g': 10}
+        ],
+        'steps': ['Heat beans with cumin', 'Warm tortillas', 'Mash avocado', 'Assemble tacos'],
+        'cooking_time_minutes': 15,
+        'difficulty': 'easy',
+        'sustainability_tip': 'Beans are sustainable protein'
+    },
+    {
+        'name': 'Japanese Miso Soup',
+        'cuisine': 'japanese',
+        'description': 'Traditional Japanese soup with tofu and seaweed',
+        'ingredients': [
+            {'name': 'Miso paste', 'quantity_g': 30},
+            {'name': 'Tofu', 'quantity_g': 100},
+            {'name': 'Seaweed', 'quantity_g': 5},
+            {'name': 'Green onions', 'quantity_g': 20},
+            {'name': 'Dashi stock', 'quantity_g': 300}
+        ],
+        'steps': ['Heat dashi', 'Add miso paste', 'Add tofu cubes', 'Garnish with onions'],
+        'cooking_time_minutes': 10,
+        'difficulty': 'easy',
+        'sustainability_tip': 'Plant-based and very low CO2'
+    },
+    {
+        'name': 'French Ratatouille',
+        'cuisine': 'french',
+        'description': 'Classic Provençal vegetable stew',
+        'ingredients': [
+            {'name': 'Eggplant', 'quantity_g': 150},
+            {'name': 'Zucchini', 'quantity_g': 150},
+            {'name': 'Bell peppers', 'quantity_g': 100},
+            {'name': 'Tomatoes', 'quantity_g': 200},
+            {'name': 'Herbes de Provence', 'quantity_g': 5}
+        ],
+        'steps': ['Slice vegetables', 'Layer in baking dish', 'Drizzle with olive oil', 'Bake 45 min'],
+        'cooking_time_minutes': 60,
+        'difficulty': 'medium',
+        'sustainability_tip': 'Use seasonal vegetables from local market'
     }
+]
+
+def get_fallback_recipe() -> Dict:
+    """Return a random fallback recipe from diverse cuisines."""
+    from random import choice
+    return choice(_FALLBACK_RECIPES)
 
 
 def safe_response(raw_llm_response: str, expected_type: str = 'recipe') -> Dict:
