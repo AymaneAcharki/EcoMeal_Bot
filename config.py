@@ -35,7 +35,9 @@ LM_STUDIO_MODEL = os.environ.get("LM_STUDIO_MODEL", "qwen3.5:0.8b")
 
 # Hugging Face (cloud)
 HF_API_TOKEN = os.environ.get("HF_API_TOKEN", "")
-HF_MODEL = os.environ.get("HF_MODEL", "Qwen/Qwen3.5-0.8B")
+# Use Qwen2.5-0.5B-Instruct (text-only, works on free Inference API)
+# Qwen3.5-0.8B is VL model and may not be available on free tier
+HF_MODEL = os.environ.get("HF_MODEL", "Qwen/Qwen2.5-0.5B-Instruct")
 
 # Common settings
 LLM_TEMPERATURE = 0.3
