@@ -1,0 +1,19 @@
+{
+  "user_id": "default_user",
+  "diet_type": "omnivore",
+  "allergies": [],
+  "disliked_ingredients": [],
+  "cuisine_preferences": [
+    "french",
+    "italian"
+  ],
+  "max_cooking_time": 60,
+  "skill_level": "beginner",
+  "weekly_budget": 100.0,
+  "currency": "EUR",
+  "household_size": 2,
+  "sustainability_priority": "balanced",
+  "country": "france",
+  "created_at": "2026-04-02T17:26:07.272513",
+  "updated_at": "2026-04-02T17:26:07.272513"
+}

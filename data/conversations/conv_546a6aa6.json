@@ -1,0 +1,474 @@
+{
+  "id": "conv_546a6aa6",
+  "title": "Demo - Spaghetti, Pesto, Curry",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a spaghetti bolognese recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Beef Polenta with Spaghetti, Cook And Drain**",
+      "type": "recipe",
+      "data": {
+        "name": "Beef Polenta with Spaghetti, Cook And Drain",
+        "cuisine": "italian",
+        "description": "A Italian recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "spaghetti, cook and drain",
+            "quantity_g": 150
+          },
+          {
+            "name": "eggs",
+            "quantity_g": 80
+          },
+          {
+            "name": "ground beef",
+            "quantity_g": 200
+          },
+          {
+            "name": "shredded mozzarella cheese",
+            "quantity_g": 80
+          },
+          {
+            "name": "ragu old world style pasta sauc",
+            "quantity_g": 150
+          },
+          {
+            "name": "italian seasoned dry bread crumbs",
+            "quantity_g": 150
+          }
+        ],
+        "steps": [
+          "Season the Beef and sear in a hot pan until golden. Set aside on a plate.",
+          "Add the eggs and shredded mozzarella cheese and cook for 5-7 minutes.",
+          "Stir in the Spaghetti, Cook And Drain and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 39,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 5.479,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Pasta",
+              "quantity_g": 150,
+              "co2_kg": 0.225,
+              "co2_base_kg": 0.225,
+              "category": "carbs"
+            },
+            {
+              "name": "Eggs",
+              "quantity_g": 80,
+              "co2_kg": 0.384,
+              "co2_base_kg": 0.384,
+              "category": "eggs"
+            },
+            {
+              "name": "Beef (minced)",
+              "quantity_g": 200,
+              "co2_kg": 3.8,
+              "co2_base_kg": 3.8,
+              "category": "meat"
+            },
+            {
+              "name": "Cheese (soft)",
+              "quantity_g": 80,
+              "co2_kg": 0.68,
+              "co2_base_kg": 0.68,
+              "category": "dairy"
+            },
+            {
+              "name": "Pasta",
+              "quantity_g": 150,
+              "co2_kg": 0.225,
+              "co2_base_kg": 0.225,
+              "category": "carbs"
+            },
+            {
+              "name": "Bread (wheat)",
+              "quantity_g": 150,
+              "co2_kg": 0.165,
+              "co2_base_kg": 0.165,
+              "category": "carbs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 5.479,
+          "difference_kg": 2.979,
+          "percentage": 119.2,
+          "status": "above",
+          "country": "France"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 44959
+      }
+    },
+    {
+      "role": "user",
+      "content": "make it vegetarian",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's an alternative: **Saltimbocca with Crushed Tomatoes & Garlic**",
+      "type": "recipe",
+      "data": {
+        "name": "Saltimbocca with Crushed Tomatoes & Garlic",
+        "cuisine": "italian",
+        "description": "A Italian recipe with 7 ingredients",
+        "ingredients": [
+          {
+            "name": "crushed red pepper flakes",
+            "quantity_g": 30
+          },
+          {
+            "name": "crushed tomatoes",
+            "quantity_g": 80
+          },
+          {
+            "name": "garlic",
+            "quantity_g": 80
+          },
+          {
+            "name": "fresh basil",
+            "quantity_g": 3
+          },
+          {
+            "name": "extra-virgin olive oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "bay leaves",
+            "quantity_g": 3
+          },
+          {
+            "name": "penne pasta",
+            "quantity_g": 150
+          }
+        ],
+        "steps": [
+          "Finely chop the garlic.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the crushed tomatoes and cook for 5-7 minutes.",
+          "Add the Penne Pasta and cook according to package directions.",
+          "Season with basil and bay leaves. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 43,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 0.617,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Chili powder",
+              "quantity_g": 30,
+              "co2_kg": 0.075,
+              "co2_base_kg": 0.075,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Diced tomatoes",
+              "quantity_g": 80,
+              "co2_kg": 0.12,
+              "co2_base_kg": 0.12,
+              "category": "vegetables"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 80,
+              "co2_kg": 0.032,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Basil",
+              "quantity_g": 3,
+              "co2_kg": 0.001,
+              "co2_base_kg": 0.001,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 30,
+              "co2_kg": 0.162,
+              "co2_base_kg": 0.162,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Bay leaves",
+              "quantity_g": 3,
+              "co2_kg": 0.002,
+              "co2_base_kg": 0.002,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Pasta",
+              "quantity_g": 150,
+              "co2_kg": 0.225,
+              "co2_base_kg": 0.225,
+              "category": "carbs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 0.617,
+          "difference_kg": -1.883,
+          "percentage": -75.3,
+          "status": "below",
+          "country": "France"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Good CO2 score for a italian meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 14934
+      }
+    },
+    {
+      "role": "user",
+      "content": "now suggest an indian dish",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Chicken Thighs Curry with Rice**",
+      "type": "recipe",
+      "data": {
+        "name": "Chicken Thighs Curry with Rice",
+        "cuisine": "indian",
+        "description": "A Indian recipe with 16 ingredients",
+        "ingredients": [
+          {
+            "name": "peeled fresh ginger",
+            "quantity_g": 80
+          },
+          {
+            "name": "cilantro sprigs",
+            "quantity_g": 15
+          },
+          {
+            "name": "fresh lemon juice",
+            "quantity_g": 80
+          },
+          {
+            "name": "ground cumin",
+            "quantity_g": 3
+          },
+          {
+            "name": "peeled tomatoes",
+            "quantity_g": 80
+          },
+          {
+            "name": "vegetable oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "ground coriander",
+            "quantity_g": 3
+          },
+          {
+            "name": "chopped cilantro fresh",
+            "quantity_g": 15
+          },
+          {
+            "name": "cooked rice",
+            "quantity_g": 150
+          },
+          {
+            "name": "chili powder",
+            "quantity_g": 3
+          },
+          {
+            "name": "salt",
+            "quantity_g": 30
+          },
+          {
+            "name": "chicken thighs",
+            "quantity_g": 200
+          },
+          {
+            "name": "finely chopped onion",
+            "quantity_g": 80
+          },
+          {
+            "name": "baking potatoes",
+            "quantity_g": 150
+          },
+          {
+            "name": "garlic cloves",
+            "quantity_g": 3
+          },
+          {
+            "name": "ground turmeric",
+            "quantity_g": 3
+          }
+        ],
+        "steps": [
+          "Finely chop the fresh ginger and chopped onion and garlic cloves.",
+          "Season the Chicken Thighs and sear in a hot pan until golden. Set aside on a plate.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the lemon juice and tomatoes and cook for 5-7 minutes.",
+          "Add the Rice and cook according to package directions.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with cilantro sprigs and cumin. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 79,
+        "difficulty": "advanced",
+        "co2_info": {
+          "total_co2_kg": 2.171,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Ginger",
+              "quantity_g": 80,
+              "co2_kg": 0.048,
+              "co2_base_kg": 0.048,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Cilantro",
+              "quantity_g": 15,
+              "co2_kg": 0.004,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Lemon juice",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "fruits"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 3,
+              "co2_kg": 0.009,
+              "co2_base_kg": 0.009,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Tomatoes",
+              "quantity_g": 80,
+              "co2_kg": 0.112,
+              "co2_base_kg": 0.112,
+              "category": "vegetables"
+            },
+            {
+              "name": "Vegetable oil",
+              "quantity_g": 30,
+              "co2_kg": 0.105,
+              "co2_base_kg": 0.105,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Cilantro",
+              "quantity_g": 3,
+              "co2_kg": 0.001,
+              "co2_base_kg": 0.001,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Cilantro",
+              "quantity_g": 15,
+              "co2_kg": 0.004,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Rice (white)",
+              "quantity_g": 150,
+              "co2_kg": 0.405,
+              "co2_base_kg": 0.405,
+              "category": "carbs"
+            },
+            {
+              "name": "Chili powder",
+              "quantity_g": 3,
+              "co2_kg": 0.007,
+              "co2_base_kg": 0.007,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Chicken",
+              "quantity_g": 200,
+              "co2_kg": 1.38,
+              "co2_base_kg": 1.38,
+              "category": "meat"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Potatoes",
+              "quantity_g": 150,
+              "co2_kg": 0.045,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 3,
+              "co2_kg": 0.001,
+              "co2_base_kg": 0.001,
+              "category": "vegetables"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Medium",
+          "color": "#f39c12",
+          "emoji": "⚠"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 2.171,
+          "difference_kg": -0.329,
+          "percentage": -13.2,
+          "status": "below",
+          "country": "France"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Average impact. Try replacing some ingredients with plant-based alternatives.",
+        "source": "database",
+        "database_id": 38045
+      }
+    }
+  ],
+  "stats": {
+    "messages": 6,
+    "recipes": 3
+  },
+  "created_at": "2026-04-03T12:56:58.606596",
+  "updated_at": "2026-04-03T13:00:32.608219"
+}

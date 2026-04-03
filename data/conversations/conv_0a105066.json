@@ -1,0 +1,226 @@
+{
+  "id": "conv_0a105066",
+  "title": "recipe with chicken and potato",
+  "messages": [
+    {
+      "role": "user",
+      "content": "recipe with chicken and potato",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **chicken stock & Russet Potatoes Blanquette**",
+      "type": "recipe",
+      "data": {
+        "name": "chicken stock & Russet Potatoes Blanquette",
+        "cuisine": "french",
+        "description": "A French recipe with 4 ingredients",
+        "ingredients": [
+          {
+            "name": "olive oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "yellow onion",
+            "quantity_g": 80
+          },
+          {
+            "name": "chicken stock",
+            "quantity_g": 200
+          },
+          {
+            "name": "russet potatoes",
+            "quantity_g": 150
+          }
+        ],
+        "steps": [
+          "Finely chop the yellow onion.",
+          "Season the Chicken Stock and sear in a hot pan until golden. Set aside on a plate.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Stir in the Russet Potatoes and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 31,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.454,
+          "country": "Morocco",
+          "country_multiplier": 0.72,
+          "breakdown": [
+            {
+              "name": "Olive oil",
+              "quantity_g": 30,
+              "co2_kg": 0.117,
+              "co2_base_kg": 0.162,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 80,
+              "co2_kg": 0.017,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Chicken broth",
+              "quantity_g": 200,
+              "co2_kg": 0.288,
+              "co2_base_kg": 0.4,
+              "category": "condiments"
+            },
+            {
+              "name": "Potatoes",
+              "quantity_g": 150,
+              "co2_kg": 0.032,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Excellent",
+          "color": "#27ae60",
+          "emoji": "🌟"
+        },
+        "comparison": {
+          "average": 1.8,
+          "your_meal": 0.454,
+          "difference_kg": -1.346,
+          "percentage": -74.8,
+          "status": "below",
+          "country": "Morocco"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Excellent low-carbon footprint! This french dish is well below the French average.",
+        "source": "database",
+        "database_id": 14787
+      }
+    },
+    {
+      "role": "user",
+      "content": "Mexican equivalent recipe ?",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Bacon Fajitas with Wheat Tortillas**",
+      "type": "recipe",
+      "data": {
+        "name": "Bacon Fajitas with Wheat Tortillas",
+        "cuisine": "mexican",
+        "description": "A Mexican recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "bacon",
+            "quantity_g": 200
+          },
+          {
+            "name": "avocado",
+            "quantity_g": 80
+          },
+          {
+            "name": "goat cheese",
+            "quantity_g": 80
+          },
+          {
+            "name": "whole wheat tortillas",
+            "quantity_g": 150
+          },
+          {
+            "name": "smoked paprika",
+            "quantity_g": 3
+          },
+          {
+            "name": "veggies",
+            "quantity_g": 80
+          }
+        ],
+        "steps": [
+          "Season the Bacon and sear in a hot pan until golden. Set aside on a plate.",
+          "Add the avocado and goat cheese and veggies and cook for 5-7 minutes.",
+          "Stir in the Wheat Tortillas and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with smoked paprika. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 39,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 2.092,
+          "country": "Morocco",
+          "country_multiplier": 0.72,
+          "breakdown": [
+            {
+              "name": "Pork",
+              "quantity_g": 200,
+              "co2_kg": 1.094,
+              "co2_base_kg": 1.52,
+              "category": "meat"
+            },
+            {
+              "name": "Avocado",
+              "quantity_g": 80,
+              "co2_kg": 0.075,
+              "co2_base_kg": 0.104,
+              "category": "fruits"
+            },
+            {
+              "name": "Cheese (soft)",
+              "quantity_g": 80,
+              "co2_kg": 0.49,
+              "co2_base_kg": 0.68,
+              "category": "dairy"
+            },
+            {
+              "name": "Corn tortillas",
+              "quantity_g": 150,
+              "co2_kg": 0.151,
+              "co2_base_kg": 0.21,
+              "category": "carbs"
+            },
+            {
+              "name": "Chili powder",
+              "quantity_g": 3,
+              "co2_kg": 0.005,
+              "co2_base_kg": 0.007,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Eggs",
+              "quantity_g": 80,
+              "co2_kg": 0.276,
+              "co2_base_kg": 0.384,
+              "category": "eggs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Medium",
+          "color": "#f39c12",
+          "emoji": "⚠"
+        },
+        "comparison": {
+          "average": 1.8,
+          "your_meal": 2.092,
+          "difference_kg": 0.292,
+          "percentage": 16.2,
+          "status": "above",
+          "country": "Morocco"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Average impact. Try replacing some ingredients with plant-based alternatives.",
+        "source": "database",
+        "database_id": 44015
+      }
+    }
+  ],
+  "stats": {
+    "messages": 4,
+    "recipes": 2
+  },
+  "created_at": "2026-04-03T01:03:11.637535",
+  "updated_at": "2026-04-03T01:04:10.764896"
+}

@@ -1,0 +1,16 @@
+{
+  "user_id": "Sven_Sweden",
+  "diet_type": "flexitarian",
+  "allergies": ["dairy", "gluten"],
+  "disliked_ingredients": ["beets"],
+  "cuisine_preferences": ["mediterranean", "asian", "french"],
+  "max_cooking_time": 45,
+  "skill_level": "intermediate",
+  "weekly_budget": 200.0,
+  "currency": "EUR",
+  "household_size": 2,
+  "sustainability_priority": "co2",
+  "country": "Sweden",
+  "created_at": "2026-04-03T10:00:00.000000",
+  "updated_at": "2026-04-03T10:00:00.000000"
+}

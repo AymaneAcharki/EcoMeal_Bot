@@ -1,0 +1,1263 @@
+{
+  "id": "conv_3dd485bd",
+  "title": "Suggest a stew with meat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a stew with meat",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Andouille Sausage & Shrimp Etouffee**",
+      "type": "recipe",
+      "data": {
+        "name": "Andouille Sausage & Shrimp Etouffee",
+        "cuisine": "cajun_creole",
+        "description": "A Cajun_Creole recipe with 18 ingredients",
+        "ingredients": [
+          {
+            "name": "tomato paste",
+            "quantity_g": 80
+          },
+          {
+            "name": "sugar",
+            "quantity_g": 80
+          },
+          {
+            "name": "large eggs",
+            "quantity_g": 80
+          },
+          {
+            "name": "paprika",
+            "quantity_g": 3
+          },
+          {
+            "name": "roux",
+            "quantity_g": 80
+          },
+          {
+            "name": "andouille sausage",
+            "quantity_g": 200
+          },
+          {
+            "name": "file powder",
+            "quantity_g": 80
+          },
+          {
+            "name": "vegetable oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "ground cayenne pepper",
+            "quantity_g": 30
+          },
+          {
+            "name": "powdered sugar",
+            "quantity_g": 80
+          },
+          {
+            "name": "baking soda",
+            "quantity_g": 30
+          },
+          {
+            "name": "onion powder",
+            "quantity_g": 80
+          },
+          {
+            "name": "shrimp",
+            "quantity_g": 200
+          },
+          {
+            "name": "chicken broth",
+            "quantity_g": 200
+          },
+          {
+            "name": "garlic powder",
+            "quantity_g": 80
+          },
+          {
+            "name": "baking powder",
+            "quantity_g": 30
+          },
+          {
+            "name": "all-purpose flour",
+            "quantity_g": 80
+          },
+          {
+            "name": "ground cumin",
+            "quantity_g": 3
+          }
+        ],
+        "steps": [
+          "Finely chop the onion powder and garlic powder.",
+          "Season and cook the Andouille Sausage until nicely browned on all sides. Set aside.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the tomato paste and sugar and eggs and cook for 5-7 minutes.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with paprika and cumin. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 87,
+        "difficulty": "advanced",
+        "co2_info": {
+          "total_co2_kg": 5.129,
+          "country": "Japan",
+          "country_multiplier": 0.92,
+          "breakdown": [
+            {
+              "name": "Tomato paste",
+              "quantity_g": 80,
+              "co2_kg": 0.132,
+              "co2_base_kg": 0.144,
+              "category": "condiments"
+            },
+            {
+              "name": "Sugar",
+              "quantity_g": 80,
+              "co2_kg": 0.132,
+              "co2_base_kg": 0.144,
+              "category": "carbs"
+            },
+            {
+              "name": "Eggs",
+              "quantity_g": 80,
+              "co2_kg": 0.353,
+              "co2_base_kg": 0.384,
+              "category": "eggs"
+            },
+            {
+              "name": "Chili powder",
+              "quantity_g": 3,
+              "co2_kg": 0.007,
+              "co2_base_kg": 0.007,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Pork",
+              "quantity_g": 200,
+              "co2_kg": 1.398,
+              "co2_base_kg": 1.52,
+              "category": "meat"
+            },
+            {
+              "name": "Vegetable oil",
+              "quantity_g": 30,
+              "co2_kg": 0.097,
+              "co2_base_kg": 0.105,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Chili powder",
+              "quantity_g": 30,
+              "co2_kg": 0.069,
+              "co2_base_kg": 0.075,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Sugar",
+              "quantity_g": 80,
+              "co2_kg": 0.132,
+              "co2_base_kg": 0.144,
+              "category": "carbs"
+            },
+            {
+              "name": "Baking powder",
+              "quantity_g": 30,
+              "co2_kg": 0.041,
+              "co2_base_kg": 0.045,
+              "category": "carbs"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 80,
+              "co2_kg": 0.022,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Shrimp",
+              "quantity_g": 200,
+              "co2_kg": 2.208,
+              "co2_base_kg": 2.4,
+              "category": "fish"
+            },
+            {
+              "name": "Chicken broth",
+              "quantity_g": 200,
+              "co2_kg": 0.368,
+              "co2_base_kg": 0.4,
+              "category": "condiments"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 80,
+              "co2_kg": 0.029,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Baking powder",
+              "quantity_g": 30,
+              "co2_kg": 0.041,
+              "co2_base_kg": 0.045,
+              "category": "carbs"
+            },
+            {
+              "name": "All-purpose flour",
+              "quantity_g": 80,
+              "co2_kg": 0.088,
+              "co2_base_kg": 0.096,
+              "category": "carbs"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 3,
+              "co2_kg": 0.008,
+              "co2_base_kg": 0.009,
+              "category": "herbs_spices"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 2.3,
+          "your_meal": 5.129,
+          "difference_kg": 2.829,
+          "percentage": 123.0,
+          "status": "above",
+          "country": "Japan"
+        },
+        "substitutions": [
+          {
+            "original": "chicken broth",
+            "original_co2": 2.0,
+            "substitutes": [
+              "Tofu",
+              "Tempeh",
+              "Seitan"
+            ],
+            "reason": "Poultry can be replaced with similar-texture plant proteins",
+            "potential_savings": 5.0
+          }
+        ],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 35833
+      }
+    },
+    {
+      "role": "user",
+      "content": "Another one",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have a previous recipe to modify. Please ask for a recipe first!",
+      "type": "error",
+      "data": null
+    },
+    {
+      "role": "user",
+      "content": "suggest a stew",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Lamb Stew Meat Tartare with Russet Potatoes**",
+      "type": "recipe",
+      "data": {
+        "name": "Lamb Stew Meat Tartare with Russet Potatoes",
+        "cuisine": "french",
+        "description": "A French recipe with 10 ingredients",
+        "ingredients": [
+          {
+            "name": "lamb stew meat",
+            "quantity_g": 200
+          },
+          {
+            "name": "all-purpose flour",
+            "quantity_g": 80
+          },
+          {
+            "name": "dried thyme",
+            "quantity_g": 3
+          },
+          {
+            "name": "canned beef broth",
+            "quantity_g": 200
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 80
+          },
+          {
+            "name": "russet potatoes",
+            "quantity_g": 150
+          },
+          {
+            "name": "boiling onions",
+            "quantity_g": 30
+          },
+          {
+            "name": "bay leaves",
+            "quantity_g": 3
+          },
+          {
+            "name": "butter",
+            "quantity_g": 80
+          },
+          {
+            "name": "fresh parsley",
+            "quantity_g": 15
+          }
+        ],
+        "steps": [
+          "Finely chop the carrots and boiling onions.",
+          "Season and cook the Lamb Stew Meat until nicely browned on all sides. Set aside.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the all-purpose flour and butter and cook for 5-7 minutes.",
+          "Stir in the Russet Potatoes and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with thyme and bay leaves. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 55,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 6.845,
+          "country": "United States",
+          "country_multiplier": 1.28,
+          "breakdown": [
+            {
+              "name": "Lamb",
+              "quantity_g": 200,
+              "co2_kg": 5.12,
+              "co2_base_kg": 4.0,
+              "category": "meat"
+            },
+            {
+              "name": "All-purpose flour",
+              "quantity_g": 80,
+              "co2_kg": 0.123,
+              "co2_base_kg": 0.096,
+              "category": "carbs"
+            },
+            {
+              "name": "Chicken broth",
+              "quantity_g": 200,
+              "co2_kg": 0.512,
+              "co2_base_kg": 0.4,
+              "category": "condiments"
+            },
+            {
+              "name": "Carrots",
+              "quantity_g": 80,
+              "co2_kg": 0.041,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Potatoes",
+              "quantity_g": 150,
+              "co2_kg": 0.058,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 30,
+              "co2_kg": 0.012,
+              "co2_base_kg": 0.009,
+              "category": "vegetables"
+            },
+            {
+              "name": "Bay leaves",
+              "quantity_g": 3,
+              "co2_kg": 0.002,
+              "co2_base_kg": 0.002,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Butter",
+              "quantity_g": 80,
+              "co2_kg": 0.973,
+              "co2_base_kg": 0.76,
+              "category": "dairy"
+            },
+            {
+              "name": "Parsley",
+              "quantity_g": 15,
+              "co2_kg": 0.006,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 3.2,
+          "your_meal": 6.845,
+          "difference_kg": 3.645,
+          "percentage": 113.9,
+          "status": "above",
+          "country": "United States"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 40873
+      }
+    },
+    {
+      "role": "user",
+      "content": "Propose a week plan high in proteins and carbs",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's your weekly meal plan with shopping list and CO2 analysis:",
+      "type": "weekly_plan",
+      "data": {
+        "days": [
+          {
+            "day": "Monday",
+            "meal": "Stroganoff with Tomatoes & Beets",
+            "cuisine": "russian",
+            "ingredients": [
+              {
+                "name": "canned chopped tomatoes",
+                "quantity_g": 80
+              },
+              {
+                "name": "beets",
+                "quantity_g": 80
+              },
+              {
+                "name": "low-fat sour cream",
+                "quantity_g": 80
+              },
+              {
+                "name": "russet potatoes",
+                "quantity_g": 150
+              },
+              {
+                "name": "fresh parsley",
+                "quantity_g": 15
+              },
+              {
+                "name": "green cabbage",
+                "quantity_g": 150
+              },
+              {
+                "name": "lemon wedge",
+                "quantity_g": 80
+              },
+              {
+                "name": "fresh lemon juice",
+                "quantity_g": 80
+              },
+              {
+                "name": "olive oil",
+                "quantity_g": 30
+              },
+              {
+                "name": "vegetable broth",
+                "quantity_g": 30
+              },
+              {
+                "name": "onions",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 0.999
+          },
+          {
+            "day": "Tuesday",
+            "meal": "Chicken Breasts Polenta with Mozzarella Cheese",
+            "cuisine": "italian",
+            "ingredients": [
+              {
+                "name": "mozzarella cheese",
+                "quantity_g": 80
+              },
+              {
+                "name": "Kraft Sun Dried Tomato Vinaigrette",
+                "quantity_g": 80
+              },
+              {
+                "name": "feta cheese",
+                "quantity_g": 80
+              },
+              {
+                "name": "sun-dried tomatoes",
+                "quantity_g": 80
+              },
+              {
+                "name": "spinach",
+                "quantity_g": 150
+              },
+              {
+                "name": "chicken breasts",
+                "quantity_g": 200
+              }
+            ],
+            "co2_kg": 3.909
+          },
+          {
+            "day": "Wednesday",
+            "meal": "Chicken Broth Boudin with Long Grain Brown Rice",
+            "cuisine": "cajun_creole",
+            "ingredients": [
+              {
+                "name": "minced garlic",
+                "quantity_g": 80
+              },
+              {
+                "name": "chopped celery",
+                "quantity_g": 80
+              },
+              {
+                "name": "long grain brown rice",
+                "quantity_g": 150
+              },
+              {
+                "name": "butter",
+                "quantity_g": 80
+              },
+              {
+                "name": "chopped onion",
+                "quantity_g": 80
+              },
+              {
+                "name": "steak",
+                "quantity_g": 80
+              },
+              {
+                "name": "cajun seasoning",
+                "quantity_g": 30
+              },
+              {
+                "name": "salt",
+                "quantity_g": 30
+              },
+              {
+                "name": "red bell pepper",
+                "quantity_g": 30
+              },
+              {
+                "name": "chicken broth",
+                "quantity_g": 200
+              },
+              {
+                "name": "extra-virgin olive oil",
+                "quantity_g": 30
+              },
+              {
+                "name": "shrimp",
+                "quantity_g": 200
+              }
+            ],
+            "co2_kg": 8.035
+          },
+          {
+            "day": "Thursday",
+            "meal": "Chicken Broth Fajitas with White Rice",
+            "cuisine": "mexican",
+            "ingredients": [
+              {
+                "name": "white rice",
+                "quantity_g": 150
+              },
+              {
+                "name": "chicken broth",
+                "quantity_g": 200
+              },
+              {
+                "name": "oil",
+                "quantity_g": 30
+              },
+              {
+                "name": "salsa",
+                "quantity_g": 30
+              },
+              {
+                "name": "green onions",
+                "quantity_g": 80
+              },
+              {
+                "name": "cumin",
+                "quantity_g": 3
+              }
+            ],
+            "co2_kg": 1.292
+          },
+          {
+            "day": "Friday",
+            "meal": "Fish Sauce Banh Mi with Vermicelli Noodles",
+            "cuisine": "vietnamese",
+            "ingredients": [
+              {
+                "name": "fish sauce",
+                "quantity_g": 200
+              },
+              {
+                "name": "soy sauce",
+                "quantity_g": 30
+              },
+              {
+                "name": "hoisin sauce",
+                "quantity_g": 30
+              },
+              {
+                "name": "wonton wrappers",
+                "quantity_g": 80
+              },
+              {
+                "name": "hot curry powder",
+                "quantity_g": 3
+              },
+              {
+                "name": "vermicelli noodles",
+                "quantity_g": 150
+              },
+              {
+                "name": "fresh basil",
+                "quantity_g": 3
+              },
+              {
+                "name": "butter lettuce",
+                "quantity_g": 150
+              },
+              {
+                "name": "honey",
+                "quantity_g": 80
+              },
+              {
+                "name": "boneless skinless chicken breasts",
+                "quantity_g": 200
+              },
+              {
+                "name": "rice vinegar",
+                "quantity_g": 150
+              },
+              {
+                "name": "red bell pepper",
+                "quantity_g": 30
+              },
+              {
+                "name": "avocado",
+                "quantity_g": 80
+              },
+              {
+                "name": "brown sugar",
+                "quantity_g": 80
+              },
+              {
+                "name": "lemongrass",
+                "quantity_g": 15
+              },
+              {
+                "name": "green onions",
+                "quantity_g": 80
+              },
+              {
+                "name": "garlic",
+                "quantity_g": 80
+              },
+              {
+                "name": "carrots",
+                "quantity_g": 80
+              },
+              {
+                "name": "toasted sesame seeds",
+                "quantity_g": 80
+              },
+              {
+                "name": "roasted cashews",
+                "quantity_g": 80
+              },
+              {
+                "name": "red chili peppers",
+                "quantity_g": 30
+              },
+              {
+                "name": "fresh ginger",
+                "quantity_g": 80
+              },
+              {
+                "name": "sesame oil",
+                "quantity_g": 30
+              },
+              {
+                "name": "creamy peanut butter",
+                "quantity_g": 80
+              },
+              {
+                "name": "fresh lime juice",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 7.008
+          },
+          {
+            "day": "Saturday",
+            "meal": "Breakfast Sausages Gumbo with Sharp Cheddar Cheese",
+            "cuisine": "southern_us",
+            "ingredients": [
+              {
+                "name": "unsalted butter",
+                "quantity_g": 30
+              },
+              {
+                "name": "salt",
+                "quantity_g": 30
+              },
+              {
+                "name": "breakfast sausages",
+                "quantity_g": 200
+              },
+              {
+                "name": "sharp cheddar cheese",
+                "quantity_g": 80
+              },
+              {
+                "name": "baking powder",
+                "quantity_g": 30
+              },
+              {
+                "name": "all-purpose flour",
+                "quantity_g": 80
+              },
+              {
+                "name": "baking soda",
+                "quantity_g": 30
+              },
+              {
+                "name": "buttermilk",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 4.955
+          },
+          {
+            "day": "Sunday",
+            "meal": "Chicken Breasts Chow Mein with Rice Vinegar",
+            "cuisine": "chinese",
+            "ingredients": [
+              {
+                "name": "boneless skinless chicken breasts",
+                "quantity_g": 200
+              },
+              {
+                "name": "dark brown sugar",
+                "quantity_g": 80
+              },
+              {
+                "name": "low sodium soy sauce",
+                "quantity_g": 30
+              },
+              {
+                "name": "rice vinegar",
+                "quantity_g": 150
+              },
+              {
+                "name": "corn starch",
+                "quantity_g": 80
+              },
+              {
+                "name": "vegetable oil",
+                "quantity_g": 30
+              },
+              {
+                "name": "garlic cloves",
+                "quantity_g": 3
+              },
+              {
+                "name": "water",
+                "quantity_g": 30
+              },
+              {
+                "name": "broccoli",
+                "quantity_g": 150
+              }
+            ],
+            "co2_kg": 2.611
+          }
+        ],
+        "total_estimated_co2": 28.81,
+        "french_avg_weekly_co2": 35.0,
+        "co2_saved_kg": 6.19,
+        "co2_saved_percent": 17.7,
+        "seasonal_score_percent": 2.8,
+        "shopping_list": {
+          "items": [
+            {
+              "name": "Tomatoes",
+              "food_id": 30,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 1.4
+            },
+            {
+              "name": "Sour cream",
+              "food_id": 59,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 3.5
+            },
+            {
+              "name": "Potatoes",
+              "food_id": 29,
+              "quantity_g": 150,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Parsley",
+              "food_id": 52,
+              "quantity_g": 15,
+              "category": "herbs_spices",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Cabbage",
+              "food_id": 73,
+              "quantity_g": 150,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Lemon",
+              "food_id": 47,
+              "quantity_g": 80,
+              "category": "fruits",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Lemon juice",
+              "food_id": 77,
+              "quantity_g": 80,
+              "category": "fruits",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Olive oil",
+              "food_id": 41,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 5.4
+            },
+            {
+              "name": "Chicken broth",
+              "food_id": 60,
+              "quantity_g": 30,
+              "category": "condiments",
+              "co2_kg": 2.0
+            },
+            {
+              "name": "Onions",
+              "food_id": 34,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Cheese (soft)",
+              "food_id": 12,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 8.5
+            },
+            {
+              "name": "Tomatoes",
+              "food_id": 30,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 1.4
+            },
+            {
+              "name": "Cheese (soft)",
+              "food_id": 12,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 8.5
+            },
+            {
+              "name": "Tomatoes",
+              "food_id": 30,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 1.4
+            },
+            {
+              "name": "Spinach",
+              "food_id": 33,
+              "quantity_g": 150,
+              "category": "vegetables",
+              "co2_kg": 0.6
+            },
+            {
+              "name": "Chicken",
+              "food_id": 5,
+              "quantity_g": 200,
+              "category": "meat",
+              "co2_kg": 6.9
+            },
+            {
+              "name": "Garlic",
+              "food_id": 46,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Celery",
+              "food_id": 72,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Rice (brown)",
+              "food_id": 24,
+              "quantity_g": 150,
+              "category": "carbs",
+              "co2_kg": 2.0
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Onions",
+              "food_id": 34,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Beef (steak)",
+              "food_id": 1,
+              "quantity_g": 80,
+              "category": "meat",
+              "co2_kg": 27.0
+            },
+            {
+              "name": "Red bell pepper",
+              "food_id": 66,
+              "quantity_g": 60,
+              "category": "vegetables",
+              "co2_kg": 0.5
+            },
+            {
+              "name": "Chicken broth",
+              "food_id": 60,
+              "quantity_g": 400,
+              "category": "condiments",
+              "co2_kg": 2.0
+            },
+            {
+              "name": "Olive oil",
+              "food_id": 41,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 5.4
+            },
+            {
+              "name": "Shrimp",
+              "food_id": 10,
+              "quantity_g": 200,
+              "category": "fish",
+              "co2_kg": 12.0
+            },
+            {
+              "name": "Rice (white)",
+              "food_id": 23,
+              "quantity_g": 150,
+              "category": "carbs",
+              "co2_kg": 2.7
+            },
+            {
+              "name": "Sesame oil",
+              "food_id": 44,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 4.5
+            },
+            {
+              "name": "Salsa",
+              "food_id": 79,
+              "quantity_g": 30,
+              "category": "condiments",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Green onions",
+              "food_id": 64,
+              "quantity_g": 160,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Cumin",
+              "food_id": 67,
+              "quantity_g": 3,
+              "category": "herbs_spices",
+              "co2_kg": 3.0
+            },
+            {
+              "name": "Fish sauce",
+              "food_id": 70,
+              "quantity_g": 200,
+              "category": "condiments",
+              "co2_kg": 3.5
+            },
+            {
+              "name": "Soy sauce",
+              "food_id": 43,
+              "quantity_g": 30,
+              "category": "condiments",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Bread (wheat)",
+              "food_id": 26,
+              "quantity_g": 80,
+              "category": "carbs",
+              "co2_kg": 1.1
+            },
+            {
+              "name": "Pasta",
+              "food_id": 25,
+              "quantity_g": 150,
+              "category": "carbs",
+              "co2_kg": 1.5
+            },
+            {
+              "name": "Basil",
+              "food_id": 53,
+              "quantity_g": 3,
+              "category": "herbs_spices",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 150,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Honey",
+              "food_id": 49,
+              "quantity_g": 80,
+              "category": "condiments",
+              "co2_kg": 1.5
+            },
+            {
+              "name": "Chicken",
+              "food_id": 5,
+              "quantity_g": 400,
+              "category": "meat",
+              "co2_kg": 6.9
+            },
+            {
+              "name": "Rice vinegar",
+              "food_id": 68,
+              "quantity_g": 300,
+              "category": "condiments",
+              "co2_kg": 1.0
+            },
+            {
+              "name": "Avocado",
+              "food_id": 40,
+              "quantity_g": 80,
+              "category": "fruits",
+              "co2_kg": 1.3
+            },
+            {
+              "name": "Brown sugar",
+              "food_id": 75,
+              "quantity_g": 80,
+              "category": "carbs",
+              "co2_kg": 1.8
+            },
+            {
+              "name": "Lemon",
+              "food_id": 47,
+              "quantity_g": 15,
+              "category": "fruits",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Garlic",
+              "food_id": 46,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Carrots",
+              "food_id": 31,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Peppers",
+              "food_id": 35,
+              "quantity_g": 30,
+              "category": "vegetables",
+              "co2_kg": 0.9
+            },
+            {
+              "name": "Ginger",
+              "food_id": 45,
+              "quantity_g": 80,
+              "category": "herbs_spices",
+              "co2_kg": 0.6
+            },
+            {
+              "name": "Sesame oil",
+              "food_id": 44,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 4.5
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Lime",
+              "food_id": 48,
+              "quantity_g": 80,
+              "category": "fruits",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 30,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Pork",
+              "food_id": 4,
+              "quantity_g": 200,
+              "category": "meat",
+              "co2_kg": 7.6
+            },
+            {
+              "name": "Cheese (hard)",
+              "food_id": 11,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 14.0
+            },
+            {
+              "name": "Baking powder",
+              "food_id": 61,
+              "quantity_g": 30,
+              "category": "carbs",
+              "co2_kg": 1.5
+            },
+            {
+              "name": "All-purpose flour",
+              "food_id": 55,
+              "quantity_g": 80,
+              "category": "carbs",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Baking powder",
+              "food_id": 61,
+              "quantity_g": 30,
+              "category": "carbs",
+              "co2_kg": 1.5
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Brown sugar",
+              "food_id": 75,
+              "quantity_g": 80,
+              "category": "carbs",
+              "co2_kg": 1.8
+            },
+            {
+              "name": "Soy sauce",
+              "food_id": 43,
+              "quantity_g": 30,
+              "category": "condiments",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Cornstarch",
+              "food_id": 50,
+              "quantity_g": 80,
+              "category": "carbs",
+              "co2_kg": 1.3
+            },
+            {
+              "name": "Vegetable oil",
+              "food_id": 42,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 3.5
+            },
+            {
+              "name": "Garlic",
+              "food_id": 46,
+              "quantity_g": 3,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Broccoli",
+              "food_id": 32,
+              "quantity_g": 150,
+              "category": "vegetables",
+              "co2_kg": 0.8
+            }
+          ],
+          "total_items": 63,
+          "total_cost": 36.57,
+          "currency": "EUR"
+        },
+        "recommendation": "Great choice! This plan saves 6.19 kg CO2 compared to the French average (17.7% reduction)."
+      }
+    }
+  ],
+  "stats": {
+    "messages": 8,
+    "recipes": 2
+  },
+  "created_at": "2026-04-03T00:38:58.423252",
+  "updated_at": "2026-04-03T00:57:34.633118"
+}

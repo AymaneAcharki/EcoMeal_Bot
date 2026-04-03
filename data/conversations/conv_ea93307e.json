@@ -1,0 +1,140 @@
+{
+  "id": "conv_ea93307e",
+  "title": "Suggest a moroccan lamb recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a moroccan lamb recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Lamb Tagine**",
+      "type": "recipe",
+      "data": {
+        "name": "Lamb Tagine",
+        "cuisine": "moroccan",
+        "description": "A Moroccan recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "lamb",
+            "quantity_g": 400
+          },
+          {
+            "name": "onions",
+            "quantity_g": 150
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 100
+          },
+          {
+            "name": "cumin",
+            "quantity_g": 5
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 20
+          },
+          {
+            "name": "lemon",
+            "quantity_g": 30
+          }
+        ],
+        "steps": [
+          "Brown lamb pieces in tagine or Dutch oven.",
+          "Add spices, vegetables and dried fruits.",
+          "Slow cook until meat is tender.",
+          "Serve with couscous and preserved lemon."
+        ],
+        "cooking_time_minutes": 120,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 5.916,
+          "country": "Morocco",
+          "country_multiplier": 0.72,
+          "breakdown": [
+            {
+              "name": "Lamb",
+              "quantity_g": 400,
+              "co2_kg": 5.76,
+              "co2_base_kg": 8.0,
+              "category": "meat"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 150,
+              "co2_kg": 0.032,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Carrots",
+              "quantity_g": 100,
+              "co2_kg": 0.029,
+              "co2_base_kg": 0.04,
+              "category": "vegetables"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 5,
+              "co2_kg": 0.011,
+              "co2_base_kg": 0.015,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 20,
+              "co2_kg": 0.078,
+              "co2_base_kg": 0.108,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Lemon",
+              "quantity_g": 30,
+              "co2_kg": 0.006,
+              "co2_base_kg": 0.009,
+              "category": "fruits"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 1.8,
+          "your_meal": 5.916,
+          "difference_kg": 4.116,
+          "percentage": 228.7,
+          "status": "above",
+          "country": "Morocco"
+        },
+        "substitutions": [
+          {
+            "original": "lamb",
+            "original_co2": 20.0,
+            "substitutes": [
+              "Lentils",
+              "Chickpeas",
+              "Tofu"
+            ],
+            "reason": "Lamb has very high environmental impact",
+            "potential_savings": 18.0
+          }
+        ],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 9015
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T12:16:19.201122",
+  "updated_at": "2026-04-03T12:16:45.756188"
+}

@@ -1,0 +1,203 @@
+{
+  "id": "conv_b9e032ee",
+  "title": "Generate a spaghetti recipe without meat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Generate a spaghetti recipe without meat",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for **Chicken Broth Minestra with Ditalini Pasta**!",
+      "type": "recipe",
+      "data": {
+        "name": "Chicken Broth Minestra with Ditalini Pasta",
+        "cuisine": "italian",
+        "description": "A Italian recipe with 12 ingredients",
+        "ingredients": [
+          {
+            "name": "ground black pepper",
+            "quantity_g": 30
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 80
+          },
+          {
+            "name": "chopped garlic",
+            "quantity_g": 80
+          },
+          {
+            "name": "tomato sauce",
+            "quantity_g": 30
+          },
+          {
+            "name": "cannellini beans",
+            "quantity_g": 80
+          },
+          {
+            "name": "onions",
+            "quantity_g": 80
+          },
+          {
+            "name": "chicken broth",
+            "quantity_g": 200
+          },
+          {
+            "name": "ditalini pasta",
+            "quantity_g": 150
+          },
+          {
+            "name": "celery",
+            "quantity_g": 80
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "basil dried leaves",
+            "quantity_g": 3
+          },
+          {
+            "name": "dried parsley",
+            "quantity_g": 15
+          }
+        ],
+        "steps": [
+          "Finely chop the carrots and garlic and onions.",
+          "Season the Chicken Broth and sear in a hot pan until golden. Set aside on a plate.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the cannellini beans and cook for 5-7 minutes.",
+          "Add the Ditalini Pasta and cook according to package directions.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with basil dried leaves and parsley. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 63,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 1.03,
+          "country": "Russia",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Carrots",
+              "quantity_g": 80,
+              "co2_kg": 0.032,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 80,
+              "co2_kg": 0.032,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Diced tomatoes",
+              "quantity_g": 30,
+              "co2_kg": 0.045,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Beans (black)",
+              "quantity_g": 80,
+              "co2_kg": 0.08,
+              "co2_base_kg": 0.08,
+              "category": "plant_protein"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Chicken broth",
+              "quantity_g": 200,
+              "co2_kg": 0.4,
+              "co2_base_kg": 0.4,
+              "category": "condiments"
+            },
+            {
+              "name": "Pasta",
+              "quantity_g": 150,
+              "co2_kg": 0.225,
+              "co2_base_kg": 0.225,
+              "category": "carbs"
+            },
+            {
+              "name": "Celery",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 30,
+              "co2_kg": 0.162,
+              "co2_base_kg": 0.162,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Basil",
+              "quantity_g": 3,
+              "co2_kg": 0.001,
+              "co2_base_kg": 0.001,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Parsley",
+              "quantity_g": 15,
+              "co2_kg": 0.004,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 1.03,
+          "difference_kg": -1.47,
+          "percentage": -58.8,
+          "status": "below",
+          "country": "Russia"
+        },
+        "substitutions": [
+          {
+            "original": "chicken broth",
+            "original_co2": 2.0,
+            "substitutes": [
+              "Tofu",
+              "Tempeh",
+              "Seitan"
+            ],
+            "reason": "Poultry can be replaced with similar-texture plant proteins",
+            "potential_savings": 5.0
+          }
+        ],
+        "sustainability_tip": "Good CO2 score for a italian meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 43926
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T13:07:20.855503",
+  "updated_at": "2026-04-03T13:08:15.604869"
+}

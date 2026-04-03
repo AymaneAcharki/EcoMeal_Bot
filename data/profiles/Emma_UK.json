@@ -1,0 +1,16 @@
+{
+  "user_id": "Emma_UK",
+  "diet_type": "flexitarian",
+  "allergies": ["eggs"],
+  "disliked_ingredients": ["liver", "blue cheese"],
+  "cuisine_preferences": ["mediterranean", "indian", "french"],
+  "max_cooking_time": 50,
+  "skill_level": "beginner",
+  "weekly_budget": 120.0,
+  "currency": "GBP",
+  "household_size": 2,
+  "sustainability_priority": "balanced",
+  "country": "United Kingdom",
+  "created_at": "2026-04-03T10:00:00.000000",
+  "updated_at": "2026-04-03T10:00:00.000000"
+}

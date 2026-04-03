@@ -1,0 +1,151 @@
+{
+  "id": "conv_11eceb21",
+  "title": "Suggest an indian recipe with lamb and bread",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest an indian recipe with lamb and bread",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Lamb Rogan Josh**",
+      "type": "recipe",
+      "data": {
+        "name": "Lamb Rogan Josh",
+        "cuisine": "indian",
+        "description": "A Indian recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "lamb",
+            "quantity_g": 400
+          },
+          {
+            "name": "onions",
+            "quantity_g": 150
+          },
+          {
+            "name": "yogurt",
+            "quantity_g": 100
+          },
+          {
+            "name": "garlic",
+            "quantity_g": 15
+          },
+          {
+            "name": "cumin",
+            "quantity_g": 5
+          },
+          {
+            "name": "rice (white)",
+            "quantity_g": 150
+          }
+        ],
+        "steps": [
+          "Brown lamb pieces in oil.",
+          "Sauté onions and garlic until golden.",
+          "Add yogurt and spices, simmer until tender.",
+          "Serve with basmati rice."
+        ],
+        "cooking_time_minutes": 90,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 8.601,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Lamb",
+              "quantity_g": 400,
+              "co2_kg": 8.0,
+              "co2_base_kg": 8.0,
+              "category": "meat"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 150,
+              "co2_kg": 0.045,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Yogurt",
+              "quantity_g": 100,
+              "co2_kg": 0.13,
+              "co2_base_kg": 0.13,
+              "category": "dairy"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 15,
+              "co2_kg": 0.006,
+              "co2_base_kg": 0.006,
+              "category": "vegetables"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 5,
+              "co2_kg": 0.015,
+              "co2_base_kg": 0.015,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Rice (white)",
+              "quantity_g": 150,
+              "co2_kg": 0.405,
+              "co2_base_kg": 0.405,
+              "category": "carbs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 8.601,
+          "difference_kg": 6.101,
+          "percentage": 244.0,
+          "status": "above",
+          "country": "France"
+        },
+        "substitutions": [
+          {
+            "original": "lamb",
+            "original_co2": 20.0,
+            "substitutes": [
+              "Lentils",
+              "Chickpeas",
+              "Tofu"
+            ],
+            "reason": "Lamb has very high environmental impact",
+            "potential_savings": 18.0
+          },
+          {
+            "original": "rice (white)",
+            "original_co2": 2.7,
+            "substitutes": [
+              "Quinoa",
+              "Potatoes",
+              "Pasta"
+            ],
+            "reason": "Rice paddies produce methane; alternatives have lower impact",
+            "potential_savings": 1.5
+          }
+        ],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 9010
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T00:57:34.637796",
+  "updated_at": "2026-04-03T01:01:27.994118"
+}

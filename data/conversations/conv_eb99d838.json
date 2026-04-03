@@ -1,0 +1,169 @@
+{
+  "id": "conv_eb99d838",
+  "title": "Suggest a shawarma recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a shawarma recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Beef Broth Tamales with Corn Tortillas**",
+      "type": "recipe",
+      "data": {
+        "name": "Beef Broth Tamales with Corn Tortillas",
+        "cuisine": "mexican",
+        "description": "A Mexican recipe with 10 ingredients",
+        "ingredients": [
+          {
+            "name": "soy sauce",
+            "quantity_g": 30
+          },
+          {
+            "name": "corn tortillas",
+            "quantity_g": 150
+          },
+          {
+            "name": "hot salsa",
+            "quantity_g": 30
+          },
+          {
+            "name": "canned beef broth",
+            "quantity_g": 200
+          },
+          {
+            "name": "chopped cilantro fresh",
+            "quantity_g": 15
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "fresh lime juice",
+            "quantity_g": 80
+          },
+          {
+            "name": "chuck",
+            "quantity_g": 80
+          },
+          {
+            "name": "dark brown sugar",
+            "quantity_g": 80
+          },
+          {
+            "name": "chopped garlic",
+            "quantity_g": 80
+          }
+        ],
+        "steps": [
+          "Finely chop the garlic.",
+          "Season the Beef Broth and sear in a hot pan until golden. Set aside on a plate.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the lime juice and chuck and dark brown sugar and cook for 5-7 minutes.",
+          "Stir in the Corn Tortillas and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with cilantro fresh. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 55,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 0.755,
+          "country": "Morocco",
+          "country_multiplier": 0.72,
+          "breakdown": [
+            {
+              "name": "Soy sauce",
+              "quantity_g": 30,
+              "co2_kg": 0.026,
+              "co2_base_kg": 0.036,
+              "category": "condiments"
+            },
+            {
+              "name": "Corn tortillas",
+              "quantity_g": 150,
+              "co2_kg": 0.151,
+              "co2_base_kg": 0.21,
+              "category": "carbs"
+            },
+            {
+              "name": "Salsa",
+              "quantity_g": 30,
+              "co2_kg": 0.026,
+              "co2_base_kg": 0.036,
+              "category": "condiments"
+            },
+            {
+              "name": "Chicken broth",
+              "quantity_g": 200,
+              "co2_kg": 0.288,
+              "co2_base_kg": 0.4,
+              "category": "condiments"
+            },
+            {
+              "name": "Cilantro",
+              "quantity_g": 15,
+              "co2_kg": 0.003,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 30,
+              "co2_kg": 0.117,
+              "co2_base_kg": 0.162,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Lime",
+              "quantity_g": 80,
+              "co2_kg": 0.017,
+              "co2_base_kg": 0.024,
+              "category": "fruits"
+            },
+            {
+              "name": "Brown sugar",
+              "quantity_g": 80,
+              "co2_kg": 0.104,
+              "co2_base_kg": 0.144,
+              "category": "carbs"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 80,
+              "co2_kg": 0.023,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 1.8,
+          "your_meal": 0.755,
+          "difference_kg": -1.045,
+          "percentage": -58.1,
+          "status": "below",
+          "country": "Morocco"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Good CO2 score for a mexican meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 35574
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T01:02:27.037397",
+  "updated_at": "2026-04-03T01:02:47.579859"
+}

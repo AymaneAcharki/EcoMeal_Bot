@@ -1,0 +1,66 @@
+{
+  "id": "conv_kenji_001",
+  "title": "Japanese-style grilled fish recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a pescatarian recipe with fish, Japanese style, something elegant",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's an elegant Japanese recipe: **Miso-Glazed Cod with Pickled Vegetables**",
+      "type": "recipe",
+      "data": {
+        "name": "Miso-Glazed Cod with Pickled Vegetables",
+        "description": "Traditional Japanese fish dish with umami-rich miso glaze and refreshing tsukemono",
+        "ingredients": [
+          {"name": "cod fillet", "quantity_g": 300},
+          {"name": "miso paste", "quantity_g": 30},
+          {"name": "mirin", "quantity_g": 20},
+          {"name": "sake", "quantity_g": 15},
+          {"name": "ginger", "quantity_g": 10},
+          {"name": "daikon radish", "quantity_g": 100},
+          {"name": "carrots", "quantity_g": 50},
+          {"name": "cucumber", "quantity_g": 50},
+          {"name": "rice vinegar", "quantity_g": 20},
+          {"name": "sesame oil", "quantity_g": 10},
+          {"name": "rice", "quantity_g": 150}
+        ],
+        "steps": [
+          "Mix miso paste, mirin, and sake for the marinade",
+          "Marinate cod fillets for at least 30 minutes (overnight is better)",
+          "Slice daikon, carrots, and cucumber thinly for pickles",
+          "Quick-pickle vegetables in rice vinegar for 20 minutes",
+          "Preheat broiler to high",
+          "Broil cod for 8-10 minutes until glaze caramelizes",
+          "Steam rice and arrange everything elegantly",
+          "Drizzle with sesame oil and serve immediately"
+        ],
+        "cooking_time_minutes": 50,
+        "difficulty": "intermediate",
+        "co2_info": {
+          "total_co2_kg": 1.08,
+          "breakdown": [
+            {"name": "Cod", "quantity_g": 300, "co2_kg": 1.02, "category": "fish"},
+            {"name": "Vegetables", "quantity_g": 200, "co2_kg": 0.06, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Low", "color": "#2ecc71", "emoji": "\ud83c\udf3f"},
+        "comparison": {"average": 2.5, "your_meal": 0.54, "difference_kg": -1.96, "percentage": -78.4, "status": "below"},
+        "substitutions": [
+          {"ingredient": "cod", "substitute": "mackerel", "co2_reduction": "35%", "reason": "More sustainable fish choice"}
+        ],
+        "sustainability_tip": "Cod from sustainable fisheries (MSC certified) ensures ocean health for future generations.",
+        "source": "database",
+        "database_id": 31234
+      }
+    }
+  ],
+  "stats": {"messages": 2, "recipes": 1},
+  "created_at": "2026-04-03T12:00:00.000000",
+  "updated_at": "2026-04-03T12:10:00.000000",
+  "user_id": "Kenji_Japan",
+  "pantry_ingredients": ["cod", "miso paste", "mirin", "ginger", "daikon radish", "carrots", "rice", "rice vinegar", "sesame oil"]
+}

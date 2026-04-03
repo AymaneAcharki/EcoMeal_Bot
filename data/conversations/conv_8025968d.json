@@ -1,0 +1,94 @@
+{
+  "id": "conv_8025968d",
+  "title": "I have just some cucumber, tomatos, rice and banan...",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I have just some cucumber, tomatos, rice and bananas ",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Tom Yum with Banana Leaf & Burro Banana**",
+      "type": "recipe",
+      "data": {
+        "name": "Tom Yum with Banana Leaf & Burro Banana",
+        "cuisine": "thai",
+        "description": "A Thai recipe with 3 ingredients",
+        "ingredients": [
+          {
+            "name": "sticky rice",
+            "quantity_g": 150
+          },
+          {
+            "name": "frozen banana leaf",
+            "quantity_g": 80
+          },
+          {
+            "name": "burro banana",
+            "quantity_g": 80
+          }
+        ],
+        "steps": [
+          "Add the banana leaf and burro banana and cook for 5-7 minutes.",
+          "Add the Sticky Rice and cook according to package directions.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 27,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.533,
+          "country": "france",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Rice (white)",
+              "quantity_g": 150,
+              "co2_kg": 0.405,
+              "co2_base_kg": 0.405,
+              "category": "carbs"
+            },
+            {
+              "name": "Bananas",
+              "quantity_g": 80,
+              "co2_kg": 0.064,
+              "co2_base_kg": 0.064,
+              "category": "fruits"
+            },
+            {
+              "name": "Bananas",
+              "quantity_g": 80,
+              "co2_kg": 0.064,
+              "co2_base_kg": 0.064,
+              "category": "fruits"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 0.533,
+          "difference_kg": -1.967,
+          "percentage": -78.7,
+          "status": "below",
+          "country": "france"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Good CO2 score for a thai meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 49233
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T14:50:54.068361",
+  "updated_at": "2026-04-03T14:51:37.633161"
+}

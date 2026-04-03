@@ -1,0 +1,75 @@
+{
+  "id": "conv_marie_001",
+  "title": "Recette vegetarienne aux lentilles",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Je veux une recette vegetarienne simple avec des lentilles",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Voici une recette parfaite pour vous: **Dal de lentilles corail aux epices douces**",
+      "type": "recipe",
+      "data": {
+        "name": "Dal de lentilles corail aux epices douces",
+        "description": "Un plat indien vegetarian riche en proteines vegetales, ideal pour un repas sain et economique",
+        "ingredients": [
+          {"name": "lentils", "quantity_g": 200},
+          {"name": "onions", "quantity_g": 100},
+          {"name": "tomatoes", "quantity_g": 150},
+          {"name": "garlic", "quantity_g": 15},
+          {"name": "ginger", "quantity_g": 10},
+          {"name": "cumin", "quantity_g": 5},
+          {"name": "turmeric", "quantity_g": 3},
+          {"name": "coconut milk", "quantity_g": 100},
+          {"name": "spinach", "quantity_g": 100}
+        ],
+        "steps": [
+          "Rincer les lentilles corail a l'eau froide",
+          "Faire revenir l'oignon, l'ail et le gingembre dans un peu d'huile",
+          "Ajouter les epices (cumin, curcuma) et faire torrer 1 minute",
+          "Ajouter les tomates coupees et cuire 5 minutes",
+          "Verser les lentilles et 500ml d'eau, porter a ebullition",
+          "Laisser mijoter 20 minutes jusqu'a ce que les lentilles soient fondantes",
+          "Ajouter le lait de coco et les epinards, cuire 5 minutes",
+          "Assaisonner et servir avec du riz basmati"
+        ],
+        "cooking_time_minutes": 35,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.42,
+          "breakdown": [
+            {"name": "Lentils", "quantity_g": 200, "co2_kg": 0.18, "category": "plant_protein"},
+            {"name": "Onions", "quantity_g": 100, "co2_kg": 0.03, "category": "vegetables"},
+            {"name": "Tomatoes", "quantity_g": 150, "co2_kg": 0.21, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Excellent", "color": "#27ae60", "emoji": "\ud83c\udf1f"},
+        "comparison": {"average": 2.5, "your_meal": 0.42, "difference_kg": -2.08, "percentage": -83.2, "status": "below"},
+        "substitutions": [],
+        "sustainability_tip": "Excellent choix! Les lentilles sont l'une des sources de proteines les plus ecologiques.",
+        "source": "database",
+        "database_id": 15234
+      }
+    },
+    {
+      "role": "user",
+      "content": "Parfait! Peux-tu me suggerer une alternative sans lait de coco?",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Absolument! Vous pouvez remplacer le lait de coco par:\n\n1. **Creme vegetale d'avoine** - Plus legere et locale\n2. **Pursee de tomates** - Pour une version plus legere\n3. **Yaourt nature vegetal** - Ajoute a la fin pour la creme\n\nPour votre profil (allergie noix), ces alternatives sont parfaites!",
+      "type": "text",
+      "data": null
+    }
+  ],
+  "stats": {"messages": 4, "recipes": 1},
+  "created_at": "2026-04-03T10:15:00.000000",
+  "updated_at": "2026-04-03T10:25:00.000000",
+  "user_id": "Marie_France",
+  "pantry_ingredients": ["lentils", "onions", "tomatoes", "garlic", "ginger", "cumin", "turmeric", "rice"]
+}

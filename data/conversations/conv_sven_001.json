@@ -1,0 +1,66 @@
+{
+  "id": "conv_sven_001",
+  "title": "Nordic-inspired sustainable salmon",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a sustainable recipe with salmon, Scandinavian style, gluten and dairy free",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect for your dietary needs! **Gravlax-Style Salmon with Dill Potatoes**",
+      "type": "recipe",
+      "data": {
+        "name": "Gravlax-Style Salmon with Dill Potatoes",
+        "description": "Nordic-inspired dish featuring cured-style salmon with herbed potatoes - naturally gluten and dairy free",
+        "ingredients": [
+          {"name": "salmon fillet", "quantity_g": 300},
+          {"name": "potatoes", "quantity_g": 400},
+          {"name": "fresh dill", "quantity_g": 30},
+          {"name": "capers", "quantity_g": 20},
+          {"name": "red onion", "quantity_g": 50},
+          {"name": "lemon", "quantity_g": 40},
+          {"name": "olive oil", "quantity_g": 30},
+          {"name": "mustard (dijon)", "quantity_g": 15},
+          {"name": "white pepper", "quantity_g": 2},
+          {"name": "cucumber", "quantity_g": 100}
+        ],
+        "steps": [
+          "Cure salmon with salt, sugar and dill for 2 hours (or use store-bought gravlax)",
+          "Boil potatoes in salted water until tender, about 15 minutes",
+          "Make sauce: mix mustard, olive oil, chopped dill and lemon juice",
+          "Slice cucumber thinly and red onion into thin rings",
+          "Slice cured salmon thinly on an angle",
+          "Toss warm potatoes with dill sauce",
+          "Arrange salmon with cucumber, onions and capers",
+          "Drizzle with remaining sauce and serve"
+        ],
+        "cooking_time_minutes": 40,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 3.72,
+          "breakdown": [
+            {"name": "Salmon", "quantity_g": 300, "co2_kg": 3.57, "category": "fish"},
+            {"name": "Vegetables", "quantity_g": 590, "co2_kg": 0.15, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Medium", "color": "#f39c12", "emoji": "\ud83c\udf31"},
+        "comparison": {"average": 2.5, "your_meal": 1.86, "difference_kg": -0.64, "percentage": -25.6, "status": "below"},
+        "substitutions": [
+          {"ingredient": "farmed salmon", "substitute": "wild alaskan salmon", "co2_reduction": "40%", "reason": "More sustainable fishery management"},
+          {"ingredient": "salmon", "substitute": "arctic char", "co2_reduction": "30%", "reason": "Similar taste, lower impact"}
+        ],
+        "sustainability_tip": "Choose MSC-certified salmon or switch to arctic char for a more sustainable option while keeping Nordic flavors.",
+        "source": "database",
+        "database_id": 78901
+      }
+    }
+  ],
+  "stats": {"messages": 2, "recipes": 1},
+  "created_at": "2026-04-03T16:00:00.000000",
+  "updated_at": "2026-04-03T16:15:00.000000",
+  "user_id": "Sven_Sweden",
+  "pantry_ingredients": ["salmon", "potatoes", "dill", "capers", "red onion", "lemon", "olive oil", "mustard", "cucumber"]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "conv_1dd7a294",
+  "title": "I want a spaghetti bolognese recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a spaghetti bolognese recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for **Donburi with Black Sesame Seeds & Linguine**!",
+      "type": "recipe",
+      "data": {
+        "name": "Donburi with Black Sesame Seeds & Linguine",
+        "cuisine": "japanese",
+        "description": "A Japanese recipe with 8 ingredients",
+        "ingredients": [
+          {
+            "name": "black sesame seeds",
+            "quantity_g": 80
+          },
+          {
+            "name": "cayenne pepper",
+            "quantity_g": 30
+          },
+          {
+            "name": "soy sauce",
+            "quantity_g": 30
+          },
+          {
+            "name": "linguine",
+            "quantity_g": 80
+          },
+          {
+            "name": "fresh ginger",
+            "quantity_g": 80
+          },
+          {
+            "name": "rice vinegar",
+            "quantity_g": 150
+          },
+          {
+            "name": "green onions",
+            "quantity_g": 80
+          },
+          {
+            "name": "toasted sesame oil",
+            "quantity_g": 30
+          }
+        ],
+        "steps": [
+          "Finely chop the ginger and green onions.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the black sesame seeds and linguine and cook for 5-7 minutes.",
+          "Add the Rice Vinegar and cook according to package directions.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 47,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 0.588,
+          "country": "Russia",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Chili powder",
+              "quantity_g": 30,
+              "co2_kg": 0.075,
+              "co2_base_kg": 0.075,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Soy sauce",
+              "quantity_g": 30,
+              "co2_kg": 0.036,
+              "co2_base_kg": 0.036,
+              "category": "condiments"
+            },
+            {
+              "name": "Pasta",
+              "quantity_g": 80,
+              "co2_kg": 0.12,
+              "co2_base_kg": 0.12,
+              "category": "carbs"
+            },
+            {
+              "name": "Ginger",
+              "quantity_g": 80,
+              "co2_kg": 0.048,
+              "co2_base_kg": 0.048,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Rice vinegar",
+              "quantity_g": 150,
+              "co2_kg": 0.15,
+              "co2_base_kg": 0.15,
+              "category": "condiments"
+            },
+            {
+              "name": "Green onions",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Sesame oil",
+              "quantity_g": 30,
+              "co2_kg": 0.135,
+              "co2_base_kg": 0.135,
+              "category": "oils_fats"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 0.588,
+          "difference_kg": -1.912,
+          "percentage": -76.5,
+          "status": "below",
+          "country": "Russia"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Good CO2 score for a japanese meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 33394
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T14:01:48.708930",
+  "updated_at": "2026-04-03T14:02:12.120665"
+}

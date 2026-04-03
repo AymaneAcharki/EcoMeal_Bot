@@ -1,0 +1,104 @@
+{
+  "id": "conv_ce06fb14",
+  "title": "Suggest a russian recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a russian recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Kasha with Eggs & Flour**",
+      "type": "recipe",
+      "data": {
+        "name": "Kasha with Eggs & Flour",
+        "cuisine": "russian",
+        "description": "A Russian recipe with 4 ingredients",
+        "ingredients": [
+          {
+            "name": "eggs",
+            "quantity_g": 80
+          },
+          {
+            "name": "flour",
+            "quantity_g": 80
+          },
+          {
+            "name": "tart apples",
+            "quantity_g": 80
+          },
+          {
+            "name": "sugar",
+            "quantity_g": 80
+          }
+        ],
+        "steps": [
+          "Add the eggs and flour and tart apples and cook for 5-7 minutes.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 31,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.538,
+          "country": "Sweden",
+          "country_multiplier": 0.82,
+          "breakdown": [
+            {
+              "name": "Eggs",
+              "quantity_g": 80,
+              "co2_kg": 0.315,
+              "co2_base_kg": 0.384,
+              "category": "eggs"
+            },
+            {
+              "name": "All-purpose flour",
+              "quantity_g": 80,
+              "co2_kg": 0.079,
+              "co2_base_kg": 0.096,
+              "category": "carbs"
+            },
+            {
+              "name": "Apples",
+              "quantity_g": 80,
+              "co2_kg": 0.026,
+              "co2_base_kg": 0.032,
+              "category": "fruits"
+            },
+            {
+              "name": "Sugar",
+              "quantity_g": 80,
+              "co2_kg": 0.118,
+              "co2_base_kg": 0.144,
+              "category": "carbs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 2.05,
+          "your_meal": 0.538,
+          "difference_kg": -1.512,
+          "percentage": -73.8,
+          "status": "below",
+          "country": "Sweden"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Good CO2 score for a russian meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 34608
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T12:55:38.943591",
+  "updated_at": "2026-04-03T12:56:58.603688"
+}

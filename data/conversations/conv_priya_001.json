@@ -1,0 +1,79 @@
+{
+  "id": "conv_priya_001",
+  "title": "Vegan gluten-free chickpea curry",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I need a vegan gluten-free recipe with chickpeas, Indian spices, under 40 minutes",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect for your dietary needs! **Chana Masala - Gluten-Free Vegan Chickpea Curry**",
+      "type": "recipe",
+      "data": {
+        "name": "Chana Masala - Gluten-Free Vegan Chickpea Curry",
+        "description": "Authentic North Indian chickpea curry, naturally vegan and gluten-free, packed with protein",
+        "ingredients": [
+          {"name": "chickpeas", "quantity_g": 400},
+          {"name": "tomatoes", "quantity_g": 250},
+          {"name": "onions", "quantity_g": 150},
+          {"name": "garlic", "quantity_g": 15},
+          {"name": "ginger", "quantity_g": 15},
+          {"name": "cumin", "quantity_g": 5},
+          {"name": "coriander", "quantity_g": 5},
+          {"name": "turmeric", "quantity_g": 3},
+          {"name": "garam masala", "quantity_g": 5},
+          {"name": "green chilies", "quantity_g": 10},
+          {"name": "cilantro", "quantity_g": 20},
+          {"name": "lemon juice", "quantity_g": 15}
+        ],
+        "steps": [
+          "Heat oil and add cumin seeds, let them splutter",
+          "Add chopped onions and saute until golden brown",
+          "Add ginger-garlic paste and green chilies, cook 2 minutes",
+          "Add turmeric, coriander powder and cook for 30 seconds",
+          "Add pureed tomatoes and cook until oil separates",
+          "Add chickpeas and 1 cup water, simmer for 20 minutes",
+          "Mash some chickpeas for thicker gravy",
+          "Finish with garam masala, cilantro and lemon juice",
+          "Serve with gluten-free flatbread or rice"
+        ],
+        "cooking_time_minutes": 35,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.35,
+          "breakdown": [
+            {"name": "Chickpeas", "quantity_g": 400, "co2_kg": 0.32, "category": "plant_protein"},
+            {"name": "Vegetables", "quantity_g": 430, "co2_kg": 0.03, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Excellent", "color": "#27ae60", "emoji": "\ud83c\udf1f"},
+        "comparison": {"average": 2.5, "your_meal": 0.35, "difference_kg": -2.15, "percentage": -86.0, "status": "below"},
+        "substitutions": [],
+        "sustainability_tip": "Outstanding! Chickpeas fix nitrogen in soil, improving farmland health. This meal is 86% below average!",
+        "source": "database",
+        "database_id": 45678,
+        "nutrition": {"protein_g": 28, "fiber_g": 15, "calories": 380}
+      }
+    },
+    {
+      "role": "user",
+      "content": "Can I use canned chickpeas to save time?",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely! Canned chickpeas work perfectly and save 40-60 minutes of cooking time.\n\n**Tips for canned chickpeas:**\n- Rinse thoroughly to remove 40% of sodium\n- Use 2 cans (400g each) for this recipe\n- Add them later in the cooking process (step 6) since they're already cooked\n- Simmer for just 10-15 minutes instead of 20\n\n**CO2 Note:** Canned chickpeas have slightly higher footprint due to processing, but the difference is minimal (~0.05 kg CO2). Still an excellent eco choice!",
+      "type": "text",
+      "data": null
+    }
+  ],
+  "stats": {"messages": 4, "recipes": 1},
+  "created_at": "2026-04-03T13:00:00.000000",
+  "updated_at": "2026-04-03T13:20:00.000000",
+  "user_id": "Priya_India",
+  "pantry_ingredients": ["chickpeas", "tomatoes", "onions", "garlic", "ginger", "cumin", "coriander", "turmeric", "garam masala", "cilantro", "lemon"]
+}

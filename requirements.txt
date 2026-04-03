@@ -1,0 +1,6 @@
+# EcoMeal Bot - Sustainable Recipe Chatbot
+# Install with: pip install -r requirements.txt
+
+streamlit>=1.29.0
+openai>=1.0.0
+requests>=2.28.0

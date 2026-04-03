@@ -1,0 +1,79 @@
+{
+  "id": "conv_ahmed_001",
+  "title": "Traditional Moroccan tagine recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Je veux une recette marocaine traditionnelle pour 5 personnes avec de l'agneau",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Voici une recette traditionnelle: **Tagine d'Agneau aux Pruneaux et Amandes**",
+      "type": "recipe",
+      "data": {
+        "name": "Tagine d'Agneau aux Pruneaux et Amandes",
+        "description": "Classique de la cuisine marocaine, melange sucre-sale parfume aux epices",
+        "ingredients": [
+          {"name": "lamb shoulder", "quantity_g": 800},
+          {"name": "prunes", "quantity_g": 150},
+          {"name": "almonds", "quantity_g": 50},
+          {"name": "onions", "quantity_g": 200},
+          {"name": "honey", "quantity_g": 30},
+          {"name": "cinnamon", "quantity_g": 5},
+          {"name": "ginger", "quantity_g": 5},
+          {"name": "saffron", "quantity_g": 1},
+          {"name": "ras el hanout", "quantity_g": 10},
+          {"name": "olive oil", "quantity_g": 40},
+          {"name": "cilantro", "quantity_g": 20}
+        ],
+        "steps": [
+          "Couper l'agneau en morceaux et dorer dans l'huile d'olive",
+          "Retirer la viande et faire revenir les oignons",
+          "Ajouter les epices (cannelle, gingembre, ras el hanout, safran)",
+          "Remettre l'agneau, couvrir d'eau et porter a ebullition",
+          "Couvrir et laisser mijoter 1h30 a feu doux",
+          "Ajouter les pruneaux et le miel, cuire 30 minutes",
+          "Faire griller les amandes a sec",
+          "Servir saupoudre d'amandes et de coriandre fraiche"
+        ],
+        "cooking_time_minutes": 140,
+        "difficulty": "intermediate",
+        "co2_info": {
+          "total_co2_kg": 16.8,
+          "breakdown": [
+            {"name": "Lamb", "quantity_g": 800, "co2_kg": 16.0, "category": "meat"},
+            {"name": "Vegetables & others", "quantity_g": 450, "co2_kg": 0.80, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Very High", "color": "#c0392b", "emoji": "\u26a0\ufe0f"},
+        "comparison": {"average": 2.5, "your_meal": 3.36, "difference_kg": 0.86, "percentage": 34.4, "status": "above"},
+        "substitutions": [
+          {"ingredient": "lamb shoulder", "substitute": "chicken thighs", "co2_reduction": "65%", "reason": "Poultry has much lower CO2 impact"},
+          {"ingredient": "lamb shoulder", "substitute": "chickpeas + vegetables", "co2_reduction": "95%", "reason": "Vegetarian version with authentic spices"}
+        ],
+        "sustainability_tip": "L'agneau a un impact eleve. Pour reduire votre empreinte, servez avec beaucoup de legumes et reduisez la portion de viande a 120g par personne.",
+        "source": "database",
+        "database_id": 67890
+      }
+    },
+    {
+      "role": "user",
+      "content": "Peux-tu me proposer une version plus ecologique?",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Absolument! Voici la **Tagine Vegetarienne aux Pois Chiches et Legumes**:\n\n**CO2 reduit de 95%!** - Seulement 0.85 kg CO2 au total\n\n**Modifications:**\n- Remplacer l'agneau par 500g de pois chiches\n- Ajouter des carottes (200g), courgettes (200g), patates douces (200g)\n- Garder toutes les epices traditionnelles\n- Meme temps de cuisson mais moins de surveillance\n\n**Pour 5 personnes:**\n- 0.17 kg CO2 par personne vs 3.36 kg\n- Economie de 16 kg de CO2!\n- Budget divise par 3\n\nLes epices (ras el hanout, safran, cannelle) gardent toute l'authenticite marocaine!",
+      "type": "text",
+      "data": null
+    }
+  ],
+  "stats": {"messages": 4, "recipes": 1},
+  "created_at": "2026-04-03T15:00:00.000000",
+  "updated_at": "2026-04-03T15:30:00.000000",
+  "user_id": "Ahmed_Morocco",
+  "pantry_ingredients": ["lamb", "prunes", "almonds", "onions", "honey", "cinnamon", "ginger", "saffron", "ras el hanout", "olive oil", "cilantro"]
+}

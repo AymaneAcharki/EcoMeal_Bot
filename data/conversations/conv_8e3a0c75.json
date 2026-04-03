@@ -1,0 +1,136 @@
+{
+  "id": "conv_8e3a0c75",
+  "title": "I want an indian recipe with chicken",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want an indian recipe with chicken",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Chicken Thigh Fillets Vindaloo with Sweet Potatoes**",
+      "type": "recipe",
+      "data": {
+        "name": "Chicken Thigh Fillets Vindaloo with Sweet Potatoes",
+        "cuisine": "indian",
+        "description": "A Indian recipe with 7 ingredients",
+        "ingredients": [
+          {
+            "name": "sweet potatoes",
+            "quantity_g": 150
+          },
+          {
+            "name": "spinach",
+            "quantity_g": 150
+          },
+          {
+            "name": "purple onion",
+            "quantity_g": 80
+          },
+          {
+            "name": "tomatoes",
+            "quantity_g": 80
+          },
+          {
+            "name": "chicken thigh fillets",
+            "quantity_g": 200
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "curry paste",
+            "quantity_g": 3
+          }
+        ],
+        "steps": [
+          "Finely chop the purple onion.",
+          "Season the Chicken Thigh Fillets and sear in a hot pan until golden. Set aside on a plate.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the spinach and tomatoes and cook for 5-7 minutes.",
+          "Stir in the Sweet Potatoes and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Season with curry paste. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 43,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 1.305,
+          "country": "Morocco",
+          "country_multiplier": 0.72,
+          "breakdown": [
+            {
+              "name": "Potatoes",
+              "quantity_g": 150,
+              "co2_kg": 0.032,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Spinach",
+              "quantity_g": 150,
+              "co2_kg": 0.065,
+              "co2_base_kg": 0.09,
+              "category": "vegetables"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 80,
+              "co2_kg": 0.017,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Tomatoes",
+              "quantity_g": 80,
+              "co2_kg": 0.081,
+              "co2_base_kg": 0.112,
+              "category": "vegetables"
+            },
+            {
+              "name": "Chicken",
+              "quantity_g": 200,
+              "co2_kg": 0.994,
+              "co2_base_kg": 1.38,
+              "category": "meat"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 30,
+              "co2_kg": 0.117,
+              "co2_base_kg": 0.162,
+              "category": "oils_fats"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 1.8,
+          "your_meal": 1.305,
+          "difference_kg": -0.495,
+          "percentage": -27.5,
+          "status": "below",
+          "country": "Morocco"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Good CO2 score for a indian meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 9689
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T14:03:06.020187",
+  "updated_at": "2026-04-03T14:21:05.856401"
+}

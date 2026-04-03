@@ -1,0 +1,646 @@
+{
+  "id": "conv_john_002",
+  "title": "Healthy meal prep for the week",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I need meal prep ideas for 4 people, healthy and high protein",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here are 5 **High-Protein Meal Prep Ideas** for your family of 4:\n\n**1. Turkey & Quinoa Bowls** (35g protein)\n- CO2: 0.92 kg/serving\n- Prep time: 45 min for 8 servings\n- Cost: $3.50/serving\n\n**2. Greek Chicken Salad Jars** (28g protein)\n- CO2: 0.68 kg/serving\n- Prep time: 30 min for 8 jars\n- Cost: $4.00/serving\n\n**3. Lentil & Sweet Potato Curry** (22g protein)\n- CO2: 0.38 kg/serving\n- Prep time: 40 min for 8 servings\n- Cost: $2.20/serving\n\n**4. Egg & Black Bean Burritos** (24g protein)\n- CO2: 0.45 kg/serving\n- Prep time: 35 min for 16 burritos\n- Cost: $1.80/serving\n\n**5. Salmon & Veggie Foil Packs** (32g protein)\n- CO2: 1.2 kg/serving\n- Prep time: 25 min for 8 packs\n- Cost: $5.50/serving\n\n**Weekly CO2 Savings:** Choosing #3 twice saves 4.2 kg CO2 vs beef options!",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "user",
+      "content": "Give me the recipe for the lentil curry - best eco choice",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "**Lentil & Sweet Potato Curry** - 8 servings\n\n**Ingredients:**\n- Red lentils 400g\n- Sweet potatoes 600g (cubed)\n- Coconut milk 400ml\n- Diced tomatoes 400g\n- Onion 200g, Garlic 15g, Ginger 10g\n- Curry powder 15g, Turmeric 5g, Cumin 5g\n- Spinach 150g\n- Rice 400g (serve on side)\n\n**Instructions:**\n1. Saute onion, garlic, ginger (5 min)\n2. Add spices, toast 1 min\n3. Add tomatoes, coconut milk, lentils, sweet potato\n4. Simmer 25 min until lentils soft\n5. Stir in spinach at the end\n6. Season to taste\n\n**Meal Prep Tips:**\n- Store in 8 glass containers\n- Freezes well up to 3 months\n- Reheat with splash of water\n\n**Nutrition per serving:** 380 cal, 22g protein, 12g fiber\n**CO2 per serving:** 0.38 kg (85% below average!)",
+      "type": "recipe",
+      "data": {
+        "name": "Lentil & Sweet Potato Curry",
+        "description": "Batch-cook friendly curry, freezes perfectly",
+        "ingredients": [
+          {
+            "name": "lentils",
+            "quantity_g": 400
+          },
+          {
+            "name": "sweet potatoes",
+            "quantity_g": 600
+          },
+          {
+            "name": "coconut milk",
+            "quantity_g": 400
+          },
+          {
+            "name": "tomatoes",
+            "quantity_g": 400
+          },
+          {
+            "name": "onions",
+            "quantity_g": 200
+          },
+          {
+            "name": "garlic",
+            "quantity_g": 15
+          },
+          {
+            "name": "ginger",
+            "quantity_g": 10
+          },
+          {
+            "name": "spinach",
+            "quantity_g": 150
+          },
+          {
+            "name": "rice",
+            "quantity_g": 400
+          }
+        ],
+        "steps": [
+          "Saute aromatics",
+          "Add spices",
+          "Simmer 25 min",
+          "Add spinach"
+        ],
+        "cooking_time_minutes": 40,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 3.04,
+          "breakdown": []
+        },
+        "co2_label": {
+          "label": "Excellent",
+          "color": "#27ae60",
+          "emoji": "🌟"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 0.38,
+          "difference_kg": -2.12,
+          "percentage": -84.8,
+          "status": "below"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Lentils require no nitrogen fertilizer - they make their own!",
+        "source": "database",
+        "database_id": 90123
+      }
+    },
+    {
+      "role": "user",
+      "content": "I want a moroccan chicken recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Chicken Couscous**",
+      "type": "recipe",
+      "data": {
+        "name": "Chicken Couscous",
+        "cuisine": "moroccan",
+        "description": "A Moroccan recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "chicken",
+            "quantity_g": 350
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 150
+          },
+          {
+            "name": "zucchini",
+            "quantity_g": 100
+          },
+          {
+            "name": "onions",
+            "quantity_g": 100
+          },
+          {
+            "name": "cumin",
+            "quantity_g": 5
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 20
+          }
+        ],
+        "steps": [
+          "Simmer chicken with spices and vegetables.",
+          "Steam couscous over the broth.",
+          "Serve couscous topped with chicken and veggies.",
+          "Drizzle with broth and harissa."
+        ],
+        "cooking_time_minutes": 60,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 2.658,
+          "country": "france",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Chicken",
+              "quantity_g": 350,
+              "co2_kg": 2.415,
+              "co2_base_kg": 2.415,
+              "category": "meat"
+            },
+            {
+              "name": "Carrots",
+              "quantity_g": 150,
+              "co2_kg": 0.06,
+              "co2_base_kg": 0.06,
+              "category": "vegetables"
+            },
+            {
+              "name": "Zucchini",
+              "quantity_g": 100,
+              "co2_kg": 0.03,
+              "co2_base_kg": 0.03,
+              "category": "vegetables"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 100,
+              "co2_kg": 0.03,
+              "co2_base_kg": 0.03,
+              "category": "vegetables"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 5,
+              "co2_kg": 0.015,
+              "co2_base_kg": 0.015,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 20,
+              "co2_kg": 0.108,
+              "co2_base_kg": 0.108,
+              "category": "oils_fats"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Medium",
+          "color": "#f39c12",
+          "emoji": "⚠"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 2.658,
+          "difference_kg": 0.158,
+          "percentage": 6.3,
+          "status": "above",
+          "country": "france"
+        },
+        "substitutions": [
+          {
+            "original": "chicken",
+            "original_co2": 6.9,
+            "substitutes": [
+              "Tofu",
+              "Tempeh",
+              "Seitan"
+            ],
+            "reason": "Poultry can be replaced with similar-texture plant proteins",
+            "potential_savings": 5.0
+          }
+        ],
+        "sustainability_tip": "Average impact. Try replacing some ingredients with plant-based alternatives.",
+        "source": "database",
+        "database_id": 9016
+      }
+    },
+    {
+      "role": "user",
+      "content": "Do a weekly plan for moroccan cuisine and focus on high protein",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's your weekly meal plan with shopping list and CO2 analysis:",
+      "type": "weekly_plan",
+      "data": {
+        "days": [
+          {
+            "day": "Monday",
+            "meal": "Ratatouille",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "zucchini",
+                "quantity_g": 200
+              },
+              {
+                "name": "tomatoes",
+                "quantity_g": 200
+              },
+              {
+                "name": "onions",
+                "quantity_g": 100
+              },
+              {
+                "name": "peppers",
+                "quantity_g": 100
+              },
+              {
+                "name": "garlic",
+                "quantity_g": 10
+              },
+              {
+                "name": "olive oil",
+                "quantity_g": 30
+              }
+            ],
+            "co2_kg": 0.626
+          },
+          {
+            "day": "Tuesday",
+            "meal": "Coq au Vin",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "chicken",
+                "quantity_g": 800
+              },
+              {
+                "name": "mushrooms",
+                "quantity_g": 150
+              },
+              {
+                "name": "onions",
+                "quantity_g": 100
+              },
+              {
+                "name": "carrots",
+                "quantity_g": 100
+              },
+              {
+                "name": "garlic",
+                "quantity_g": 10
+              },
+              {
+                "name": "butter",
+                "quantity_g": 30
+              }
+            ],
+            "co2_kg": 5.954
+          },
+          {
+            "day": "Wednesday",
+            "meal": "Compote with Eggs & Carrots",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "large eggs",
+                "quantity_g": 80
+              },
+              {
+                "name": "carrots",
+                "quantity_g": 80
+              },
+              {
+                "name": "baking potatoes",
+                "quantity_g": 150
+              },
+              {
+                "name": "shallots",
+                "quantity_g": 80
+              },
+              {
+                "name": "corn starch",
+                "quantity_g": 80
+              },
+              {
+                "name": "milk",
+                "quantity_g": 80
+              },
+              {
+                "name": "heavy cream",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 1.085
+          },
+          {
+            "day": "Thursday",
+            "meal": "Blanquette with Egg Yolks & Whipping Cream",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "egg yolks",
+                "quantity_g": 80
+              },
+              {
+                "name": "vanilla extract",
+                "quantity_g": 30
+              },
+              {
+                "name": "whipping cream",
+                "quantity_g": 80
+              },
+              {
+                "name": "sugar",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 1.003
+          },
+          {
+            "day": "Friday",
+            "meal": "Veloute with Clarified Butter",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "baking potatoes",
+                "quantity_g": 150
+              },
+              {
+                "name": "unsalted butter",
+                "quantity_g": 30
+              },
+              {
+                "name": "clarified butter",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 1.09
+          },
+          {
+            "day": "Saturday",
+            "meal": "Blanquette with Sugar & Egg Yolks",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "sugar",
+                "quantity_g": 80
+              },
+              {
+                "name": "large egg yolks",
+                "quantity_g": 80
+              },
+              {
+                "name": "whole milk",
+                "quantity_g": 80
+              },
+              {
+                "name": "vanilla beans",
+                "quantity_g": 30
+              }
+            ],
+            "co2_kg": 0.699
+          },
+          {
+            "day": "Sunday",
+            "meal": "Provencal with Eggs & Lemon Peel",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "large eggs",
+                "quantity_g": 80
+              },
+              {
+                "name": "unsalted butter",
+                "quantity_g": 30
+              },
+              {
+                "name": "lemon peel",
+                "quantity_g": 80
+              },
+              {
+                "name": "sugar",
+                "quantity_g": 80
+              },
+              {
+                "name": "fresh lemon juice",
+                "quantity_g": 80
+              }
+            ],
+            "co2_kg": 0.861
+          }
+        ],
+        "total_estimated_co2": 11.32,
+        "french_avg_weekly_co2": 35.0,
+        "co2_saved_kg": 23.68,
+        "co2_saved_percent": 67.7,
+        "seasonal_score_percent": 0.0,
+        "shopping_list": {
+          "items": [
+            {
+              "name": "Zucchini",
+              "food_id": 56,
+              "quantity_g": 200,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Tomatoes",
+              "food_id": 30,
+              "quantity_g": 200,
+              "category": "vegetables",
+              "co2_kg": 1.4
+            },
+            {
+              "name": "Onions",
+              "food_id": 34,
+              "quantity_g": 200,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Peppers",
+              "food_id": 35,
+              "quantity_g": 100,
+              "category": "vegetables",
+              "co2_kg": 0.9
+            },
+            {
+              "name": "Garlic",
+              "food_id": 46,
+              "quantity_g": 20,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Olive oil",
+              "food_id": 41,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 5.4
+            },
+            {
+              "name": "Chicken",
+              "food_id": 5,
+              "quantity_g": 800,
+              "category": "meat",
+              "co2_kg": 6.9
+            },
+            {
+              "name": "Mushrooms",
+              "food_id": 57,
+              "quantity_g": 150,
+              "category": "vegetables",
+              "co2_kg": 0.5
+            },
+            {
+              "name": "Carrots",
+              "food_id": 31,
+              "quantity_g": 180,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 30,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Eggs",
+              "food_id": 16,
+              "quantity_g": 160,
+              "category": "eggs",
+              "co2_kg": 4.8
+            },
+            {
+              "name": "Potatoes",
+              "food_id": 29,
+              "quantity_g": 300,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Shallots",
+              "food_id": 69,
+              "quantity_g": 80,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Cornstarch",
+              "food_id": 50,
+              "quantity_g": 80,
+              "category": "carbs",
+              "co2_kg": 1.3
+            },
+            {
+              "name": "Milk (cow)",
+              "food_id": 13,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Heavy cream",
+              "food_id": 63,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 5.0
+            },
+            {
+              "name": "Eggs",
+              "food_id": 16,
+              "quantity_g": 80,
+              "category": "eggs",
+              "co2_kg": 4.8
+            },
+            {
+              "name": "Vanilla extract",
+              "food_id": 62,
+              "quantity_g": 30,
+              "category": "condiments",
+              "co2_kg": 2.5
+            },
+            {
+              "name": "Heavy cream",
+              "food_id": 63,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 5.0
+            },
+            {
+              "name": "Sugar",
+              "food_id": 54,
+              "quantity_g": 240,
+              "category": "carbs",
+              "co2_kg": 1.8
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 60,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Butter",
+              "food_id": 15,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 9.5
+            },
+            {
+              "name": "Eggs",
+              "food_id": 16,
+              "quantity_g": 80,
+              "category": "eggs",
+              "co2_kg": 4.8
+            },
+            {
+              "name": "Milk (cow)",
+              "food_id": 13,
+              "quantity_g": 80,
+              "category": "dairy",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Vanilla extract",
+              "food_id": 62,
+              "quantity_g": 30,
+              "category": "condiments",
+              "co2_kg": 2.5
+            },
+            {
+              "name": "Lemon",
+              "food_id": 47,
+              "quantity_g": 80,
+              "category": "fruits",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Lemon juice",
+              "food_id": 77,
+              "quantity_g": 80,
+              "category": "fruits",
+              "co2_kg": 0.3
+            }
+          ],
+          "total_items": 27,
+          "total_cost": 17.21,
+          "currency": "EUR"
+        },
+        "recommendation": "Great choice! This plan saves 23.68 kg CO2 compared to the French average (67.7% reduction)."
+      }
+    }
+  ],
+  "stats": {
+    "messages": 8,
+    "recipes": 2
+  },
+  "created_at": "2026-04-03T11:30:00.000000",
+  "updated_at": "2026-04-03T00:13:19.296342"
+}

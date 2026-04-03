@@ -1,0 +1,561 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "24 emblematic recipes with real dish names for priority display",
+    "last_updated": "2026-04-02"
+  },
+  "recipes": [
+    {
+      "name": "Spaghetti Carbonara",
+      "cuisine": "italian",
+      "emblematic": true,
+      "description": "Classic Roman pasta with eggs, cheese and pancetta",
+      "ingredients": [
+        {"name": "spaghetti", "food_id": 25, "quantity_g": 200},
+        {"name": "eggs", "food_id": 16, "quantity_g": 100},
+        {"name": "cheese (hard)", "food_id": 11, "quantity_g": 50},
+        {"name": "beef (minced)", "food_id": 3, "quantity_g": 100},
+        {"name": "garlic", "food_id": 46, "quantity_g": 10},
+        {"name": "olive oil", "food_id": 41, "quantity_g": 15}
+      ],
+      "steps": [
+        "Cook spaghetti in salted boiling water until al dente.",
+        "Fry beef mince until crispy.",
+        "Whisk eggs with grated cheese and black pepper.",
+        "Combine hot pasta with egg mixture off heat, add crispy beef.",
+        "Serve immediately with extra cheese."
+      ],
+      "cooking_time_minutes": 25,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Margherita Pizza",
+      "cuisine": "italian",
+      "emblematic": true,
+      "description": "Neapolitan pizza with tomatoes, mozzarella and basil",
+      "ingredients": [
+        {"name": "all-purpose flour", "food_id": 55, "quantity_g": 250},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 150},
+        {"name": "cheese (soft)", "food_id": 12, "quantity_g": 125},
+        {"name": "olive oil", "food_id": 41, "quantity_g": 20},
+        {"name": "garlic", "food_id": 46, "quantity_g": 5},
+        {"name": "basil", "food_id": 53, "quantity_g": 10}
+      ],
+      "steps": [
+        "Make pizza dough with flour, water, yeast and salt.",
+        "Spread crushed tomatoes seasoned with garlic and oil.",
+        "Add torn mozzarella pieces.",
+        "Bake at high heat until crust is golden.",
+        "Top with fresh basil leaves."
+      ],
+      "cooking_time_minutes": 40,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Coq au Vin",
+      "cuisine": "french",
+      "emblematic": true,
+      "description": "Chicken braised in red wine with mushrooms and onions",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 800},
+        {"name": "mushrooms", "food_id": 57, "quantity_g": 150},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "carrots", "food_id": 31, "quantity_g": 100},
+        {"name": "garlic", "food_id": 46, "quantity_g": 10},
+        {"name": "butter", "food_id": 15, "quantity_g": 30}
+      ],
+      "steps": [
+        "Brown chicken pieces in butter.",
+        "Sauter vegetables until softened.",
+        "Add red wine and herbs, simmer until chicken is tender.",
+        "Reduce sauce and serve with crusty bread."
+      ],
+      "cooking_time_minutes": 90,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Ratatouille",
+      "cuisine": "french",
+      "emblematic": true,
+      "description": "Provencal vegetable stew with eggplant, zucchini and tomatoes",
+      "ingredients": [
+        {"name": "zucchini", "food_id": 56, "quantity_g": 200},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 200},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "peppers", "food_id": 35, "quantity_g": 100},
+        {"name": "garlic", "food_id": 46, "quantity_g": 10},
+        {"name": "olive oil", "food_id": 41, "quantity_g": 30}
+      ],
+      "steps": [
+        "Slice all vegetables thinly.",
+        "Layer vegetables in a baking dish.",
+        "Drizzle with olive oil and herbs.",
+        "Bake until tender and caramelized."
+      ],
+      "cooking_time_minutes": 60,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Beef Tacos",
+      "cuisine": "mexican",
+      "emblematic": true,
+      "description": "Seasoned ground beef in corn tortillas with toppings",
+      "ingredients": [
+        {"name": "beef (minced)", "food_id": 3, "quantity_g": 250},
+        {"name": "corn tortillas", "food_id": 80, "quantity_g": 120},
+        {"name": "onions", "food_id": 34, "quantity_g": 50},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 100},
+        {"name": "cheese (hard)", "food_id": 11, "quantity_g": 50},
+        {"name": "chili powder", "food_id": 71, "quantity_g": 5}
+      ],
+      "steps": [
+        "Brown beef with onions and spices.",
+        "Warm tortillas on a dry pan.",
+        "Assemble tacos with beef and toppings.",
+        "Serve with salsa and lime."
+      ],
+      "cooking_time_minutes": 25,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Guacamole",
+      "cuisine": "mexican",
+      "emblematic": true,
+      "description": "Avocado dip with lime, onions and cilantro",
+      "ingredients": [
+        {"name": "avocado", "food_id": 40, "quantity_g": 200},
+        {"name": "onions", "food_id": 34, "quantity_g": 30},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 50},
+        {"name": "lime", "food_id": 48, "quantity_g": 30},
+        {"name": "cilantro", "food_id": 51, "quantity_g": 10},
+        {"name": "chili powder", "food_id": 71, "quantity_g": 2}
+      ],
+      "steps": [
+        "Mash ripe avocados.",
+        "Mix with diced onions, tomatoes and cilantro.",
+        "Season with lime juice and salt.",
+        "Serve immediately with tortilla chips."
+      ],
+      "cooking_time_minutes": 10,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Pad Thai",
+      "cuisine": "thai",
+      "emblematic": true,
+      "description": "Stir-fried rice noodles with shrimp, eggs and peanuts",
+      "ingredients": [
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150},
+        {"name": "shrimp", "food_id": 10, "quantity_g": 150},
+        {"name": "eggs", "food_id": 16, "quantity_g": 50},
+        {"name": "beans (black)", "food_id": 21, "quantity_g": 50},
+        {"name": "fish sauce", "food_id": 70, "quantity_g": 15},
+        {"name": "lime", "food_id": 48, "quantity_g": 20}
+      ],
+      "steps": [
+        "Soak rice noodles until soft.",
+        "Stir-fry shrimp and scrambled eggs.",
+        "Add noodles with tamarind and fish sauce.",
+        "Top with crushed peanuts and lime."
+      ],
+      "cooking_time_minutes": 30,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Green Curry",
+      "cuisine": "thai",
+      "emblematic": true,
+      "description": "Creamy coconut curry with chicken and Thai basil",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 300},
+        {"name": "coconut milk", "food_id": 58, "quantity_g": 200},
+        {"name": "green beans", "food_id": 74, "quantity_g": 100},
+        {"name": "basil", "food_id": 53, "quantity_g": 15},
+        {"name": "fish sauce", "food_id": 70, "quantity_g": 15},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150}
+      ],
+      "steps": [
+        "Simmer coconut milk with curry paste.",
+        "Add sliced chicken and cook through.",
+        "Add vegetables and Thai basil.",
+        "Serve over jasmine rice."
+      ],
+      "cooking_time_minutes": 35,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Chicken Tikka Masala",
+      "cuisine": "indian",
+      "emblematic": true,
+      "description": "Grilled chicken in creamy tomato curry sauce",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 400},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 200},
+        {"name": "yogurt", "food_id": 14, "quantity_g": 100},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "heavy cream", "food_id": 63, "quantity_g": 50},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150}
+      ],
+      "steps": [
+        "Marinate chicken in yogurt and spices.",
+        "Grill or bake chicken until charred.",
+        "Simmer tomatoes with spices and cream.",
+        "Add chicken to sauce and serve with rice."
+      ],
+      "cooking_time_minutes": 45,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Vegetable Biryani",
+      "cuisine": "indian",
+      "emblematic": true,
+      "description": "Fragrant layered rice dish with spiced vegetables",
+      "ingredients": [
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 250},
+        {"name": "carrots", "food_id": 31, "quantity_g": 100},
+        {"name": "green beans", "food_id": 74, "quantity_g": 100},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "yogurt", "food_id": 14, "quantity_g": 100},
+        {"name": "cumin", "food_id": 67, "quantity_g": 5}
+      ],
+      "steps": [
+        "Parboil rice with whole spices.",
+        "Layer spiced vegetables and rice.",
+        "Steam covered until rice is fluffy.",
+        "Garnish with fried onions and mint."
+      ],
+      "cooking_time_minutes": 50,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Lamb Rogan Josh",
+      "cuisine": "indian",
+      "emblematic": true,
+      "description": "Aromatic Kashmiri lamb curry with rich spices",
+      "ingredients": [
+        {"name": "lamb", "food_id": 2, "quantity_g": 400},
+        {"name": "onions", "food_id": 34, "quantity_g": 150},
+        {"name": "yogurt", "food_id": 14, "quantity_g": 100},
+        {"name": "garlic", "food_id": 46, "quantity_g": 15},
+        {"name": "cumin", "food_id": 67, "quantity_g": 5},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150}
+      ],
+      "steps": [
+        "Brown lamb pieces in oil.",
+        "Sauté onions and garlic until golden.",
+        "Add yogurt and spices, simmer until tender.",
+        "Serve with basmati rice."
+      ],
+      "cooking_time_minutes": 90,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Kung Pao Chicken",
+      "cuisine": "chinese",
+      "emblematic": true,
+      "description": "Spicy stir-fry with peanuts and dried chilies",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 300},
+        {"name": "peppers", "food_id": 35, "quantity_g": 100},
+        {"name": "onions", "food_id": 34, "quantity_g": 50},
+        {"name": "garlic", "food_id": 46, "quantity_g": 10},
+        {"name": "soy sauce", "food_id": 43, "quantity_g": 20},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150}
+      ],
+      "steps": [
+        "Dice chicken and marinate briefly.",
+        "Stir-fry chicken until golden.",
+        "Add vegetables and sauce.",
+        "Top with roasted peanuts."
+      ],
+      "cooking_time_minutes": 20,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Fried Rice",
+      "cuisine": "chinese",
+      "emblematic": true,
+      "description": "Wok-fried rice with eggs and vegetables",
+      "ingredients": [
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 250},
+        {"name": "eggs", "food_id": 16, "quantity_g": 50},
+        {"name": "carrots", "food_id": 31, "quantity_g": 50},
+        {"name": "green onions", "food_id": 64, "quantity_g": 30},
+        {"name": "soy sauce", "food_id": 43, "quantity_g": 15},
+        {"name": "sesame oil", "food_id": 44, "quantity_g": 10}
+      ],
+      "steps": [
+        "Use cold day-old rice for best texture.",
+        "Scramble eggs and set aside.",
+        "Stir-fry vegetables then add rice.",
+        "Season with soy sauce and sesame oil."
+      ],
+      "cooking_time_minutes": 15,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Tonkotsu Ramen",
+      "cuisine": "japanese",
+      "emblematic": true,
+      "description": "Rich pork bone broth with noodles and chashu",
+      "ingredients": [
+        {"name": "pasta", "food_id": 25, "quantity_g": 150},
+        {"name": "pork", "food_id": 4, "quantity_g": 150},
+        {"name": "eggs", "food_id": 16, "quantity_g": 50},
+        {"name": "green onions", "food_id": 64, "quantity_g": 20},
+        {"name": "garlic", "food_id": 46, "quantity_g": 10},
+        {"name": "soy sauce", "food_id": 43, "quantity_g": 20}
+      ],
+      "steps": [
+        "Simmer pork bones for rich broth.",
+        "Prepare chashu pork belly.",
+        "Cook ramen noodles al dente.",
+        "Assemble with soft-boiled egg and toppings."
+      ],
+      "cooking_time_minutes": 60,
+      "difficulty": "hard"
+    },
+    {
+      "name": "Chicken Teriyaki",
+      "cuisine": "japanese",
+      "emblematic": true,
+      "description": "Grilled chicken glazed with sweet soy sauce",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 300},
+        {"name": "soy sauce", "food_id": 43, "quantity_g": 30},
+        {"name": "sugar", "food_id": 54, "quantity_g": 15},
+        {"name": "ginger", "food_id": 45, "quantity_g": 10},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150},
+        {"name": "broccoli", "food_id": 32, "quantity_g": 100}
+      ],
+      "steps": [
+        "Make teriyaki sauce with soy, sugar and ginger.",
+        "Grill or pan-fry chicken until golden.",
+        "Glaze with sauce until sticky.",
+        "Serve with steamed rice and broccoli."
+      ],
+      "cooking_time_minutes": 30,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Lamb Tagine",
+      "cuisine": "moroccan",
+      "emblematic": true,
+      "description": "Slow-cooked lamb with apricots and warm spices",
+      "ingredients": [
+        {"name": "lamb", "food_id": 2, "quantity_g": 400},
+        {"name": "onions", "food_id": 34, "quantity_g": 150},
+        {"name": "carrots", "food_id": 31, "quantity_g": 100},
+        {"name": "cumin", "food_id": 67, "quantity_g": 5},
+        {"name": "olive oil", "food_id": 41, "quantity_g": 20},
+        {"name": "lemon", "food_id": 47, "quantity_g": 30}
+      ],
+      "steps": [
+        "Brown lamb pieces in tagine or Dutch oven.",
+        "Add spices, vegetables and dried fruits.",
+        "Slow cook until meat is tender.",
+        "Serve with couscous and preserved lemon."
+      ],
+      "cooking_time_minutes": 120,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Chicken Couscous",
+      "cuisine": "moroccan",
+      "emblematic": true,
+      "description": "Steamed couscous with spiced chicken and vegetables",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 350},
+        {"name": "carrots", "food_id": 31, "quantity_g": 150},
+        {"name": "zucchini", "food_id": 56, "quantity_g": 100},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "cumin", "food_id": 67, "quantity_g": 5},
+        {"name": "olive oil", "food_id": 41, "quantity_g": 20}
+      ],
+      "steps": [
+        "Simmer chicken with spices and vegetables.",
+        "Steam couscous over the broth.",
+        "Serve couscous topped with chicken and veggies.",
+        "Drizzle with broth and harissa."
+      ],
+      "cooking_time_minutes": 60,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Paella",
+      "cuisine": "spanish",
+      "emblematic": true,
+      "description": "Saffron rice with seafood, chicken and chorizo",
+      "ingredients": [
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 300},
+        {"name": "chicken", "food_id": 5, "quantity_g": 200},
+        {"name": "shrimp", "food_id": 10, "quantity_g": 150},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 100},
+        {"name": "onions", "food_id": 34, "quantity_g": 80},
+        {"name": "olive oil", "food_id": 41, "quantity_g": 30}
+      ],
+      "steps": [
+        "Brown chicken and seafood in paella pan.",
+        "Add rice, saffron and stock.",
+        "Cook without stirring for crispy bottom.",
+        "Rest before serving with lemon wedges."
+      ],
+      "cooking_time_minutes": 45,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Moussaka",
+      "cuisine": "greek",
+      "emblematic": true,
+      "description": "Layered eggplant casserole with meat and bechamel",
+      "ingredients": [
+        {"name": "beef (minced)", "food_id": 3, "quantity_g": 300},
+        {"name": "zucchini", "food_id": 56, "quantity_g": 200},
+        {"name": "tomatoes", "food_id": 30, "quantity_g": 150},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "milk (cow)", "food_id": 13, "quantity_g": 200},
+        {"name": "cheese (hard)", "food_id": 11, "quantity_g": 80}
+      ],
+      "steps": [
+        "Slice and grill eggplant.",
+        "Cook spiced meat sauce.",
+        "Make bechamel with milk and cheese.",
+        "Layer and bake until golden."
+      ],
+      "cooking_time_minutes": 75,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Pho Bo",
+      "cuisine": "vietnamese",
+      "emblematic": true,
+      "description": "Beef noodle soup with aromatic broth and fresh herbs",
+      "ingredients": [
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150},
+        {"name": "beef (steak)", "food_id": 1, "quantity_g": 150},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "ginger", "food_id": 45, "quantity_g": 20},
+        {"name": "basil", "food_id": 53, "quantity_g": 15},
+        {"name": "lime", "food_id": 48, "quantity_g": 30}
+      ],
+      "steps": [
+        "Char onion and ginger for broth.",
+        "Simmer beef bones with star anise and cinnamon.",
+        "Cook rice noodles separately.",
+        "Serve with rare beef slices and fresh herbs."
+      ],
+      "cooking_time_minutes": 90,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Feijoada",
+      "cuisine": "brazilian",
+      "emblematic": true,
+      "description": "Black bean stew with pork and beef",
+      "ingredients": [
+        {"name": "beans (black)", "food_id": 21, "quantity_g": 250},
+        {"name": "pork", "food_id": 4, "quantity_g": 200},
+        {"name": "beef (minced)", "food_id": 3, "quantity_g": 150},
+        {"name": "onions", "food_id": 34, "quantity_g": 100},
+        {"name": "garlic", "food_id": 46, "quantity_g": 15},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150}
+      ],
+      "steps": [
+        "Soak black beans overnight.",
+        "Simmer beans with smoked meats.",
+        "Fry onions and garlic, add to stew.",
+        "Serve with rice, collard greens and orange."
+      ],
+      "cooking_time_minutes": 180,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Fish and Chips",
+      "cuisine": "british",
+      "emblematic": true,
+      "description": "Battered fried fish with thick-cut fries",
+      "ingredients": [
+        {"name": "fish (cod)", "food_id": 8, "quantity_g": 250},
+        {"name": "potatoes", "food_id": 29, "quantity_g": 300},
+        {"name": "all-purpose flour", "food_id": 55, "quantity_g": 100},
+        {"name": "eggs", "food_id": 16, "quantity_g": 50},
+        {"name": "vegetable oil", "food_id": 42, "quantity_g": 50},
+        {"name": "lemon", "food_id": 47, "quantity_g": 30}
+      ],
+      "steps": [
+        "Cut potatoes into thick chips and fry twice.",
+        "Make beer batter with flour and eggs.",
+        "Coat fish and fry until golden.",
+        "Serve with mushy peas and tartar sauce."
+      ],
+      "cooking_time_minutes": 40,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Fried Chicken",
+      "cuisine": "southern_us",
+      "emblematic": true,
+      "description": "Crispy seasoned fried chicken",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 500},
+        {"name": "all-purpose flour", "food_id": 55, "quantity_g": 150},
+        {"name": "eggs", "food_id": 16, "quantity_g": 50},
+        {"name": "vegetable oil", "food_id": 42, "quantity_g": 50},
+        {"name": "garlic", "food_id": 46, "quantity_g": 5},
+        {"name": "chili powder", "food_id": 71, "quantity_g": 5}
+      ],
+      "steps": [
+        "Marinate chicken in seasoned buttermilk.",
+        "Dredge in spiced flour mixture.",
+        "Fry until golden and cooked through.",
+        "Rest before serving."
+      ],
+      "cooking_time_minutes": 45,
+      "difficulty": "medium"
+    },
+    {
+      "name": "Chicken Adobo",
+      "cuisine": "filipino",
+      "emblematic": true,
+      "description": "Chicken braised in vinegar, soy sauce and garlic",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 500},
+        {"name": "soy sauce", "food_id": 43, "quantity_g": 60},
+        {"name": "garlic", "food_id": 46, "quantity_g": 20},
+        {"name": "onions", "food_id": 34, "quantity_g": 80},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150},
+        {"name": "bay leaves", "food_id": 78, "quantity_g": 2}
+      ],
+      "steps": [
+        "Marinate chicken in soy sauce and vinegar.",
+        "Brown chicken pieces.",
+        "Simmer with garlic and bay leaves.",
+        "Reduce sauce and serve with rice."
+      ],
+      "cooking_time_minutes": 50,
+      "difficulty": "easy"
+    },
+    {
+      "name": "Jerk Chicken",
+      "cuisine": "jamaican",
+      "emblematic": true,
+      "description": "Spicy grilled chicken with Jamaican jerk seasoning",
+      "ingredients": [
+        {"name": "chicken", "food_id": 5, "quantity_g": 500},
+        {"name": "onions", "food_id": 34, "quantity_g": 50},
+        {"name": "garlic", "food_id": 46, "quantity_g": 15},
+        {"name": "chili powder", "food_id": 71, "quantity_g": 10},
+        {"name": "lime", "food_id": 48, "quantity_g": 30},
+        {"name": "rice (white)", "food_id": 23, "quantity_g": 150}
+      ],
+      "steps": [
+        "Make jerk marinade with scotch bonnet, allspice.",
+        "Marinate chicken overnight.",
+        "Grill over charcoal until charred.",
+        "Serve with rice and peas."
+      ],
+      "cooking_time_minutes": 40,
+      "difficulty": "medium"
+    }
+  ]
+}

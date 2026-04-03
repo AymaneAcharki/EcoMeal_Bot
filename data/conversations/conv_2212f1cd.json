@@ -1,0 +1,109 @@
+{
+  "id": "conv_2212f1cd",
+  "title": "I want a steak recipe with potatoes",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a steak recipe with potatoes",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **beef brisket & Red Potato Champ**",
+      "type": "recipe",
+      "data": {
+        "name": "beef brisket & Red Potato Champ",
+        "cuisine": "irish",
+        "description": "A Irish recipe with 4 ingredients",
+        "ingredients": [
+          {
+            "name": "small red potato",
+            "quantity_g": 150
+          },
+          {
+            "name": "cabbage",
+            "quantity_g": 150
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 80
+          },
+          {
+            "name": "beef brisket",
+            "quantity_g": 200
+          }
+        ],
+        "steps": [
+          "Finely chop the carrots.",
+          "Season the Beef Brisket and sear in a hot pan until golden. Set aside on a plate.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Add the cabbage and cook for 5-7 minutes.",
+          "Stir in the Red Potato and combine well.",
+          "Return the protein to the pan and toss everything together.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 31,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 7.068,
+          "country": "United States",
+          "country_multiplier": 1.28,
+          "breakdown": [
+            {
+              "name": "Potatoes",
+              "quantity_g": 150,
+              "co2_kg": 0.058,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Cabbage",
+              "quantity_g": 150,
+              "co2_kg": 0.058,
+              "co2_base_kg": 0.045,
+              "category": "vegetables"
+            },
+            {
+              "name": "Carrots",
+              "quantity_g": 80,
+              "co2_kg": 0.041,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Beef (steak)",
+              "quantity_g": 200,
+              "co2_kg": 6.912,
+              "co2_base_kg": 5.4,
+              "category": "meat"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 3.2,
+          "your_meal": 7.068,
+          "difference_kg": 3.868,
+          "percentage": 120.9,
+          "status": "above",
+          "country": "United States"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 41750
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T01:21:50.068728",
+  "updated_at": "2026-04-03T01:22:21.728057"
+}

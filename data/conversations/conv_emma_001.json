@@ -1,0 +1,65 @@
+{
+  "id": "conv_emma_001",
+  "title": "Quick Mediterranean pasta recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a quick Mediterranean recipe for 2, something with pasta and vegetables",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a lovely Mediterranean pasta dish: **Sun-Dried Tomato & Spinach Pasta**",
+      "type": "recipe",
+      "data": {
+        "name": "Sun-Dried Tomato & Spinach Pasta",
+        "description": "Quick Mediterranean pasta with sun-dried tomatoes, fresh spinach, and garlic - ready in 25 minutes",
+        "ingredients": [
+          {"name": "pasta", "quantity_g": 200},
+          {"name": "sun-dried tomatoes", "quantity_g": 50},
+          {"name": "fresh spinach", "quantity_g": 150},
+          {"name": "garlic", "quantity_g": 10},
+          {"name": "olive oil", "quantity_g": 30},
+          {"name": "parmesan", "quantity_g": 30},
+          {"name": "cherry tomatoes", "quantity_g": 100},
+          {"name": "basil", "quantity_g": 10},
+          {"name": "pine nuts", "quantity_g": 15},
+          {"name": "lemon zest", "quantity_g": 3}
+        ],
+        "steps": [
+          "Cook pasta in salted water until al dente, reserve 100ml pasta water",
+          "While pasta cooks, heat olive oil and saute garlic until fragrant",
+          "Add sun-dried tomatoes and cherry tomatoes, cook 3 minutes",
+          "Add spinach and wilt for 1 minute",
+          "Toss in drained pasta with reserved pasta water",
+          "Finish with parmesan, basil, pine nuts and lemon zest",
+          "Season to taste and serve immediately"
+        ],
+        "cooking_time_minutes": 25,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.68,
+          "breakdown": [
+            {"name": "Pasta", "quantity_g": 200, "co2_kg": 0.30, "category": "carbs"},
+            {"name": "Cheese", "quantity_g": 30, "co2_kg": 0.25, "category": "dairy"},
+            {"name": "Vegetables", "quantity_g": 260, "co2_kg": 0.13, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Excellent", "color": "#27ae60", "emoji": "\ud83c\udf1f"},
+        "comparison": {"average": 2.5, "your_meal": 0.34, "difference_kg": -2.16, "percentage": -86.4, "status": "below"},
+        "substitutions": [
+          {"ingredient": "parmesan", "substitute": "nutritional yeast", "co2_reduction": "90%", "reason": "Vegan alternative with similar umami"}
+        ],
+        "sustainability_tip": "This vegetarian pasta is 86% below the French average! The pine nuts add healthy fats with moderate footprint.",
+        "source": "database",
+        "database_id": 56789
+      }
+    }
+  ],
+  "stats": {"messages": 2, "recipes": 1},
+  "created_at": "2026-04-03T14:00:00.000000",
+  "updated_at": "2026-04-03T14:10:00.000000",
+  "user_id": "Emma_UK",
+  "pantry_ingredients": ["pasta", "sun-dried tomatoes", "spinach", "garlic", "olive oil", "parmesan", "cherry tomatoes", "basil", "lemon"]
+}

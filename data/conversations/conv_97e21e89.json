@@ -1,0 +1,140 @@
+{
+  "id": "conv_97e21e89",
+  "title": "Suggest an indian chiken recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest an indian chiken recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Vegetable Biryani**",
+      "type": "recipe",
+      "data": {
+        "name": "Vegetable Biryani",
+        "cuisine": "indian",
+        "description": "A Indian recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "rice (white)",
+            "quantity_g": 250
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 100
+          },
+          {
+            "name": "green beans",
+            "quantity_g": 100
+          },
+          {
+            "name": "onions",
+            "quantity_g": 100
+          },
+          {
+            "name": "yogurt",
+            "quantity_g": 100
+          },
+          {
+            "name": "cumin",
+            "quantity_g": 5
+          }
+        ],
+        "steps": [
+          "Parboil rice with whole spices.",
+          "Layer spiced vegetables and rice.",
+          "Steam covered until rice is fluffy.",
+          "Garnish with fried onions and mint."
+        ],
+        "cooking_time_minutes": 50,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.94,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Rice (white)",
+              "quantity_g": 250,
+              "co2_kg": 0.675,
+              "co2_base_kg": 0.675,
+              "category": "carbs"
+            },
+            {
+              "name": "Carrots",
+              "quantity_g": 100,
+              "co2_kg": 0.04,
+              "co2_base_kg": 0.04,
+              "category": "vegetables"
+            },
+            {
+              "name": "Green beans",
+              "quantity_g": 100,
+              "co2_kg": 0.05,
+              "co2_base_kg": 0.05,
+              "category": "vegetables"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 100,
+              "co2_kg": 0.03,
+              "co2_base_kg": 0.03,
+              "category": "vegetables"
+            },
+            {
+              "name": "Yogurt",
+              "quantity_g": 100,
+              "co2_kg": 0.13,
+              "co2_base_kg": 0.13,
+              "category": "dairy"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 5,
+              "co2_kg": 0.015,
+              "co2_base_kg": 0.015,
+              "category": "herbs_spices"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Low",
+          "color": "#2ecc71",
+          "emoji": "✓"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 0.94,
+          "difference_kg": -1.56,
+          "percentage": -62.4,
+          "status": "below",
+          "country": "France"
+        },
+        "substitutions": [
+          {
+            "original": "rice (white)",
+            "original_co2": 2.7,
+            "substitutes": [
+              "Quinoa",
+              "Potatoes",
+              "Pasta"
+            ],
+            "reason": "Rice paddies produce methane; alternatives have lower impact",
+            "potential_savings": 1.5
+          }
+        ],
+        "sustainability_tip": "Good CO2 score for a indian meal. Consider seasonal vegetables to reduce further.",
+        "source": "database",
+        "database_id": 9009
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T13:00:32.629775",
+  "updated_at": "2026-04-03T13:01:46.450580"
+}

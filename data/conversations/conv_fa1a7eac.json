@@ -1,0 +1,151 @@
+{
+  "id": "conv_fa1a7eac",
+  "title": "Suggest a chicken indian recipe",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a chicken indian recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Chicken Tikka Masala**",
+      "type": "recipe",
+      "data": {
+        "name": "Chicken Tikka Masala",
+        "cuisine": "indian",
+        "description": "A Indian recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "chicken",
+            "quantity_g": 400
+          },
+          {
+            "name": "tomatoes",
+            "quantity_g": 200
+          },
+          {
+            "name": "yogurt",
+            "quantity_g": 100
+          },
+          {
+            "name": "onions",
+            "quantity_g": 100
+          },
+          {
+            "name": "heavy cream",
+            "quantity_g": 50
+          },
+          {
+            "name": "rice (white)",
+            "quantity_g": 150
+          }
+        ],
+        "steps": [
+          "Marinate chicken in yogurt and spices.",
+          "Grill or bake chicken until charred.",
+          "Simmer tomatoes with spices and cream.",
+          "Add chicken to sauce and serve with rice."
+        ],
+        "cooking_time_minutes": 45,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 3.855,
+          "country": "Russia",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Chicken",
+              "quantity_g": 400,
+              "co2_kg": 2.76,
+              "co2_base_kg": 2.76,
+              "category": "meat"
+            },
+            {
+              "name": "Tomatoes",
+              "quantity_g": 200,
+              "co2_kg": 0.28,
+              "co2_base_kg": 0.28,
+              "category": "vegetables"
+            },
+            {
+              "name": "Yogurt",
+              "quantity_g": 100,
+              "co2_kg": 0.13,
+              "co2_base_kg": 0.13,
+              "category": "dairy"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 100,
+              "co2_kg": 0.03,
+              "co2_base_kg": 0.03,
+              "category": "vegetables"
+            },
+            {
+              "name": "Heavy cream",
+              "quantity_g": 50,
+              "co2_kg": 0.25,
+              "co2_base_kg": 0.25,
+              "category": "dairy"
+            },
+            {
+              "name": "Rice (white)",
+              "quantity_g": 150,
+              "co2_kg": 0.405,
+              "co2_base_kg": 0.405,
+              "category": "carbs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "High",
+          "color": "#e67e22",
+          "emoji": "🔶"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 3.855,
+          "difference_kg": 1.355,
+          "percentage": 54.2,
+          "status": "above",
+          "country": "Russia"
+        },
+        "substitutions": [
+          {
+            "original": "chicken",
+            "original_co2": 6.9,
+            "substitutes": [
+              "Tofu",
+              "Tempeh",
+              "Seitan"
+            ],
+            "reason": "Poultry can be replaced with similar-texture plant proteins",
+            "potential_savings": 5.0
+          },
+          {
+            "original": "rice (white)",
+            "original_co2": 2.7,
+            "substitutes": [
+              "Quinoa",
+              "Potatoes",
+              "Pasta"
+            ],
+            "reason": "Rice paddies produce methane; alternatives have lower impact",
+            "potential_savings": 1.5
+          }
+        ],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 9008
+      }
+    }
+  ],
+  "stats": {
+    "messages": 2,
+    "recipes": 1
+  },
+  "created_at": "2026-04-03T13:08:15.606239",
+  "updated_at": "2026-04-03T14:02:53.464925"
+}

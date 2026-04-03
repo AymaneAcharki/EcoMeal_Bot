@@ -1,0 +1,802 @@
+{
+  "id": "conv_808a7cef",
+  "title": "Suggest a mexican recipe with beef",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a mexican recipe with beef",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **beef & Rice Mole**",
+      "type": "recipe",
+      "data": {
+        "name": "beef & Rice Mole",
+        "cuisine": "mexican",
+        "description": "A Mexican recipe with 4 ingredients",
+        "ingredients": [
+          {
+            "name": "beef",
+            "quantity_g": 200
+          },
+          {
+            "name": "pico de gallo",
+            "quantity_g": 80
+          },
+          {
+            "name": "rice",
+            "quantity_g": 150
+          },
+          {
+            "name": "tortillas",
+            "quantity_g": 150
+          }
+        ],
+        "steps": [
+          "Season the Beef and sear in a hot pan until golden. Set aside on a plate.",
+          "Add the pico de gallo and cook for 5-7 minutes.",
+          "Add the Rice and cook according to package directions.",
+          "Return the protein to the pan and toss everything together.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 31,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 5.011,
+          "country": "Sweden",
+          "country_multiplier": 0.82,
+          "breakdown": [
+            {
+              "name": "Beef (steak)",
+              "quantity_g": 200,
+              "co2_kg": 4.428,
+              "co2_base_kg": 5.4,
+              "category": "meat"
+            },
+            {
+              "name": "Salsa",
+              "quantity_g": 80,
+              "co2_kg": 0.079,
+              "co2_base_kg": 0.096,
+              "category": "condiments"
+            },
+            {
+              "name": "Rice (white)",
+              "quantity_g": 150,
+              "co2_kg": 0.332,
+              "co2_base_kg": 0.405,
+              "category": "carbs"
+            },
+            {
+              "name": "Corn tortillas",
+              "quantity_g": 150,
+              "co2_kg": 0.172,
+              "co2_base_kg": 0.21,
+              "category": "carbs"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Very High",
+          "color": "#e74c3c",
+          "emoji": "🔴"
+        },
+        "comparison": {
+          "average": 2.05,
+          "your_meal": 5.011,
+          "difference_kg": 2.961,
+          "percentage": 144.4,
+          "status": "above",
+          "country": "Sweden"
+        },
+        "substitutions": [
+          {
+            "original": "beef",
+            "original_co2": 27.0,
+            "substitutes": [
+              "Lentils",
+              "Chickpeas",
+              "Tofu",
+              "Tempeh",
+              "Seitan"
+            ],
+            "reason": "Plant-based proteins have 90-95% lower CO2 emissions",
+            "potential_savings": 25.0
+          },
+          {
+            "original": "rice",
+            "original_co2": 2.7,
+            "substitutes": [
+              "Quinoa",
+              "Potatoes",
+              "Pasta"
+            ],
+            "reason": "Rice paddies produce methane; alternatives have lower impact",
+            "potential_savings": 1.5
+          }
+        ],
+        "sustainability_tip": "Higher carbon footprint. Consider swapping meat for lentils or chickpeas.",
+        "source": "database",
+        "database_id": 12331
+      }
+    },
+    {
+      "role": "user",
+      "content": "Make it vegetarian and moroccan",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's an alternative: **Mechoui with Carrots & Onion**",
+      "type": "recipe",
+      "data": {
+        "name": "Mechoui with Carrots & Onion",
+        "cuisine": "moroccan",
+        "description": "A Moroccan recipe with 7 ingredients",
+        "ingredients": [
+          {
+            "name": "white vinegar",
+            "quantity_g": 30
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 80
+          },
+          {
+            "name": "chopped onion",
+            "quantity_g": 80
+          },
+          {
+            "name": "chopped cilantro",
+            "quantity_g": 15
+          },
+          {
+            "name": "garlic cloves",
+            "quantity_g": 3
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 30
+          },
+          {
+            "name": "flat leaf parsley",
+            "quantity_g": 15
+          }
+        ],
+        "steps": [
+          "Finely chop the carrots and onion and garlic cloves.",
+          "In the same pan, saute the chopped aromatics until fragrant and soft (about 3-4 minutes).",
+          "Season with cilantro and garlic cloves. Adjust salt and pepper to taste.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 43,
+        "difficulty": "medium",
+        "co2_info": {
+          "total_co2_kg": 0.187,
+          "country": "Sweden",
+          "country_multiplier": 0.82,
+          "breakdown": [
+            {
+              "name": "Carrots",
+              "quantity_g": 80,
+              "co2_kg": 0.026,
+              "co2_base_kg": 0.032,
+              "category": "vegetables"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 80,
+              "co2_kg": 0.02,
+              "co2_base_kg": 0.024,
+              "category": "vegetables"
+            },
+            {
+              "name": "Cilantro",
+              "quantity_g": 15,
+              "co2_kg": 0.004,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Garlic",
+              "quantity_g": 3,
+              "co2_kg": 0.001,
+              "co2_base_kg": 0.001,
+              "category": "vegetables"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 30,
+              "co2_kg": 0.133,
+              "co2_base_kg": 0.162,
+              "category": "oils_fats"
+            },
+            {
+              "name": "Parsley",
+              "quantity_g": 15,
+              "co2_kg": 0.004,
+              "co2_base_kg": 0.004,
+              "category": "herbs_spices"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Excellent",
+          "color": "#27ae60",
+          "emoji": "🌟"
+        },
+        "comparison": {
+          "average": 2.05,
+          "your_meal": 0.187,
+          "difference_kg": -1.863,
+          "percentage": -90.9,
+          "status": "below",
+          "country": "Sweden"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Excellent low-carbon footprint! This moroccan dish is well below the French average.",
+        "source": "database",
+        "database_id": 19080
+      }
+    },
+    {
+      "role": "user",
+      "content": "Do a mexican recipe ",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Guacamole**",
+      "type": "recipe",
+      "data": {
+        "name": "Guacamole",
+        "cuisine": "mexican",
+        "description": "A Mexican recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "avocado",
+            "quantity_g": 200
+          },
+          {
+            "name": "onions",
+            "quantity_g": 30
+          },
+          {
+            "name": "tomatoes",
+            "quantity_g": 50
+          },
+          {
+            "name": "lime",
+            "quantity_g": 30
+          },
+          {
+            "name": "cilantro",
+            "quantity_g": 10
+          },
+          {
+            "name": "chili powder",
+            "quantity_g": 2
+          }
+        ],
+        "steps": [
+          "Mash ripe avocados.",
+          "Mix with diced onions, tomatoes and cilantro.",
+          "Season with lime juice and salt.",
+          "Serve immediately with tortilla chips."
+        ],
+        "cooking_time_minutes": 10,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.292,
+          "country": "Sweden",
+          "country_multiplier": 0.82,
+          "breakdown": [
+            {
+              "name": "Avocado",
+              "quantity_g": 200,
+              "co2_kg": 0.213,
+              "co2_base_kg": 0.26,
+              "category": "fruits"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 30,
+              "co2_kg": 0.007,
+              "co2_base_kg": 0.009,
+              "category": "vegetables"
+            },
+            {
+              "name": "Tomatoes",
+              "quantity_g": 50,
+              "co2_kg": 0.057,
+              "co2_base_kg": 0.07,
+              "category": "vegetables"
+            },
+            {
+              "name": "Lime",
+              "quantity_g": 30,
+              "co2_kg": 0.007,
+              "co2_base_kg": 0.009,
+              "category": "fruits"
+            },
+            {
+              "name": "Cilantro",
+              "quantity_g": 10,
+              "co2_kg": 0.002,
+              "co2_base_kg": 0.003,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Chili powder",
+              "quantity_g": 2,
+              "co2_kg": 0.004,
+              "co2_base_kg": 0.005,
+              "category": "herbs_spices"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Excellent",
+          "color": "#27ae60",
+          "emoji": "🌟"
+        },
+        "comparison": {
+          "average": 2.05,
+          "your_meal": 0.292,
+          "difference_kg": -1.758,
+          "percentage": -85.8,
+          "status": "below",
+          "country": "Sweden"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Excellent low-carbon footprint! This mexican dish is well below the French average.",
+        "source": "database",
+        "database_id": 9005
+      }
+    },
+    {
+      "role": "user",
+      "content": "can you do a weekly plan ",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's your weekly meal plan with shopping list and CO2 analysis:",
+      "type": "weekly_plan",
+      "data": {
+        "days": [
+          {
+            "day": "Monday",
+            "meal": "Fish and Chips",
+            "cuisine": "british",
+            "ingredients": [
+              {
+                "name": "fish (cod)",
+                "quantity_g": 250
+              },
+              {
+                "name": "potatoes",
+                "quantity_g": 300
+              },
+              {
+                "name": "all-purpose flour",
+                "quantity_g": 100
+              },
+              {
+                "name": "eggs",
+                "quantity_g": 50
+              },
+              {
+                "name": "vegetable oil",
+                "quantity_g": 50
+              },
+              {
+                "name": "lemon",
+                "quantity_g": 30
+              }
+            ],
+            "co2_kg": 1.217
+          },
+          {
+            "day": "Tuesday",
+            "meal": "Kung Pao Chicken",
+            "cuisine": "chinese",
+            "ingredients": [
+              {
+                "name": "chicken",
+                "quantity_g": 300
+              },
+              {
+                "name": "peppers",
+                "quantity_g": 100
+              },
+              {
+                "name": "onions",
+                "quantity_g": 50
+              },
+              {
+                "name": "garlic",
+                "quantity_g": 10
+              },
+              {
+                "name": "soy sauce",
+                "quantity_g": 20
+              },
+              {
+                "name": "rice (white)",
+                "quantity_g": 150
+              }
+            ],
+            "co2_kg": 2.139
+          },
+          {
+            "day": "Wednesday",
+            "meal": "Ratatouille",
+            "cuisine": "french",
+            "ingredients": [
+              {
+                "name": "zucchini",
+                "quantity_g": 200
+              },
+              {
+                "name": "tomatoes",
+                "quantity_g": 200
+              },
+              {
+                "name": "onions",
+                "quantity_g": 100
+              },
+              {
+                "name": "peppers",
+                "quantity_g": 100
+              },
+              {
+                "name": "garlic",
+                "quantity_g": 10
+              },
+              {
+                "name": "olive oil",
+                "quantity_g": 30
+              }
+            ],
+            "co2_kg": 0.513
+          },
+          {
+            "day": "Thursday",
+            "meal": "Tonkotsu Ramen",
+            "cuisine": "japanese",
+            "ingredients": [
+              {
+                "name": "pasta",
+                "quantity_g": 150
+              },
+              {
+                "name": "pork",
+                "quantity_g": 150
+              },
+              {
+                "name": "eggs",
+                "quantity_g": 50
+              },
+              {
+                "name": "green onions",
+                "quantity_g": 20
+              },
+              {
+                "name": "garlic",
+                "quantity_g": 10
+              },
+              {
+                "name": "soy sauce",
+                "quantity_g": 20
+              }
+            ],
+            "co2_kg": 1.344
+          },
+          {
+            "day": "Friday",
+            "meal": "Green Curry",
+            "cuisine": "thai",
+            "ingredients": [
+              {
+                "name": "chicken",
+                "quantity_g": 300
+              },
+              {
+                "name": "coconut milk",
+                "quantity_g": 200
+              },
+              {
+                "name": "green beans",
+                "quantity_g": 100
+              },
+              {
+                "name": "basil",
+                "quantity_g": 15
+              },
+              {
+                "name": "fish sauce",
+                "quantity_g": 15
+              },
+              {
+                "name": "rice (white)",
+                "quantity_g": 150
+              }
+            ],
+            "co2_kg": 2.61
+          },
+          {
+            "day": "Saturday",
+            "meal": "Chicken Tikka Masala",
+            "cuisine": "indian",
+            "ingredients": [
+              {
+                "name": "chicken",
+                "quantity_g": 400
+              },
+              {
+                "name": "tomatoes",
+                "quantity_g": 200
+              },
+              {
+                "name": "yogurt",
+                "quantity_g": 100
+              },
+              {
+                "name": "onions",
+                "quantity_g": 100
+              },
+              {
+                "name": "heavy cream",
+                "quantity_g": 50
+              },
+              {
+                "name": "rice (white)",
+                "quantity_g": 150
+              }
+            ],
+            "co2_kg": 3.161
+          },
+          {
+            "day": "Sunday",
+            "meal": "Vegetable Biryani",
+            "cuisine": "indian",
+            "ingredients": [
+              {
+                "name": "rice (white)",
+                "quantity_g": 250
+              },
+              {
+                "name": "carrots",
+                "quantity_g": 100
+              },
+              {
+                "name": "green beans",
+                "quantity_g": 100
+              },
+              {
+                "name": "onions",
+                "quantity_g": 100
+              },
+              {
+                "name": "yogurt",
+                "quantity_g": 100
+              },
+              {
+                "name": "cumin",
+                "quantity_g": 5
+              }
+            ],
+            "co2_kg": 0.771
+          }
+        ],
+        "total_estimated_co2": 11.76,
+        "french_avg_weekly_co2": 35.0,
+        "co2_saved_kg": 23.24,
+        "co2_saved_percent": 66.4,
+        "seasonal_score_percent": 0.0,
+        "shopping_list": {
+          "items": [
+            {
+              "name": "Fish (cod)",
+              "food_id": 8,
+              "quantity_g": 250,
+              "category": "fish",
+              "co2_kg": 3.4
+            },
+            {
+              "name": "Potatoes",
+              "food_id": 29,
+              "quantity_g": 300,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "All-purpose flour",
+              "food_id": 55,
+              "quantity_g": 100,
+              "category": "carbs",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Eggs",
+              "food_id": 16,
+              "quantity_g": 100,
+              "category": "eggs",
+              "co2_kg": 4.8
+            },
+            {
+              "name": "Vegetable oil",
+              "food_id": 42,
+              "quantity_g": 50,
+              "category": "oils_fats",
+              "co2_kg": 3.5
+            },
+            {
+              "name": "Lemon",
+              "food_id": 47,
+              "quantity_g": 30,
+              "category": "fruits",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Chicken",
+              "food_id": 5,
+              "quantity_g": 1000,
+              "category": "meat",
+              "co2_kg": 6.9
+            },
+            {
+              "name": "Peppers",
+              "food_id": 35,
+              "quantity_g": 200,
+              "category": "vegetables",
+              "co2_kg": 0.9
+            },
+            {
+              "name": "Onions",
+              "food_id": 34,
+              "quantity_g": 350,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Garlic",
+              "food_id": 46,
+              "quantity_g": 30,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Soy sauce",
+              "food_id": 43,
+              "quantity_g": 40,
+              "category": "condiments",
+              "co2_kg": 1.2
+            },
+            {
+              "name": "Rice (white)",
+              "food_id": 23,
+              "quantity_g": 700,
+              "category": "carbs",
+              "co2_kg": 2.7
+            },
+            {
+              "name": "Zucchini",
+              "food_id": 56,
+              "quantity_g": 200,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Tomatoes",
+              "food_id": 30,
+              "quantity_g": 400,
+              "category": "vegetables",
+              "co2_kg": 1.4
+            },
+            {
+              "name": "Olive oil",
+              "food_id": 41,
+              "quantity_g": 30,
+              "category": "oils_fats",
+              "co2_kg": 5.4
+            },
+            {
+              "name": "Pasta",
+              "food_id": 25,
+              "quantity_g": 150,
+              "category": "carbs",
+              "co2_kg": 1.5
+            },
+            {
+              "name": "Pork",
+              "food_id": 4,
+              "quantity_g": 150,
+              "category": "meat",
+              "co2_kg": 7.6
+            },
+            {
+              "name": "Green onions",
+              "food_id": 64,
+              "quantity_g": 20,
+              "category": "vegetables",
+              "co2_kg": 0.3
+            },
+            {
+              "name": "Coconut milk",
+              "food_id": 58,
+              "quantity_g": 200,
+              "category": "dairy",
+              "co2_kg": 3.0
+            },
+            {
+              "name": "Green beans",
+              "food_id": 74,
+              "quantity_g": 200,
+              "category": "vegetables",
+              "co2_kg": 0.5
+            },
+            {
+              "name": "Basil",
+              "food_id": 53,
+              "quantity_g": 15,
+              "category": "herbs_spices",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Fish sauce",
+              "food_id": 70,
+              "quantity_g": 15,
+              "category": "condiments",
+              "co2_kg": 3.5
+            },
+            {
+              "name": "Yogurt",
+              "food_id": 14,
+              "quantity_g": 200,
+              "category": "dairy",
+              "co2_kg": 1.3
+            },
+            {
+              "name": "Heavy cream",
+              "food_id": 63,
+              "quantity_g": 50,
+              "category": "dairy",
+              "co2_kg": 5.0
+            },
+            {
+              "name": "Carrots",
+              "food_id": 31,
+              "quantity_g": 100,
+              "category": "vegetables",
+              "co2_kg": 0.4
+            },
+            {
+              "name": "Cumin",
+              "food_id": 67,
+              "quantity_g": 5,
+              "category": "herbs_spices",
+              "co2_kg": 3.0
+            }
+          ],
+          "total_items": 26,
+          "total_cost": 23.61,
+          "currency": "EUR"
+        },
+        "recommendation": "Great choice! This plan saves 23.24 kg CO2 compared to the French average (66.4% reduction)."
+      }
+    }
+  ],
+  "stats": {
+    "messages": 8,
+    "recipes": 3
+  },
+  "created_at": "2026-04-03T12:42:51.316306",
+  "updated_at": "2026-04-03T12:55:38.928762"
+}

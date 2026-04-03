@@ -1,0 +1,35 @@
+{
+  "id": "conv_marie_002",
+  "title": "Menu hebdomadaire economique",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Prepare-moi un menu de la semaine vegetarian avec un budget de 60 euros",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Voici votre **Menu Vegetarien Economique** pour la semaine:\n\n**Lundi - Curry de pois chiches** (2.30 EUR/pers)\n- Poids CO2: 0.35 kg\n- Temps: 30 min\n\n**Mardi - Risotto aux champignons** (2.80 EUR/pers)\n- Poids CO2: 0.52 kg\n- Temps: 40 min\n\n**Mercredi - Soupe de lentilles** (1.50 EUR/pers)\n- Poids CO2: 0.28 kg\n- Temps: 25 min\n\n**Jeudi - Omelette aux fines herbes** (1.80 EUR/pers)\n- Poids CO2: 0.38 kg\n- Temps: 15 min\n\n**Vendredi - Pates a la puttanesca vegetarienne** (2.20 EUR/pers)\n- Poids CO2: 0.45 kg\n- Temps: 25 min\n\n**Week-end - Ratatouille avec riz** (2.50 EUR/pers)\n- Poids CO2: 0.42 kg\n- Temps: 50 min\n\n**TOTAL SEMAINE: 45.60 EUR** (sous votre budget!)\n**CO2 moyen: 0.40 kg/repas** (84% sous la moyenne)",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "user",
+      "content": "Super! Ajoute la liste de courses",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "**Liste de Courses - Menu Semaine**\n\n**Proteines**\n- Pois chiches (2 boites): 2.40 EUR\n- Lentilles (500g): 1.50 EUR\n- Oeufs (6): 2.10 EUR\n\n**Legumes**\n- Oignons (1kg): 1.20 EUR\n- Champignons (400g): 3.00 EUR\n- Tomates (1kg): 2.50 EUR\n- Courgettes (3): 2.40 EUR\n- Aubergine (2): 2.00 EUR\n- Poivrons (3): 2.10 EUR\n- Ail (1 tete): 0.50 EUR\n\n**Epicerie**\n- Riz arborio (500g): 2.00 EUR\n- Pates (500g): 1.20 EUR\n- Huile d'olive: 3.50 EUR\n- Herbes de provence: 1.50 EUR\n- Concentre de tomate: 0.80 EUR\n\n**TOTAL ESTIME: 28.70 EUR**\n\nVous economisez 31.30 EUR vs budget! Les ingredients de base peuvent etre reutilises la semaine suivante.",
+      "type": "text",
+      "data": null
+    }
+  ],
+  "stats": {"messages": 6, "recipes": 0},
+  "created_at": "2026-04-03T10:30:00.000000",
+  "updated_at": "2026-04-03T10:45:00.000000",
+  "user_id": "Marie_France",
+  "pantry_ingredients": ["chickpeas", "lentils", "eggs", "onions", "mushrooms", "tomatoes", "zucchini", "eggplant", "peppers", "garlic", "rice", "pasta", "olive oil"]
+}

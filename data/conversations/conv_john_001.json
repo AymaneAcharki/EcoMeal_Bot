@@ -1,0 +1,79 @@
+{
+  "id": "conv_john_001",
+  "title": "BBQ chicken tacos for family dinner",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I need a family dinner recipe for 4 people, something with chicken and mexican style",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a perfect family recipe: **BBQ Chicken Tacos with Fresh Salsa**",
+      "type": "recipe",
+      "data": {
+        "name": "BBQ Chicken Tacos with Fresh Salsa",
+        "description": "Crowd-pleasing Mexican-American fusion tacos, perfect for family dinners",
+        "ingredients": [
+          {"name": "chicken breast", "quantity_g": 500},
+          {"name": "tortillas", "quantity_g": 200},
+          {"name": "tomatoes", "quantity_g": 200},
+          {"name": "onions", "quantity_g": 100},
+          {"name": "peppers", "quantity_g": 100},
+          {"name": "cheese", "quantity_g": 100},
+          {"name": "lettuce", "quantity_g": 50},
+          {"name": "sour cream", "quantity_g": 60},
+          {"name": "lime", "quantity_g": 30},
+          {"name": "cumin", "quantity_g": 5},
+          {"name": "chili powder", "quantity_g": 3}
+        ],
+        "steps": [
+          "Season chicken breast with cumin, chili powder, salt and pepper",
+          "Grill or pan-fry chicken for 6-7 minutes per side until cooked through",
+          "Let chicken rest for 5 minutes, then slice into strips",
+          "Dice tomatoes, onions, and peppers for fresh salsa",
+          "Warm tortillas in a dry pan for 30 seconds each side",
+          "Assemble tacos with chicken, salsa, cheese, lettuce and sour cream",
+          "Squeeze fresh lime juice over the top and serve"
+        ],
+        "cooking_time_minutes": 45,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 4.12,
+          "breakdown": [
+            {"name": "Chicken", "quantity_g": 500, "co2_kg": 3.45, "category": "meat"},
+            {"name": "Cheese", "quantity_g": 100, "co2_kg": 0.85, "category": "dairy"},
+            {"name": "Vegetables", "quantity_g": 450, "co2_kg": 0.32, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Medium", "color": "#f39c12", "emoji": "\ud83c\udf31"},
+        "comparison": {"average": 2.5, "your_meal": 1.03, "difference_kg": -1.47, "percentage": -58.8, "status": "below"},
+        "substitutions": [
+          {"ingredient": "chicken breast", "substitute": "turkey breast", "co2_reduction": "16%", "reason": "Lower carbon footprint"},
+          {"ingredient": "sour cream", "substitute": "greek yogurt", "co2_reduction": "62%", "reason": "Less CO2, more protein"}
+        ],
+        "sustainability_tip": "Using chicken instead of beef saves 20kg of CO2! Try turkey for even lower impact.",
+        "source": "database",
+        "database_id": 23456
+      }
+    },
+    {
+      "role": "user",
+      "content": "Great! Can you make it spicier and add some beans?",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Spicy Bean & Chicken Tacos coming up! Here's the modified version:\n\n**Additions:**\n- 1 can black beans (200g) - adds fiber and reduces meat\n- 1 jalapeno pepper, diced - for heat\n- Extra chili powder (double amount)\n- Dash of hot sauce\n\n**CO2 Impact:** Adding beans reduces overall carbon footprint by 15%! Each taco now has only 0.85 kg CO2 instead of 1.03 kg.\n\nYour family of 4 will love this heartier, spicier version!",
+      "type": "text",
+      "data": null
+    }
+  ],
+  "stats": {"messages": 4, "recipes": 1},
+  "created_at": "2026-04-03T11:00:00.000000",
+  "updated_at": "2026-04-03T11:15:00.000000",
+  "user_id": "John_USA",
+  "pantry_ingredients": ["chicken breast", "tortillas", "tomatoes", "onions", "peppers", "cheese", "lettuce", "black beans", "cumin", "chili powder"]
+}

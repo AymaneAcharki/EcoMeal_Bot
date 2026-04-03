@@ -1,0 +1,64 @@
+{
+  "id": "conv_lucas_001",
+  "title": "Brazilian-style black bean stew",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quero uma receita brasileira com feijao preto para 3 pessoas",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Aqui esta uma receita classica: **Feijoada Vegetariana**",
+      "type": "recipe",
+      "data": {
+        "name": "Feijoada Vegetariana",
+        "description": "Versao sustentavel do classico brasileiro, rica em proteinas e sabor",
+        "ingredients": [
+          {"name": "black beans", "quantity_g": 400},
+          {"name": "onions", "quantity_g": 150},
+          {"name": "garlic", "quantity_g": 15},
+          {"name": "bell peppers", "quantity_g": 100},
+          {"name": "tomatoes", "quantity_g": 150},
+          {"name": "bay leaves", "quantity_g": 3},
+          {"name": "cumin", "quantity_g": 5},
+          {"name": "smoked paprika", "quantity_g": 5},
+          {"name": "orange", "quantity_g": 50},
+          {"name": "collard greens", "quantity_g": 150},
+          {"name": "rice", "quantity_g": 200},
+          {"name": "farofa", "quantity_g": 50}
+        ],
+        "steps": [
+          "Cozinhar o feijao preto com louro ate ficar macio (40 min)",
+          "Refogar cebola, alho e pimentao em oleo",
+          "Adicionar tomates, cominho e paprika defumada",
+          "Misturar o feijao cozido e amassar parcialmente",
+          "Cozinhar em fogo baixo por 15 minutos",
+          "Servir com arroz, couve refogada e farofa",
+          "Decorar com gomos de laranja"
+        ],
+        "cooking_time_minutes": 60,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.48,
+          "breakdown": [
+            {"name": "Black beans", "quantity_g": 400, "co2_kg": 0.40, "category": "plant_protein"},
+            {"name": "Vegetables", "quantity_g": 450, "co2_kg": 0.08, "category": "vegetables"}
+          ]
+        },
+        "co2_label": {"label": "Excellent", "color": "#27ae60", "emoji": "\ud83c\udf1f"},
+        "comparison": {"average": 2.5, "your_meal": 0.16, "difference_kg": -2.34, "percentage": -93.6, "status": "below"},
+        "substitutions": [],
+        "sustainability_tip": "Feijoada vegetariana e 93% mais ecologica que a versao tradicional! O feijao preto fixa nitrogenio no solo.",
+        "source": "database",
+        "database_id": 89012
+      }
+    }
+  ],
+  "stats": {"messages": 2, "recipes": 1},
+  "created_at": "2026-04-03T17:00:00.000000",
+  "updated_at": "2026-04-03T17:15:00.000000",
+  "user_id": "Lucas_Brazil",
+  "pantry_ingredients": ["black beans", "onions", "garlic", "bell peppers", "tomatoes", "bay leaves", "cumin", "rice", "farofa", "collard greens"]
+}

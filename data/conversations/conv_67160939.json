@@ -1,0 +1,214 @@
+{
+  "id": "conv_67160939",
+  "title": "Suggest a moroccan recipe with chicken",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest a moroccan recipe with chicken",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Chicken Couscous**",
+      "type": "recipe",
+      "data": {
+        "name": "Chicken Couscous",
+        "cuisine": "moroccan",
+        "description": "A Moroccan recipe with 6 ingredients",
+        "ingredients": [
+          {
+            "name": "chicken",
+            "quantity_g": 350
+          },
+          {
+            "name": "carrots",
+            "quantity_g": 150
+          },
+          {
+            "name": "zucchini",
+            "quantity_g": 100
+          },
+          {
+            "name": "onions",
+            "quantity_g": 100
+          },
+          {
+            "name": "cumin",
+            "quantity_g": 5
+          },
+          {
+            "name": "olive oil",
+            "quantity_g": 20
+          }
+        ],
+        "steps": [
+          "Simmer chicken with spices and vegetables.",
+          "Steam couscous over the broth.",
+          "Serve couscous topped with chicken and veggies.",
+          "Drizzle with broth and harissa."
+        ],
+        "cooking_time_minutes": 60,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 2.658,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Chicken",
+              "quantity_g": 350,
+              "co2_kg": 2.415,
+              "co2_base_kg": 2.415,
+              "category": "meat"
+            },
+            {
+              "name": "Carrots",
+              "quantity_g": 150,
+              "co2_kg": 0.06,
+              "co2_base_kg": 0.06,
+              "category": "vegetables"
+            },
+            {
+              "name": "Zucchini",
+              "quantity_g": 100,
+              "co2_kg": 0.03,
+              "co2_base_kg": 0.03,
+              "category": "vegetables"
+            },
+            {
+              "name": "Onions",
+              "quantity_g": 100,
+              "co2_kg": 0.03,
+              "co2_base_kg": 0.03,
+              "category": "vegetables"
+            },
+            {
+              "name": "Cumin",
+              "quantity_g": 5,
+              "co2_kg": 0.015,
+              "co2_base_kg": 0.015,
+              "category": "herbs_spices"
+            },
+            {
+              "name": "Olive oil",
+              "quantity_g": 20,
+              "co2_kg": 0.108,
+              "co2_base_kg": 0.108,
+              "category": "oils_fats"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Medium",
+          "color": "#f39c12",
+          "emoji": "⚠"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 2.658,
+          "difference_kg": 0.158,
+          "percentage": 6.3,
+          "status": "above",
+          "country": "France"
+        },
+        "substitutions": [
+          {
+            "original": "chicken",
+            "original_co2": 6.9,
+            "substitutes": [
+              "Tofu",
+              "Tempeh",
+              "Seitan"
+            ],
+            "reason": "Poultry can be replaced with similar-texture plant proteins",
+            "potential_savings": 5.0
+          }
+        ],
+        "sustainability_tip": "Average impact. Try replacing some ingredients with plant-based alternatives.",
+        "source": "database",
+        "database_id": 9016
+      }
+    },
+    {
+      "role": "user",
+      "content": "Give me a vegetarian moroccan version recipe",
+      "type": "text",
+      "data": null
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recipe for you: **Pastilla with Lemon Juice & Lemon**",
+      "type": "recipe",
+      "data": {
+        "name": "Pastilla with Lemon Juice & Lemon",
+        "cuisine": "moroccan",
+        "description": "A Moroccan recipe with 3 ingredients",
+        "ingredients": [
+          {
+            "name": "fine sea salt",
+            "quantity_g": 30
+          },
+          {
+            "name": "fresh lemon juice",
+            "quantity_g": 80
+          },
+          {
+            "name": "lemon",
+            "quantity_g": 80
+          }
+        ],
+        "steps": [
+          "Add the lemon juice and lemon and cook for 5-7 minutes.",
+          "Serve warm and enjoy!"
+        ],
+        "cooking_time_minutes": 27,
+        "difficulty": "easy",
+        "co2_info": {
+          "total_co2_kg": 0.048,
+          "country": "France",
+          "country_multiplier": 1.0,
+          "breakdown": [
+            {
+              "name": "Lemon juice",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "fruits"
+            },
+            {
+              "name": "Lemon",
+              "quantity_g": 80,
+              "co2_kg": 0.024,
+              "co2_base_kg": 0.024,
+              "category": "fruits"
+            }
+          ]
+        },
+        "co2_label": {
+          "label": "Excellent",
+          "color": "#27ae60",
+          "emoji": "🌟"
+        },
+        "comparison": {
+          "average": 2.5,
+          "your_meal": 0.048,
+          "difference_kg": -2.452,
+          "percentage": -98.1,
+          "status": "below",
+          "country": "France"
+        },
+        "substitutions": [],
+        "sustainability_tip": "Excellent low-carbon footprint! This moroccan dish is well below the French average.",
+        "source": "database",
+        "database_id": 6010
+      }
+    }
+  ],
+  "stats": {
+    "messages": 4,
+    "recipes": 2
+  },
+  "created_at": "2026-04-03T14:39:02.703173",
+  "updated_at": "2026-04-03T14:39:32.438666"
+}
