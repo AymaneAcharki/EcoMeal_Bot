@@ -133,6 +133,15 @@ Edit `config.py` to customize:
 - Agribalyse database
 - Country-specific electricity grids
 
+## Academic context
+
+EcoMeal was originally developed as a group project during the **Artificial Intelligence and SDG** course,  
+Semester 2 of the **MSc 2 Data Analytics for Business at KEDGE Business School 2025-2026**.
+
+**Group project grade: 16.7/20.**
+
+This repository contains the consolidated application and the subsequent improvements made for deployment and portfolio presentation.
+
 ## License
 
 MIT License - See LICENSE file for details.
