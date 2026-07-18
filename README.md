@@ -10,6 +10,11 @@ pinned: false
 license: mit
 ---
 
+## Live Demo
+
+[![Try EcoMeal Bot](https://img.shields.io/badge/Try%20the%20Live%20Demo-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/spaces/AymaneAshrk/EcoMeal_Bot)
+
+
 # EcoMeal Bot - Sustainable Recipe Chatbot
 
 A Streamlit chatbot that suggests eco-friendly recipes, tracks CO2 emissions per meal
