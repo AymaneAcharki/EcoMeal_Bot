@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -13,12 +16,13 @@ jobs:
     steps:
       - name: Checkout GitHub repository
         uses: actions/checkout@v6
-
-      - name: Sync to Hugging Face
-        uses: huggingface/hub-sync@v0.1.0
         with:
-          github_repo_id: ${{ github.repository }}
-          huggingface_repo_id: AymaneAshrk/EcoMeal_Bot
-          hf_token: ${{ secrets.HF_TOKEN }}
-          repo_type: space
-          space_sdk: streamlit
+          fetch-depth: 0
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote remove space 2>/dev/null || true
+          git remote add space "https://AymaneAshrk:${HF_TOKEN}@huggingface.co/spaces/AymaneAshrk/EcoMeal_Bot"
+          git push --force space HEAD:main
